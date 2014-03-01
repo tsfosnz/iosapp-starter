@@ -22,6 +22,7 @@
 		CEDE244418C21CD50083B8DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE242318C21CD50083B8DF /* UIKit.framework */; };
 		CEDE244C18C21CD50083B8DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEDE244A18C21CD50083B8DF /* InfoPlist.strings */; };
 		CEDE244E18C21CD50083B8DF /* quicknoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE244D18C21CD50083B8DF /* quicknoteTests.m */; };
+		CEDE245C18C21E920083B8DF /* readme in Resources */ = {isa = PBXBuildFile; fileRef = CEDE245B18C21E920083B8DF /* readme */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		CEDE244918C21CD50083B8DF /* quicknoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quicknoteTests-Info.plist"; sourceTree = "<group>"; };
 		CEDE244B18C21CD50083B8DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEDE244D18C21CD50083B8DF /* quicknoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quicknoteTests.m; sourceTree = "<group>"; };
+		CEDE245B18C21E920083B8DF /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		CEDE241318C21CD50083B8DF = {
 			isa = PBXGroup;
 			children = (
+				CEDE245B18C21E920083B8DF /* readme */,
 				CEDE242518C21CD50083B8DF /* quicknote */,
 				CEDE244718C21CD50083B8DF /* quicknoteTests */,
 				CEDE241E18C21CD50083B8DF /* Frameworks */,
@@ -115,13 +118,13 @@
 		CEDE242518C21CD50083B8DF /* quicknote */ = {
 			isa = PBXGroup;
 			children = (
+				CEDE245918C21E370083B8DF /* Data */,
+				CEDE245718C21E1C0083B8DF /* Model */,
+				CEDE245A18C21E3F0083B8DF /* View */,
+				CEDE245818C21E260083B8DF /* Main */,
 				CEDE242E18C21CD50083B8DF /* AppDelegate.h */,
 				CEDE242F18C21CD50083B8DF /* AppDelegate.m */,
 				CEDE243118C21CD50083B8DF /* Main.storyboard */,
-				CEDE243418C21CD50083B8DF /* FirstViewController.h */,
-				CEDE243518C21CD50083B8DF /* FirstViewController.m */,
-				CEDE243718C21CD50083B8DF /* SecondViewController.h */,
-				CEDE243818C21CD50083B8DF /* SecondViewController.m */,
 				CEDE243A18C21CD50083B8DF /* Images.xcassets */,
 				CEDE242618C21CD50083B8DF /* Supporting Files */,
 			);
@@ -155,6 +158,46 @@
 				CEDE244A18C21CD50083B8DF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEDE245718C21E1C0083B8DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CEDE245818C21E260083B8DF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE243418C21CD50083B8DF /* FirstViewController.h */,
+				CEDE243518C21CD50083B8DF /* FirstViewController.m */,
+				CEDE243718C21CD50083B8DF /* SecondViewController.h */,
+				CEDE243818C21CD50083B8DF /* SecondViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		CEDE245918C21E370083B8DF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		CEDE245A18C21E3F0083B8DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE245D18C21F220083B8DF /* Main */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CEDE245D18C21F220083B8DF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDE245C18C21E920083B8DF /* readme in Resources */,
 				CEDE243B18C21CD50083B8DF /* Images.xcassets in Resources */,
 				CEDE242A18C21CD50083B8DF /* InfoPlist.strings in Resources */,
 				CEDE243318C21CD50083B8DF /* Main.storyboard in Resources */,
