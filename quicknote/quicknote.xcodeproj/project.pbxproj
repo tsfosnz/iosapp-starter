@@ -7,153 +7,152 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE29C8F118C219170011E0D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE29C8F018C219170011E0D6 /* Foundation.framework */; };
-		CE29C8F318C219170011E0D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE29C8F218C219170011E0D6 /* CoreGraphics.framework */; };
-		CE29C8F518C219170011E0D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE29C8F418C219170011E0D6 /* UIKit.framework */; };
-		CE29C8FB18C219170011E0D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE29C8F918C219170011E0D6 /* InfoPlist.strings */; };
-		CE29C8FD18C219170011E0D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29C8FC18C219170011E0D6 /* main.m */; };
-		CE29C90118C219170011E0D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29C90018C219170011E0D6 /* AppDelegate.m */; };
-		CE29C90418C219170011E0D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE29C90218C219170011E0D6 /* Main.storyboard */; };
-		CE29C90718C219170011E0D6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29C90618C219170011E0D6 /* FirstViewController.m */; };
-		CE29C90A18C219170011E0D6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29C90918C219170011E0D6 /* SecondViewController.m */; };
-		CE29C90C18C219170011E0D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE29C90B18C219170011E0D6 /* Images.xcassets */; };
-		CE29C91318C219170011E0D6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE29C91218C219170011E0D6 /* XCTest.framework */; };
-		CE29C91418C219170011E0D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE29C8F018C219170011E0D6 /* Foundation.framework */; };
-		CE29C91518C219170011E0D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE29C8F418C219170011E0D6 /* UIKit.framework */; };
-		CE29C91D18C219170011E0D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE29C91B18C219170011E0D6 /* InfoPlist.strings */; };
-		CE29C91F18C219170011E0D6 /* quicknoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29C91E18C219170011E0D6 /* quicknoteTests.m */; };
+		CEDE242018C21CD50083B8DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE241F18C21CD50083B8DF /* Foundation.framework */; };
+		CEDE242218C21CD50083B8DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE242118C21CD50083B8DF /* CoreGraphics.framework */; };
+		CEDE242418C21CD50083B8DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE242318C21CD50083B8DF /* UIKit.framework */; };
+		CEDE242A18C21CD50083B8DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEDE242818C21CD50083B8DF /* InfoPlist.strings */; };
+		CEDE242C18C21CD50083B8DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE242B18C21CD50083B8DF /* main.m */; };
+		CEDE243018C21CD50083B8DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE242F18C21CD50083B8DF /* AppDelegate.m */; };
+		CEDE243318C21CD50083B8DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDE243118C21CD50083B8DF /* Main.storyboard */; };
+		CEDE243618C21CD50083B8DF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE243518C21CD50083B8DF /* FirstViewController.m */; };
+		CEDE243918C21CD50083B8DF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE243818C21CD50083B8DF /* SecondViewController.m */; };
+		CEDE243B18C21CD50083B8DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDE243A18C21CD50083B8DF /* Images.xcassets */; };
+		CEDE244218C21CD50083B8DF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE244118C21CD50083B8DF /* XCTest.framework */; };
+		CEDE244318C21CD50083B8DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE241F18C21CD50083B8DF /* Foundation.framework */; };
+		CEDE244418C21CD50083B8DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE242318C21CD50083B8DF /* UIKit.framework */; };
+		CEDE244C18C21CD50083B8DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEDE244A18C21CD50083B8DF /* InfoPlist.strings */; };
+		CEDE244E18C21CD50083B8DF /* quicknoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE244D18C21CD50083B8DF /* quicknoteTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CE29C91618C219170011E0D6 /* PBXContainerItemProxy */ = {
+		CEDE244518C21CD50083B8DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CE29C8E518C219170011E0D6 /* Project object */;
+			containerPortal = CEDE241418C21CD50083B8DF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CE29C8EC18C219170011E0D6;
+			remoteGlobalIDString = CEDE241B18C21CD50083B8DF;
 			remoteInfo = quicknote;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE29C8ED18C219170011E0D6 /* quicknote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quicknote.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE29C8F018C219170011E0D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CE29C8F218C219170011E0D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CE29C8F418C219170011E0D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CE29C8F818C219170011E0D6 /* quicknote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quicknote-Info.plist"; sourceTree = "<group>"; };
-		CE29C8FA18C219170011E0D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE29C8FC18C219170011E0D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE29C8FE18C219170011E0D6 /* quicknote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quicknote-Prefix.pch"; sourceTree = "<group>"; };
-		CE29C8FF18C219170011E0D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CE29C90018C219170011E0D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE29C90318C219170011E0D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE29C90518C219170011E0D6 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		CE29C90618C219170011E0D6 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		CE29C90818C219170011E0D6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		CE29C90918C219170011E0D6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		CE29C90B18C219170011E0D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CE29C91118C219170011E0D6 /* quicknoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quicknoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE29C91218C219170011E0D6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		CE29C91A18C219170011E0D6 /* quicknoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quicknoteTests-Info.plist"; sourceTree = "<group>"; };
-		CE29C91C18C219170011E0D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE29C91E18C219170011E0D6 /* quicknoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quicknoteTests.m; sourceTree = "<group>"; };
+		CEDE241C18C21CD50083B8DF /* Quick Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDE241F18C21CD50083B8DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEDE242118C21CD50083B8DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEDE242318C21CD50083B8DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEDE242718C21CD50083B8DF /* quicknote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quicknote-Info.plist"; sourceTree = "<group>"; };
+		CEDE242918C21CD50083B8DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEDE242B18C21CD50083B8DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEDE242D18C21CD50083B8DF /* quicknote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quicknote-Prefix.pch"; sourceTree = "<group>"; };
+		CEDE242E18C21CD50083B8DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEDE242F18C21CD50083B8DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEDE243218C21CD50083B8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEDE243418C21CD50083B8DF /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		CEDE243518C21CD50083B8DF /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		CEDE243718C21CD50083B8DF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		CEDE243818C21CD50083B8DF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CEDE243A18C21CD50083B8DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEDE244018C21CD50083B8DF /* quicknoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quicknoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDE244118C21CD50083B8DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CEDE244918C21CD50083B8DF /* quicknoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quicknoteTests-Info.plist"; sourceTree = "<group>"; };
+		CEDE244B18C21CD50083B8DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEDE244D18C21CD50083B8DF /* quicknoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quicknoteTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CE29C8EA18C219170011E0D6 /* Frameworks */ = {
+		CEDE241918C21CD50083B8DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE29C8F318C219170011E0D6 /* CoreGraphics.framework in Frameworks */,
-				CE29C8F518C219170011E0D6 /* UIKit.framework in Frameworks */,
-				CE29C8F118C219170011E0D6 /* Foundation.framework in Frameworks */,
+				CEDE242218C21CD50083B8DF /* CoreGraphics.framework in Frameworks */,
+				CEDE242418C21CD50083B8DF /* UIKit.framework in Frameworks */,
+				CEDE242018C21CD50083B8DF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE29C90E18C219170011E0D6 /* Frameworks */ = {
+		CEDE243D18C21CD50083B8DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE29C91318C219170011E0D6 /* XCTest.framework in Frameworks */,
-				CE29C91518C219170011E0D6 /* UIKit.framework in Frameworks */,
-				CE29C91418C219170011E0D6 /* Foundation.framework in Frameworks */,
+				CEDE244218C21CD50083B8DF /* XCTest.framework in Frameworks */,
+				CEDE244418C21CD50083B8DF /* UIKit.framework in Frameworks */,
+				CEDE244318C21CD50083B8DF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE29C8E418C219170011E0D6 = {
+		CEDE241318C21CD50083B8DF = {
 			isa = PBXGroup;
 			children = (
-				CE29C8F618C219170011E0D6 /* Source */,
-				CE29C91818C219170011E0D6 /* quicknoteTests */,
-				CE29C8EF18C219170011E0D6 /* Frameworks */,
-				CE29C8EE18C219170011E0D6 /* Products */,
+				CEDE242518C21CD50083B8DF /* quicknote */,
+				CEDE244718C21CD50083B8DF /* quicknoteTests */,
+				CEDE241E18C21CD50083B8DF /* Frameworks */,
+				CEDE241D18C21CD50083B8DF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CE29C8EE18C219170011E0D6 /* Products */ = {
+		CEDE241D18C21CD50083B8DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE29C8ED18C219170011E0D6 /* quicknote.app */,
-				CE29C91118C219170011E0D6 /* quicknoteTests.xctest */,
+				CEDE241C18C21CD50083B8DF /* Quick Note.app */,
+				CEDE244018C21CD50083B8DF /* quicknoteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE29C8EF18C219170011E0D6 /* Frameworks */ = {
+		CEDE241E18C21CD50083B8DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE29C8F018C219170011E0D6 /* Foundation.framework */,
-				CE29C8F218C219170011E0D6 /* CoreGraphics.framework */,
-				CE29C8F418C219170011E0D6 /* UIKit.framework */,
-				CE29C91218C219170011E0D6 /* XCTest.framework */,
+				CEDE241F18C21CD50083B8DF /* Foundation.framework */,
+				CEDE242118C21CD50083B8DF /* CoreGraphics.framework */,
+				CEDE242318C21CD50083B8DF /* UIKit.framework */,
+				CEDE244118C21CD50083B8DF /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CE29C8F618C219170011E0D6 /* Source */ = {
+		CEDE242518C21CD50083B8DF /* quicknote */ = {
 			isa = PBXGroup;
 			children = (
-				CE29C8FF18C219170011E0D6 /* AppDelegate.h */,
-				CE29C90018C219170011E0D6 /* AppDelegate.m */,
-				CE29C90218C219170011E0D6 /* Main.storyboard */,
-				CE29C90518C219170011E0D6 /* FirstViewController.h */,
-				CE29C90618C219170011E0D6 /* FirstViewController.m */,
-				CE29C90818C219170011E0D6 /* SecondViewController.h */,
-				CE29C90918C219170011E0D6 /* SecondViewController.m */,
-				CE29C90B18C219170011E0D6 /* Images.xcassets */,
-				CE29C8F718C219170011E0D6 /* Supporting Files */,
+				CEDE242E18C21CD50083B8DF /* AppDelegate.h */,
+				CEDE242F18C21CD50083B8DF /* AppDelegate.m */,
+				CEDE243118C21CD50083B8DF /* Main.storyboard */,
+				CEDE243418C21CD50083B8DF /* FirstViewController.h */,
+				CEDE243518C21CD50083B8DF /* FirstViewController.m */,
+				CEDE243718C21CD50083B8DF /* SecondViewController.h */,
+				CEDE243818C21CD50083B8DF /* SecondViewController.m */,
+				CEDE243A18C21CD50083B8DF /* Images.xcassets */,
+				CEDE242618C21CD50083B8DF /* Supporting Files */,
 			);
-			name = Source;
-			path = source;
+			path = quicknote;
 			sourceTree = "<group>";
 		};
-		CE29C8F718C219170011E0D6 /* Supporting Files */ = {
+		CEDE242618C21CD50083B8DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE29C8F818C219170011E0D6 /* quicknote-Info.plist */,
-				CE29C8F918C219170011E0D6 /* InfoPlist.strings */,
-				CE29C8FC18C219170011E0D6 /* main.m */,
-				CE29C8FE18C219170011E0D6 /* quicknote-Prefix.pch */,
+				CEDE242718C21CD50083B8DF /* quicknote-Info.plist */,
+				CEDE242818C21CD50083B8DF /* InfoPlist.strings */,
+				CEDE242B18C21CD50083B8DF /* main.m */,
+				CEDE242D18C21CD50083B8DF /* quicknote-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CE29C91818C219170011E0D6 /* quicknoteTests */ = {
+		CEDE244718C21CD50083B8DF /* quicknoteTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE29C91E18C219170011E0D6 /* quicknoteTests.m */,
-				CE29C91918C219170011E0D6 /* Supporting Files */,
+				CEDE244D18C21CD50083B8DF /* quicknoteTests.m */,
+				CEDE244818C21CD50083B8DF /* Supporting Files */,
 			);
 			path = quicknoteTests;
 			sourceTree = "<group>";
 		};
-		CE29C91918C219170011E0D6 /* Supporting Files */ = {
+		CEDE244818C21CD50083B8DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE29C91A18C219170011E0D6 /* quicknoteTests-Info.plist */,
-				CE29C91B18C219170011E0D6 /* InfoPlist.strings */,
+				CEDE244918C21CD50083B8DF /* quicknoteTests-Info.plist */,
+				CEDE244A18C21CD50083B8DF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,13 +160,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE29C8EC18C219170011E0D6 /* quicknote */ = {
+		CEDE241B18C21CD50083B8DF /* quicknote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE29C92218C219170011E0D6 /* Build configuration list for PBXNativeTarget "quicknote" */;
+			buildConfigurationList = CEDE245118C21CD50083B8DF /* Build configuration list for PBXNativeTarget "quicknote" */;
 			buildPhases = (
-				CE29C8E918C219170011E0D6 /* Sources */,
-				CE29C8EA18C219170011E0D6 /* Frameworks */,
-				CE29C8EB18C219170011E0D6 /* Resources */,
+				CEDE241818C21CD50083B8DF /* Sources */,
+				CEDE241918C21CD50083B8DF /* Frameworks */,
+				CEDE241A18C21CD50083B8DF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -175,42 +174,42 @@
 			);
 			name = quicknote;
 			productName = quicknote;
-			productReference = CE29C8ED18C219170011E0D6 /* quicknote.app */;
+			productReference = CEDE241C18C21CD50083B8DF /* Quick Note.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE29C91018C219170011E0D6 /* quicknoteTests */ = {
+		CEDE243F18C21CD50083B8DF /* quicknoteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE29C92518C219170011E0D6 /* Build configuration list for PBXNativeTarget "quicknoteTests" */;
+			buildConfigurationList = CEDE245418C21CD50083B8DF /* Build configuration list for PBXNativeTarget "quicknoteTests" */;
 			buildPhases = (
-				CE29C90D18C219170011E0D6 /* Sources */,
-				CE29C90E18C219170011E0D6 /* Frameworks */,
-				CE29C90F18C219170011E0D6 /* Resources */,
+				CEDE243C18C21CD50083B8DF /* Sources */,
+				CEDE243D18C21CD50083B8DF /* Frameworks */,
+				CEDE243E18C21CD50083B8DF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CE29C91718C219170011E0D6 /* PBXTargetDependency */,
+				CEDE244618C21CD50083B8DF /* PBXTargetDependency */,
 			);
 			name = quicknoteTests;
 			productName = quicknoteTests;
-			productReference = CE29C91118C219170011E0D6 /* quicknoteTests.xctest */;
+			productReference = CEDE244018C21CD50083B8DF /* quicknoteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CE29C8E518C219170011E0D6 /* Project object */ = {
+		CEDE241418C21CD50083B8DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = hellomaya;
 				TargetAttributes = {
-					CE29C91018C219170011E0D6 = {
-						TestTargetID = CE29C8EC18C219170011E0D6;
+					CEDE243F18C21CD50083B8DF = {
+						TestTargetID = CEDE241B18C21CD50083B8DF;
 					};
 				};
 			};
-			buildConfigurationList = CE29C8E818C219170011E0D6 /* Build configuration list for PBXProject "quicknote" */;
+			buildConfigurationList = CEDE241718C21CD50083B8DF /* Build configuration list for PBXProject "quicknote" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -218,89 +217,89 @@
 				en,
 				Base,
 			);
-			mainGroup = CE29C8E418C219170011E0D6;
-			productRefGroup = CE29C8EE18C219170011E0D6 /* Products */;
+			mainGroup = CEDE241318C21CD50083B8DF;
+			productRefGroup = CEDE241D18C21CD50083B8DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE29C8EC18C219170011E0D6 /* quicknote */,
-				CE29C91018C219170011E0D6 /* quicknoteTests */,
+				CEDE241B18C21CD50083B8DF /* quicknote */,
+				CEDE243F18C21CD50083B8DF /* quicknoteTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CE29C8EB18C219170011E0D6 /* Resources */ = {
+		CEDE241A18C21CD50083B8DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE29C90C18C219170011E0D6 /* Images.xcassets in Resources */,
-				CE29C8FB18C219170011E0D6 /* InfoPlist.strings in Resources */,
-				CE29C90418C219170011E0D6 /* Main.storyboard in Resources */,
+				CEDE243B18C21CD50083B8DF /* Images.xcassets in Resources */,
+				CEDE242A18C21CD50083B8DF /* InfoPlist.strings in Resources */,
+				CEDE243318C21CD50083B8DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE29C90F18C219170011E0D6 /* Resources */ = {
+		CEDE243E18C21CD50083B8DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE29C91D18C219170011E0D6 /* InfoPlist.strings in Resources */,
+				CEDE244C18C21CD50083B8DF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CE29C8E918C219170011E0D6 /* Sources */ = {
+		CEDE241818C21CD50083B8DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE29C90A18C219170011E0D6 /* SecondViewController.m in Sources */,
-				CE29C90118C219170011E0D6 /* AppDelegate.m in Sources */,
-				CE29C90718C219170011E0D6 /* FirstViewController.m in Sources */,
-				CE29C8FD18C219170011E0D6 /* main.m in Sources */,
+				CEDE243918C21CD50083B8DF /* SecondViewController.m in Sources */,
+				CEDE243018C21CD50083B8DF /* AppDelegate.m in Sources */,
+				CEDE243618C21CD50083B8DF /* FirstViewController.m in Sources */,
+				CEDE242C18C21CD50083B8DF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE29C90D18C219170011E0D6 /* Sources */ = {
+		CEDE243C18C21CD50083B8DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE29C91F18C219170011E0D6 /* quicknoteTests.m in Sources */,
+				CEDE244E18C21CD50083B8DF /* quicknoteTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CE29C91718C219170011E0D6 /* PBXTargetDependency */ = {
+		CEDE244618C21CD50083B8DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE29C8EC18C219170011E0D6 /* quicknote */;
-			targetProxy = CE29C91618C219170011E0D6 /* PBXContainerItemProxy */;
+			target = CEDE241B18C21CD50083B8DF /* quicknote */;
+			targetProxy = CEDE244518C21CD50083B8DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE29C8F918C219170011E0D6 /* InfoPlist.strings */ = {
+		CEDE242818C21CD50083B8DF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE29C8FA18C219170011E0D6 /* en */,
+				CEDE242918C21CD50083B8DF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CE29C90218C219170011E0D6 /* Main.storyboard */ = {
+		CEDE243118C21CD50083B8DF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE29C90318C219170011E0D6 /* Base */,
+				CEDE243218C21CD50083B8DF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CE29C91B18C219170011E0D6 /* InfoPlist.strings */ = {
+		CEDE244A18C21CD50083B8DF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE29C91C18C219170011E0D6 /* en */,
+				CEDE244B18C21CD50083B8DF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -308,7 +307,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CE29C92018C219170011E0D6 /* Debug */ = {
+		CEDE244F18C21CD50083B8DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -343,11 +342,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Quick Note";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		CE29C92118C219170011E0D6 /* Release */ = {
+		CEDE245018C21CD50083B8DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -375,38 +375,39 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "Quick Note";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		CE29C92318C219170011E0D6 /* Debug */ = {
+		CEDE245218C21CD50083B8DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "source/quicknote-Prefix.pch";
-				INFOPLIST_FILE = "source/quicknote-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "quicknote/quicknote-Prefix.pch";
+				INFOPLIST_FILE = "quicknote/quicknote-Info.plist";
+				PRODUCT_NAME = "Quick Note";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		CE29C92418C219170011E0D6 /* Release */ = {
+		CEDE245318C21CD50083B8DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "source/quicknote-Prefix.pch";
-				INFOPLIST_FILE = "source/quicknote-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "quicknote/quicknote-Prefix.pch";
+				INFOPLIST_FILE = "quicknote/quicknote-Info.plist";
+				PRODUCT_NAME = "Quick Note";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		CE29C92618C219170011E0D6 /* Debug */ = {
+		CEDE245518C21CD50083B8DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -417,19 +418,19 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "source/quicknote-Prefix.pch";
+				GCC_PREFIX_HEADER = "quicknote/quicknote-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "quicknoteTests/quicknoteTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = quicknoteTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		CE29C92718C219170011E0D6 /* Release */ = {
+		CEDE245618C21CD50083B8DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -440,9 +441,9 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "source/quicknote-Prefix.pch";
+				GCC_PREFIX_HEADER = "quicknote/quicknote-Prefix.pch";
 				INFOPLIST_FILE = "quicknoteTests/quicknoteTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = quicknoteTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -451,34 +452,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE29C8E818C219170011E0D6 /* Build configuration list for PBXProject "quicknote" */ = {
+		CEDE241718C21CD50083B8DF /* Build configuration list for PBXProject "quicknote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE29C92018C219170011E0D6 /* Debug */,
-				CE29C92118C219170011E0D6 /* Release */,
+				CEDE244F18C21CD50083B8DF /* Debug */,
+				CEDE245018C21CD50083B8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE29C92218C219170011E0D6 /* Build configuration list for PBXNativeTarget "quicknote" */ = {
+		CEDE245118C21CD50083B8DF /* Build configuration list for PBXNativeTarget "quicknote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE29C92318C219170011E0D6 /* Debug */,
-				CE29C92418C219170011E0D6 /* Release */,
+				CEDE245218C21CD50083B8DF /* Debug */,
+				CEDE245318C21CD50083B8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		CE29C92518C219170011E0D6 /* Build configuration list for PBXNativeTarget "quicknoteTests" */ = {
+		CEDE245418C21CD50083B8DF /* Build configuration list for PBXNativeTarget "quicknoteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE29C92618C219170011E0D6 /* Debug */,
-				CE29C92718C219170011E0D6 /* Release */,
+				CEDE245518C21CD50083B8DF /* Debug */,
+				CEDE245618C21CD50083B8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CE29C8E518C219170011E0D6 /* Project object */;
+	rootObject = CEDE241418C21CD50083B8DF /* Project object */;
 }
