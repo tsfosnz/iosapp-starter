@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CEDE241C18C21CD50083B8DF /* Quick Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDE241C18C21CD50083B8DF /* quicknote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quicknote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDE241F18C21CD50083B8DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEDE242118C21CD50083B8DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CEDE242318C21CD50083B8DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -98,7 +98,7 @@
 		CEDE241D18C21CD50083B8DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEDE241C18C21CD50083B8DF /* Quick Note.app */,
+				CEDE241C18C21CD50083B8DF /* quicknote.app */,
 				CEDE244018C21CD50083B8DF /* quicknoteTests.xctest */,
 			);
 			name = Products;
@@ -217,7 +217,7 @@
 			);
 			name = quicknote;
 			productName = quicknote;
-			productReference = CEDE241C18C21CD50083B8DF /* Quick Note.app */;
+			productReference = CEDE241C18C21CD50083B8DF /* quicknote.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CEDE243F18C21CD50083B8DF /* quicknoteTests */ = {
@@ -433,7 +433,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "quicknote/quicknote-Prefix.pch";
 				INFOPLIST_FILE = "quicknote/quicknote-Info.plist";
-				PRODUCT_NAME = "Quick Note";
+				PRODUCT_NAME = quicknote;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -446,7 +446,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "quicknote/quicknote-Prefix.pch";
 				INFOPLIST_FILE = "quicknote/quicknote-Info.plist";
-				PRODUCT_NAME = "Quick Note";
+				PRODUCT_NAME = quicknote;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -512,6 +512,7 @@
 				CEDE245318C21CD50083B8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEDE245418C21CD50083B8DF /* Build configuration list for PBXNativeTarget "quicknoteTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +521,7 @@
 				CEDE245618C21CD50083B8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
