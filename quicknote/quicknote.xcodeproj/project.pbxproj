@@ -23,6 +23,25 @@
 		CEDE244C18C21CD50083B8DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEDE244A18C21CD50083B8DF /* InfoPlist.strings */; };
 		CEDE244E18C21CD50083B8DF /* quicknoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE244D18C21CD50083B8DF /* quicknoteTests.m */; };
 		CEDE245C18C21E920083B8DF /* readme in Resources */ = {isa = PBXBuildFile; fileRef = CEDE245B18C21E920083B8DF /* readme */; };
+		CEDE246518C231EF0083B8DF /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE245F18C231EF0083B8DF /* AppConfig.m */; };
+		CEDE246618C231EF0083B8DF /* Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE246118C231EF0083B8DF /* Bootstrap.m */; };
+		CEDE246718C231EF0083B8DF /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE246418C231EF0083B8DF /* Model.m */; };
+		CEDE246A18C232570083B8DF /* DiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE246918C232570083B8DF /* DiskCache.m */; };
+		CEDE247718C232E90083B8DF /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE246F18C232E90083B8DF /* FMDatabase.m */; };
+		CEDE247818C232E90083B8DF /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE247018C232E90083B8DF /* FMDatabaseAdditions.m */; };
+		CEDE247918C232E90083B8DF /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE247218C232E90083B8DF /* FMDatabasePool.m */; };
+		CEDE247A18C232E90083B8DF /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE247418C232E90083B8DF /* FMDatabaseQueue.m */; };
+		CEDE247B18C232E90083B8DF /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE247618C232E90083B8DF /* FMResultSet.m */; };
+		CEDE249018C232F10083B8DF /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE247E18C232F10083B8DF /* AFHTTPRequestOperation.m */; };
+		CEDE249118C232F10083B8DF /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE248018C232F10083B8DF /* AFHTTPRequestOperationManager.m */; };
+		CEDE249218C232F10083B8DF /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE248218C232F10083B8DF /* AFHTTPSessionManager.m */; };
+		CEDE249318C232F10083B8DF /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE248418C232F10083B8DF /* AFNetworkReachabilityManager.m */; };
+		CEDE249418C232F10083B8DF /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE248718C232F10083B8DF /* AFSecurityPolicy.m */; };
+		CEDE249518C232F10083B8DF /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE248918C232F10083B8DF /* AFURLConnectionOperation.m */; };
+		CEDE249618C232F10083B8DF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE248B18C232F10083B8DF /* AFURLRequestSerialization.m */; };
+		CEDE249718C232F10083B8DF /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE248D18C232F10083B8DF /* AFURLResponseSerialization.m */; };
+		CEDE249818C232F10083B8DF /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE248F18C232F10083B8DF /* AFURLSessionManager.m */; };
+		CEDE249A18C233420083B8DF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE249918C233420083B8DF /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +77,45 @@
 		CEDE244B18C21CD50083B8DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEDE244D18C21CD50083B8DF /* quicknoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quicknoteTests.m; sourceTree = "<group>"; };
 		CEDE245B18C21E920083B8DF /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
+		CEDE245E18C231EF0083B8DF /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		CEDE245F18C231EF0083B8DF /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
+		CEDE246018C231EF0083B8DF /* Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bootstrap.h; sourceTree = "<group>"; };
+		CEDE246118C231EF0083B8DF /* Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bootstrap.m; sourceTree = "<group>"; };
+		CEDE246218C231EF0083B8DF /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		CEDE246318C231EF0083B8DF /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		CEDE246418C231EF0083B8DF /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		CEDE246818C232570083B8DF /* DiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskCache.h; sourceTree = "<group>"; };
+		CEDE246918C232570083B8DF /* DiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskCache.m; sourceTree = "<group>"; };
+		CEDE246D18C232E90083B8DF /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		CEDE246E18C232E90083B8DF /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		CEDE246F18C232E90083B8DF /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		CEDE247018C232E90083B8DF /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		CEDE247118C232E90083B8DF /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		CEDE247218C232E90083B8DF /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		CEDE247318C232E90083B8DF /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		CEDE247418C232E90083B8DF /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CEDE247518C232E90083B8DF /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		CEDE247618C232E90083B8DF /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		CEDE247D18C232F10083B8DF /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		CEDE247E18C232F10083B8DF /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		CEDE247F18C232F10083B8DF /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		CEDE248018C232F10083B8DF /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		CEDE248118C232F10083B8DF /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		CEDE248218C232F10083B8DF /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		CEDE248318C232F10083B8DF /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		CEDE248418C232F10083B8DF /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		CEDE248518C232F10083B8DF /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		CEDE248618C232F10083B8DF /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		CEDE248718C232F10083B8DF /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		CEDE248818C232F10083B8DF /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		CEDE248918C232F10083B8DF /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		CEDE248A18C232F10083B8DF /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		CEDE248B18C232F10083B8DF /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		CEDE248C18C232F10083B8DF /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		CEDE248D18C232F10083B8DF /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		CEDE248E18C232F10083B8DF /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		CEDE248F18C232F10083B8DF /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		CEDE249918C233420083B8DF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDE249A18C233420083B8DF /* libsqlite3.dylib in Frameworks */,
 				CEDE242218C21CD50083B8DF /* CoreGraphics.framework in Frameworks */,
 				CEDE242418C21CD50083B8DF /* UIKit.framework in Frameworks */,
 				CEDE242018C21CD50083B8DF /* Foundation.framework in Frameworks */,
@@ -107,6 +166,7 @@
 		CEDE241E18C21CD50083B8DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEDE249918C233420083B8DF /* libsqlite3.dylib */,
 				CEDE241F18C21CD50083B8DF /* Foundation.framework */,
 				CEDE242118C21CD50083B8DF /* CoreGraphics.framework */,
 				CEDE242318C21CD50083B8DF /* UIKit.framework */,
@@ -118,6 +178,7 @@
 		CEDE242518C21CD50083B8DF /* quicknote */ = {
 			isa = PBXGroup;
 			children = (
+				CEDE246B18C232CB0083B8DF /* Lib */,
 				CEDE245918C21E370083B8DF /* Data */,
 				CEDE245718C21E1C0083B8DF /* Model */,
 				CEDE245A18C21E3F0083B8DF /* View */,
@@ -163,6 +224,15 @@
 		CEDE245718C21E1C0083B8DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CEDE246218C231EF0083B8DF /* global.h */,
+				CEDE245E18C231EF0083B8DF /* AppConfig.h */,
+				CEDE245F18C231EF0083B8DF /* AppConfig.m */,
+				CEDE246018C231EF0083B8DF /* Bootstrap.h */,
+				CEDE246118C231EF0083B8DF /* Bootstrap.m */,
+				CEDE246818C232570083B8DF /* DiskCache.h */,
+				CEDE246918C232570083B8DF /* DiskCache.m */,
+				CEDE246318C231EF0083B8DF /* Model.h */,
+				CEDE246418C231EF0083B8DF /* Model.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -198,6 +268,59 @@
 			children = (
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		CEDE246B18C232CB0083B8DF /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE247C18C232F10083B8DF /* AFNetworking */,
+				CEDE246C18C232E90083B8DF /* fmdb */,
+			);
+			name = Lib;
+			path = ../lib;
+			sourceTree = "<group>";
+		};
+		CEDE246C18C232E90083B8DF /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE246D18C232E90083B8DF /* FMDatabaseAdditions.h */,
+				CEDE246E18C232E90083B8DF /* FMDatabase.h */,
+				CEDE246F18C232E90083B8DF /* FMDatabase.m */,
+				CEDE247018C232E90083B8DF /* FMDatabaseAdditions.m */,
+				CEDE247118C232E90083B8DF /* FMDatabasePool.h */,
+				CEDE247218C232E90083B8DF /* FMDatabasePool.m */,
+				CEDE247318C232E90083B8DF /* FMDatabaseQueue.h */,
+				CEDE247418C232E90083B8DF /* FMDatabaseQueue.m */,
+				CEDE247518C232E90083B8DF /* FMResultSet.h */,
+				CEDE247618C232E90083B8DF /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		CEDE247C18C232F10083B8DF /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE247D18C232F10083B8DF /* AFHTTPRequestOperation.h */,
+				CEDE247E18C232F10083B8DF /* AFHTTPRequestOperation.m */,
+				CEDE247F18C232F10083B8DF /* AFHTTPRequestOperationManager.h */,
+				CEDE248018C232F10083B8DF /* AFHTTPRequestOperationManager.m */,
+				CEDE248118C232F10083B8DF /* AFHTTPSessionManager.h */,
+				CEDE248218C232F10083B8DF /* AFHTTPSessionManager.m */,
+				CEDE248318C232F10083B8DF /* AFNetworkReachabilityManager.h */,
+				CEDE248418C232F10083B8DF /* AFNetworkReachabilityManager.m */,
+				CEDE248518C232F10083B8DF /* AFNetworking.h */,
+				CEDE248618C232F10083B8DF /* AFSecurityPolicy.h */,
+				CEDE248718C232F10083B8DF /* AFSecurityPolicy.m */,
+				CEDE248818C232F10083B8DF /* AFURLConnectionOperation.h */,
+				CEDE248918C232F10083B8DF /* AFURLConnectionOperation.m */,
+				CEDE248A18C232F10083B8DF /* AFURLRequestSerialization.h */,
+				CEDE248B18C232F10083B8DF /* AFURLRequestSerialization.m */,
+				CEDE248C18C232F10083B8DF /* AFURLResponseSerialization.h */,
+				CEDE248D18C232F10083B8DF /* AFURLResponseSerialization.m */,
+				CEDE248E18C232F10083B8DF /* AFURLSessionManager.h */,
+				CEDE248F18C232F10083B8DF /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +423,26 @@
 			files = (
 				CEDE243918C21CD50083B8DF /* SecondViewController.m in Sources */,
 				CEDE243018C21CD50083B8DF /* AppDelegate.m in Sources */,
+				CEDE249118C232F10083B8DF /* AFHTTPRequestOperationManager.m in Sources */,
+				CEDE246618C231EF0083B8DF /* Bootstrap.m in Sources */,
+				CEDE249518C232F10083B8DF /* AFURLConnectionOperation.m in Sources */,
+				CEDE247718C232E90083B8DF /* FMDatabase.m in Sources */,
 				CEDE243618C21CD50083B8DF /* FirstViewController.m in Sources */,
+				CEDE249618C232F10083B8DF /* AFURLRequestSerialization.m in Sources */,
+				CEDE247A18C232E90083B8DF /* FMDatabaseQueue.m in Sources */,
+				CEDE249218C232F10083B8DF /* AFHTTPSessionManager.m in Sources */,
+				CEDE249018C232F10083B8DF /* AFHTTPRequestOperation.m in Sources */,
+				CEDE247B18C232E90083B8DF /* FMResultSet.m in Sources */,
+				CEDE249418C232F10083B8DF /* AFSecurityPolicy.m in Sources */,
+				CEDE247918C232E90083B8DF /* FMDatabasePool.m in Sources */,
+				CEDE249318C232F10083B8DF /* AFNetworkReachabilityManager.m in Sources */,
+				CEDE249818C232F10083B8DF /* AFURLSessionManager.m in Sources */,
+				CEDE246718C231EF0083B8DF /* Model.m in Sources */,
+				CEDE246A18C232570083B8DF /* DiskCache.m in Sources */,
+				CEDE246518C231EF0083B8DF /* AppConfig.m in Sources */,
 				CEDE242C18C21CD50083B8DF /* main.m in Sources */,
+				CEDE249718C232F10083B8DF /* AFURLResponseSerialization.m in Sources */,
+				CEDE247818C232E90083B8DF /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
