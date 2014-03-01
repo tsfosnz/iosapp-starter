@@ -185,7 +185,6 @@
 				CEDE245818C21E260083B8DF /* Main */,
 				CEDE242E18C21CD50083B8DF /* AppDelegate.h */,
 				CEDE242F18C21CD50083B8DF /* AppDelegate.m */,
-				CEDE243118C21CD50083B8DF /* Main.storyboard */,
 				CEDE243A18C21CD50083B8DF /* Images.xcassets */,
 				CEDE242618C21CD50083B8DF /* Supporting Files */,
 			);
@@ -240,6 +239,7 @@
 		CEDE245818C21E260083B8DF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CEDE249B18C234650083B8DF /* Interface */,
 				CEDE243418C21CD50083B8DF /* FirstViewController.h */,
 				CEDE243518C21CD50083B8DF /* FirstViewController.m */,
 				CEDE243718C21CD50083B8DF /* SecondViewController.h */,
@@ -322,6 +322,14 @@
 				CEDE248F18C232F10083B8DF /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		CEDE249B18C234650083B8DF /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE243118C21CD50083B8DF /* Main.storyboard */,
+			);
+			name = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
