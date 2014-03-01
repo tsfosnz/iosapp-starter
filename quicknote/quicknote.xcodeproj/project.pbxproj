@@ -253,6 +253,7 @@
 			children = (
 			);
 			name = Data;
+			path = ../data;
 			sourceTree = "<group>";
 		};
 		CEDE245A18C21E3F0083B8DF /* View */ = {

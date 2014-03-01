@@ -11,10 +11,12 @@ Coding Style (draft)
 
 1. Folder structure and name space, Keep clear folder structure -
 
-    Data - saved data files or local database
-    Model - class to access data or global configuration
-    View - different View for different controller
-    Main - thats one of modules name, we will splite app to different module
+    Data - saved data files or local database <FOLDER>
+    Lib - external library goes here <FOLDER>
+
+    Model - class to access data or global configuration <GROUP>
+    View - different View for different controller <GROUP>
+    Main - thats one of modules name, we will splite app to different module <GROUP>
     
     for example -
     
