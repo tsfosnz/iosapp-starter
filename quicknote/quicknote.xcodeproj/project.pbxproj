@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9CFCC618C51DEB002871F7 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CFCC518C51DEB002871F7 /* MainController.m */; };
+		CE9CFCCB18C51EB7002871F7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9CFCCA18C51EB7002871F7 /* Home.storyboard */; };
+		CE9CFCCD18C51ECC002871F7 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9CFCCC18C51ECC002871F7 /* Setting.storyboard */; };
+		CE9CFCD018C51F11002871F7 /* HomeInitController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CFCCF18C51F11002871F7 /* HomeInitController.m */; };
+		CE9CFCD318C51F24002871F7 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CFCD218C51F24002871F7 /* HomeController.m */; };
+		CE9CFCD518C52299002871F7 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9CFCD418C52299002871F7 /* Camera.storyboard */; };
+		CE9CFCD818C52528002871F7 /* CameraInitController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CFCD718C52528002871F7 /* CameraInitController.m */; };
 		CEDE242018C21CD50083B8DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE241F18C21CD50083B8DF /* Foundation.framework */; };
 		CEDE242218C21CD50083B8DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE242118C21CD50083B8DF /* CoreGraphics.framework */; };
 		CEDE242418C21CD50083B8DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE242318C21CD50083B8DF /* UIKit.framework */; };
@@ -14,8 +21,6 @@
 		CEDE242C18C21CD50083B8DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE242B18C21CD50083B8DF /* main.m */; };
 		CEDE243018C21CD50083B8DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE242F18C21CD50083B8DF /* AppDelegate.m */; };
 		CEDE243318C21CD50083B8DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDE243118C21CD50083B8DF /* Main.storyboard */; };
-		CEDE243618C21CD50083B8DF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE243518C21CD50083B8DF /* FirstViewController.m */; };
-		CEDE243918C21CD50083B8DF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE243818C21CD50083B8DF /* SecondViewController.m */; };
 		CEDE243B18C21CD50083B8DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDE243A18C21CD50083B8DF /* Images.xcassets */; };
 		CEDE244218C21CD50083B8DF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE244118C21CD50083B8DF /* XCTest.framework */; };
 		CEDE244318C21CD50083B8DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE241F18C21CD50083B8DF /* Foundation.framework */; };
@@ -55,6 +60,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE9CFCC418C51DEB002871F7 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		CE9CFCC518C51DEB002871F7 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		CE9CFCCA18C51EB7002871F7 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		CE9CFCCC18C51ECC002871F7 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		CE9CFCCE18C51F11002871F7 /* HomeInitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeInitController.h; sourceTree = "<group>"; };
+		CE9CFCCF18C51F11002871F7 /* HomeInitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeInitController.m; sourceTree = "<group>"; };
+		CE9CFCD118C51F24002871F7 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		CE9CFCD218C51F24002871F7 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		CE9CFCD418C52299002871F7 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		CE9CFCD618C52528002871F7 /* CameraInitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraInitController.h; sourceTree = "<group>"; };
+		CE9CFCD718C52528002871F7 /* CameraInitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraInitController.m; sourceTree = "<group>"; };
 		CEDE241C18C21CD50083B8DF /* quicknote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quicknote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDE241F18C21CD50083B8DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEDE242118C21CD50083B8DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,10 +82,6 @@
 		CEDE242E18C21CD50083B8DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEDE242F18C21CD50083B8DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CEDE243218C21CD50083B8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CEDE243418C21CD50083B8DF /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		CEDE243518C21CD50083B8DF /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		CEDE243718C21CD50083B8DF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		CEDE243818C21CD50083B8DF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		CEDE243A18C21CD50083B8DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CEDE244018C21CD50083B8DF /* quicknoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quicknoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDE244118C21CD50083B8DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -143,6 +155,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE9CFCC718C51E35002871F7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CFCCE18C51F11002871F7 /* HomeInitController.h */,
+				CE9CFCCF18C51F11002871F7 /* HomeInitController.m */,
+				CE9CFCD118C51F24002871F7 /* HomeController.h */,
+				CE9CFCD218C51F24002871F7 /* HomeController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		CE9CFCC818C51E70002871F7 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CFCD618C52528002871F7 /* CameraInitController.h */,
+				CE9CFCD718C52528002871F7 /* CameraInitController.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		CE9CFCC918C51E88002871F7 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
 		CEDE241318C21CD50083B8DF = {
 			isa = PBXGroup;
 			children = (
@@ -240,10 +279,11 @@
 			isa = PBXGroup;
 			children = (
 				CEDE249B18C234650083B8DF /* Interface */,
-				CEDE243418C21CD50083B8DF /* FirstViewController.h */,
-				CEDE243518C21CD50083B8DF /* FirstViewController.m */,
-				CEDE243718C21CD50083B8DF /* SecondViewController.h */,
-				CEDE243818C21CD50083B8DF /* SecondViewController.m */,
+				CE9CFCC918C51E88002871F7 /* Setting */,
+				CE9CFCC818C51E70002871F7 /* Camera */,
+				CE9CFCC718C51E35002871F7 /* Home */,
+				CE9CFCC418C51DEB002871F7 /* MainController.h */,
+				CE9CFCC518C51DEB002871F7 /* MainController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -328,6 +368,9 @@
 			isa = PBXGroup;
 			children = (
 				CEDE243118C21CD50083B8DF /* Main.storyboard */,
+				CE9CFCCA18C51EB7002871F7 /* Home.storyboard */,
+				CE9CFCD418C52299002871F7 /* Camera.storyboard */,
+				CE9CFCCC18C51ECC002871F7 /* Setting.storyboard */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -409,9 +452,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDE245C18C21E920083B8DF /* readme in Resources */,
+				CE9CFCD518C52299002871F7 /* Camera.storyboard in Resources */,
+				CE9CFCCB18C51EB7002871F7 /* Home.storyboard in Resources */,
 				CEDE243B18C21CD50083B8DF /* Images.xcassets in Resources */,
 				CEDE242A18C21CD50083B8DF /* InfoPlist.strings in Resources */,
 				CEDE243318C21CD50083B8DF /* Main.storyboard in Resources */,
+				CE9CFCCD18C51ECC002871F7 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,23 +476,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDE243918C21CD50083B8DF /* SecondViewController.m in Sources */,
 				CEDE243018C21CD50083B8DF /* AppDelegate.m in Sources */,
 				CEDE249118C232F10083B8DF /* AFHTTPRequestOperationManager.m in Sources */,
+				CE9CFCD818C52528002871F7 /* CameraInitController.m in Sources */,
 				CEDE246618C231EF0083B8DF /* Bootstrap.m in Sources */,
 				CEDE249518C232F10083B8DF /* AFURLConnectionOperation.m in Sources */,
 				CEDE247718C232E90083B8DF /* FMDatabase.m in Sources */,
-				CEDE243618C21CD50083B8DF /* FirstViewController.m in Sources */,
 				CEDE249618C232F10083B8DF /* AFURLRequestSerialization.m in Sources */,
+				CE9CFCD318C51F24002871F7 /* HomeController.m in Sources */,
 				CEDE247A18C232E90083B8DF /* FMDatabaseQueue.m in Sources */,
 				CEDE249218C232F10083B8DF /* AFHTTPSessionManager.m in Sources */,
 				CEDE249018C232F10083B8DF /* AFHTTPRequestOperation.m in Sources */,
+				CE9CFCC618C51DEB002871F7 /* MainController.m in Sources */,
 				CEDE247B18C232E90083B8DF /* FMResultSet.m in Sources */,
 				CEDE249418C232F10083B8DF /* AFSecurityPolicy.m in Sources */,
 				CEDE247918C232E90083B8DF /* FMDatabasePool.m in Sources */,
 				CEDE249318C232F10083B8DF /* AFNetworkReachabilityManager.m in Sources */,
 				CEDE249818C232F10083B8DF /* AFURLSessionManager.m in Sources */,
 				CEDE246718C231EF0083B8DF /* Model.m in Sources */,
+				CE9CFCD018C51F11002871F7 /* HomeInitController.m in Sources */,
 				CEDE246A18C232570083B8DF /* DiskCache.m in Sources */,
 				CEDE246518C231EF0083B8DF /* AppConfig.m in Sources */,
 				CEDE242C18C21CD50083B8DF /* main.m in Sources */,

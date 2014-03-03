@@ -1,13 +1,13 @@
 //
-//  SecondViewController.h
+//  MainController.h
 //  quicknote
 //
-//  Created by hello on 14-3-1.
+//  Created by hello on 14-3-4.
 //  Copyright (c) 2014年 hellomaya. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface MainController : UITabBarController
 
 @end
