@@ -11,6 +11,23 @@ setting
 	name
 	value
 
+tag
+	tag_id
+	name
+	name_index
+
+mark
+	mark_id
+	name
+	hint
+	level
+	icon
+
+image
+	image_id
+	name
+	name_index
+
 category_group
 
 	category_group_id
@@ -32,15 +49,10 @@ category_tag
 	category_id
 	tag_id
 
-tag
-	tag_id
-	name
-	name_index
-
-image
-	image_id
-	name
-	name_index
+category_mark
+	
+	category_id
+	mark_id
 
 post
 	post_id
@@ -67,6 +79,10 @@ post_image
 post_tag
 	post_id
 	tag_id
+
+post_tag
+	post_id
+	mark_id
 
 
 		
