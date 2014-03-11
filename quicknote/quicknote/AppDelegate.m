@@ -7,12 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "Bootstrap.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    Bootstrap *bootstrap = [Bootstrap getInstance];
+    [bootstrap bootstrap];
+    
     return YES;
 }
 							
