@@ -27,7 +27,7 @@
                     <navigationItem key="navigationItem" id="dxv-ek-PFw">
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" title="Item" id="5Oi-TL-INK"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="TVn-hQ-Xva">
+                        <barButtonItem key="rightBarButtonItem" id="TVn-hQ-Xva">
                             <view key="customView" contentMode="scaleToFill" id="E9F-Dg-suE">
                                 <rect key="frame" x="184" y="5" width="120" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
