@@ -61,7 +61,7 @@ CREATE TABLE "post" (
     "description" TEXT NOT NULL DEFAULT '' ,
     "location" TEXT NOT NULL DEFAULT '' ,
     "address" TEXT NOT NULL DEFAULT '' ,
-    "longtitude" TEXT NOT NULL DEFAULT '' ,
+    "longitude" TEXT NOT NULL DEFAULT '' ,
     "latitude" TEXT NOT NULL DEFAULT '' ,
     "watermark" TEXT NOT NULL DEFAULT '',
     "created" INTEGER NOT NULL  DEFAULT (0) ,
