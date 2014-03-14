@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE35EA2718D37FC700BC6FC6 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35EA2618D37FC700BC6FC6 /* Tag.m */; };
+		CE35EA2A18D37FD800BC6FC6 /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35EA2918D37FD800BC6FC6 /* Mark.m */; };
 		CE9CFCC618C51DEB002871F7 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CFCC518C51DEB002871F7 /* MainController.m */; };
 		CE9CFCCB18C51EB7002871F7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9CFCCA18C51EB7002871F7 /* Home.storyboard */; };
 		CE9CFCCD18C51ECC002871F7 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9CFCCC18C51ECC002871F7 /* Setting.storyboard */; };
@@ -63,6 +65,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE35EA2518D37FC700BC6FC6 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		CE35EA2618D37FC700BC6FC6 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		CE35EA2818D37FD800BC6FC6 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		CE35EA2918D37FD800BC6FC6 /* Mark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mark.m; sourceTree = "<group>"; };
 		CE9CFCC418C51DEB002871F7 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
 		CE9CFCC518C51DEB002871F7 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 		CE9CFCCA18C51EB7002871F7 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -280,6 +286,10 @@
 				CEDE246418C231EF0083B8DF /* Model.m */,
 				CE9FD64518CEE63C0039667F /* Post.h */,
 				CE9FD64618CEE63C0039667F /* Post.m */,
+				CE35EA2518D37FC700BC6FC6 /* Tag.h */,
+				CE35EA2618D37FC700BC6FC6 /* Tag.m */,
+				CE35EA2818D37FD800BC6FC6 /* Mark.h */,
+				CE35EA2918D37FD800BC6FC6 /* Mark.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -495,6 +505,7 @@
 				CEDE246618C231EF0083B8DF /* Bootstrap.m in Sources */,
 				CEDE249518C232F10083B8DF /* AFURLConnectionOperation.m in Sources */,
 				CEDE247718C232E90083B8DF /* FMDatabase.m in Sources */,
+				CE35EA2718D37FC700BC6FC6 /* Tag.m in Sources */,
 				CEDE249618C232F10083B8DF /* AFURLRequestSerialization.m in Sources */,
 				CE9CFCD318C51F24002871F7 /* HomeController.m in Sources */,
 				CEDE247A18C232E90083B8DF /* FMDatabaseQueue.m in Sources */,
@@ -514,6 +525,7 @@
 				CEDE242C18C21CD50083B8DF /* main.m in Sources */,
 				CEDE249718C232F10083B8DF /* AFURLResponseSerialization.m in Sources */,
 				CEDE247818C232E90083B8DF /* FMDatabaseAdditions.m in Sources */,
+				CE35EA2A18D37FD800BC6FC6 /* Mark.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
