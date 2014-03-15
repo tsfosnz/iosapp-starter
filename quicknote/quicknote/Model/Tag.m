@@ -58,12 +58,12 @@
     self.nameIndex =[self escape:[[self.name substringToIndex:1] uppercaseString]];
     self.name = [self escape:self.name];
     
-    NSString *sql = @"INSERT INTO %@ (name, name_index) VALUES (%@, %@)";
-    sql = [NSString stringWithFormat:sql, self.table, self.name, self.nameIndex];
+    NSString *sql = @"INSERT INTO %@ (name, name_index) VALUES (?, ?)";
+    sql = [NSString stringWithFormat:sql, self.table];
     
     // can't replace table name with updateWithFormat
     
-    [self.db executeUpdate:sql];
+    [self.db executeUpdate:sql, self.name, self.nameIndex];
     
     self.tagId = (NSInteger)[self.db lastInsertRowId];
     

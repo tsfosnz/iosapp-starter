@@ -39,6 +39,15 @@
     }
 #endif
     
+    Post *post = [[Post alloc] init];
+    
+    for (int i = 0; i < 100; ++i) {
+        post.name = [NSString stringWithFormat:@"%@%d",@"post_",i];
+        post.created = [[NSDate date] timeIntervalSince1970];
+        post.updated = post.created;
+        [post add];
+    }
+    
 #if false
     NSMutableArray *tagArray;
 

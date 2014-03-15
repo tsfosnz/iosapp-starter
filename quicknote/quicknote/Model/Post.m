@@ -61,12 +61,13 @@
     self.longitude = [self escape:self.longitude];
     self.latitude = [self escape:self.latitude];
     self.watermark = [self escape:self.watermark];
-        
-    NSString *sql = @"INSERT INTO %@ (name, name_index, description, location, address, longitude, latitude, watermark, created, updated) VALUES (%@, %@, %@, %@, %@, %@, %@, %@, %ld, %ld)";
     
-    sql = [NSString stringWithFormat:sql, self.table, self.name, self.nameIndex, self.description, self.location, self.address, self.longitude, self.latitude, self.watermark, self.created, self.updated];
+    NSString *sql = @"INSERT INTO %@ (name, name_index, description, location, address, longitude, latitude, watermark, created, updated) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     
-    [self.db executeUpdate:sql];
+    //sql = @"INSERT INTO %@ (name, name_index) VALUES (?, ?)";
+    sql = [NSString stringWithFormat:sql, self.table];
+    
+    [self.db executeUpdate:sql, self.name, self.nameIndex, self.description, self.location, self.address, self.longitude, self.latitude, self.watermark, [NSNumber numberWithInteger:self.created], [NSNumber numberWithInteger:self.updated]];
     
     self.postId = (NSInteger)[self.db lastInsertRowId];
     

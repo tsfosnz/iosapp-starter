@@ -37,6 +37,8 @@
         string = @"";
     }
     
+    return string;
+    
     [string stringByReplacingOccurrencesOfString:@"'" withString:@"\'"];
     return [NSString stringWithFormat:@"'%@'", string];
     
