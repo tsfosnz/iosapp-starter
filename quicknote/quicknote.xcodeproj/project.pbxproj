@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE1C0C8E18D47A6A004394A5 /* develop in Resources */ = {isa = PBXBuildFile; fileRef = CE1C0C8D18D47A6A004394A5 /* develop */; };
+		CE1C0C9018D48C58004394A5 /* quicknoteTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1C0C8F18D48C58004394A5 /* quicknoteTests2.m */; };
 		CE35EA2718D37FC700BC6FC6 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35EA2618D37FC700BC6FC6 /* Tag.m */; };
 		CE35EA2A18D37FD800BC6FC6 /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35EA2918D37FD800BC6FC6 /* Mark.m */; };
 		CE9CFCC618C51DEB002871F7 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CFCC518C51DEB002871F7 /* MainController.m */; };
@@ -67,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		CE1C0C8D18D47A6A004394A5 /* develop */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = develop; sourceTree = "<group>"; };
+		CE1C0C8F18D48C58004394A5 /* quicknoteTests2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = quicknoteTests2.m; sourceTree = "<group>"; };
 		CE35EA2518D37FC700BC6FC6 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
 		CE35EA2618D37FC700BC6FC6 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		CE35EA2818D37FD800BC6FC6 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				CEDE244D18C21CD50083B8DF /* quicknoteTests.m */,
+				CE1C0C8F18D48C58004394A5 /* quicknoteTests2.m */,
 				CEDE244818C21CD50083B8DF /* Supporting Files */,
 			);
 			path = quicknoteTests;
@@ -535,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1C0C9018D48C58004394A5 /* quicknoteTests2.m in Sources */,
 				CEDE244E18C21CD50083B8DF /* quicknoteTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
