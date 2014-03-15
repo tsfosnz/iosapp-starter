@@ -8,7 +8,16 @@ DESIGN
     .Finding posts efficiently
     .View post detail easily
     .Edit post easily
-    
+
     .concise 
     .detail
     .grid
+
+    List
+        photo ==> info ==> touch to open ==> detail
+        
+    Detail
+        photo / info
+        
+Only if we will list all information of post at one time, we don't have to load all infomation of post first time
+
