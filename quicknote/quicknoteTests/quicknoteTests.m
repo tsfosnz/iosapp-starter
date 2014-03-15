@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Post.h"
 
 @interface quicknoteTests : XCTestCase
 
@@ -28,7 +29,32 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    
+    Tag *tag = [[Tag alloc] init];
+    
+#if true
+    for (int i = 0; i < 100; ++i) {
+        tag.name = [NSString stringWithFormat:@"%@%d", @"tag_", i];
+        [tag add];
+    }
+#endif
+    
+#if false
+    NSMutableArray *tagArray;
+
+    tagArray = [[NSMutableArray alloc] init];
+    
+    [tag fetch:tagArray Filter:@"TRUE" Order:@"tag_id DESC" Page:0 PageSize:200];
+    
+    NSLog(@"tags = %@", tagArray);
+#endif
+    
+    
+    //Post *post = [[Post alloc] init];
+    
+    //post.name
+    
+    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end

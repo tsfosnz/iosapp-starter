@@ -26,7 +26,7 @@
     
 }
 
-- (BOOL)fetch:(NSMutableArray *)postArray Filter:(NSString *)filter Order:(NSString *)order Page:(NSInteger)page PageSize:(NSInteger)pageSize
+- (BOOL)fetch:(NSMutableArray *)tagArray Filter:(NSString *)filter Order:(NSString *)order Page:(NSInteger)page PageSize:(NSInteger)pageSize
 {
     if (!self.db) {
         return NO;
@@ -38,6 +38,12 @@
     
     while ([result next]) {
         
+        Tag *tag = [[Tag alloc] init];
+        
+        tag.name = [result stringForColumn:@"name"];
+        [tagArray addObject:tag];
+        
+        tag = nil;
     }
     
     return YES;
@@ -49,8 +55,12 @@
         return NO;
     }
     
-    NSString *sql = @"INSERT INTO %@ (name, name_index) VALUES (%@, %@)";
     
+    NSString *sql = @"INSERT INTO tag (name, name_index) VALUES (%@, %@)";
+    
+    self.nameIndex = [[self.name substringToIndex:1] uppercaseString];
+    
+    // can't replace table name
     [self.db executeUpdateWithFormat:sql, self.name, self.nameIndex];
     
     self.tagId = (NSInteger)[self.db lastInsertRowId];
