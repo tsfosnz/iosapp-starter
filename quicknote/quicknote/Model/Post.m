@@ -53,9 +53,20 @@
         return NO;
     }
     
+    self.nameIndex =[self escape:[[self.name substringToIndex:1] uppercaseString]];
+    self.name = [self escape:self.name];
+    self.description = [self escape:self.description];
+    self.location = [self escape:self.location];
+    self.address = [self escape:self.address];
+    self.longitude = [self escape:self.longitude];
+    self.latitude = [self escape:self.latitude];
+    self.watermark = [self escape:self.watermark];
+        
     NSString *sql = @"INSERT INTO %@ (name, name_index, description, location, address, longitude, latitude, watermark, created, updated) VALUES (%@, %@, %@, %@, %@, %@, %@, %@, %ld, %ld)";
     
-    [self.db executeUpdateWithFormat:sql, self.name, self.nameIndex, self.description, self.location, self.address, self.longitude, self.latitude, self.watermark, self.created, self.updated];
+    sql = [NSString stringWithFormat:sql, self.table, self.name, self.nameIndex, self.description, self.location, self.address, self.longitude, self.latitude, self.watermark, self.created, self.updated];
+    
+    [self.db executeUpdate:sql];
     
     self.postId = (NSInteger)[self.db lastInsertRowId];
     
@@ -68,9 +79,20 @@
         return NO;
     }
     
+    self.nameIndex =[self escape:[[self.name substringToIndex:1] uppercaseString]];
+    self.name = [self escape:self.name];
+    self.description = [self escape:self.description];
+    self.location = [self escape:self.location];
+    self.address = [self escape:self.address];
+    self.longitude = [self escape:self.longitude];
+    self.latitude = [self escape:self.latitude];
+    self.watermark = [self escape:self.watermark];
+    
     NSString *sql = @"UPDATE %@ SET name=%@, name_index=%@, description=%@, location=%@, address=%@, longitude=%@, latitude=%@, watermark=%@, created=%ld, updated=%ld WHERE post_id=%ld";
     
-    [self.db executeUpdateWithFormat:sql, self.name, self.nameIndex, self.description, self.location, self.address, self.longitude, self.latitude, self.watermark, self.created, self.updated, self.postId];
+    sql = [NSString stringWithFormat:sql, self.table, self.name, self.nameIndex, self.description, self.location, self.address, self.longitude, self.latitude, self.watermark, self.created, self.updated, self.postId];
+    
+    [self.db executeUpdate:sql];
     
     return YES;
 }
@@ -81,10 +103,17 @@
         return NO;
     }
     
-    NSString *sql = @"UPDATE %@ SET post_id=%ld, tag_id=%ld WHERE post_id=%ld";
+    
+    NSString *sql;
+    
+    sql = [NSString stringWithFormat:@"DELETE FROM %@ WHERE post_id=%d", self.tablePostToTag, self.postId];
+    [self.db executeUpdate:sql];
+    
+    sql = @"UPDATE %@ SET post_id=%ld, tag_id=%ld WHERE post_id=%ld";
     
     for (Tag *tag in tagArray) {
-        [self.db executeUpdateWithFormat:sql, self.table, self.postId, tag.tagId];
+        sql = [NSString stringWithFormat:sql, self.tablePostToTag, self.postId, tag.tagId];
+        [self.db executeUpdate:sql];
     }
     
     return YES;

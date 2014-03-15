@@ -29,11 +29,15 @@
     
 }
 
-// not finished yet
+// remove nil,
 
 - (NSString *)escape:(NSString *)string
 {
+    if (string == nil || (NSNull *)string == [NSNull null] || string == NULL) {
+        string = @"";
+    }
     
+    [string stringByReplacingOccurrencesOfString:@"'" withString:@"\'"];
     return [NSString stringWithFormat:@"'%@'", string];
     
 }
