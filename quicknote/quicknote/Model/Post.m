@@ -81,9 +81,11 @@
         return NO;
     }
     
-    NSString *sql = @"UPDATE %@ SET post_id=%ld, tag_id=%ld, updated=%ld WHERE post_id=%ld";
+    NSString *sql = @"UPDATE %@ SET post_id=%ld, tag_id=%ld WHERE post_id=%ld";
     
-    //[self.db executeUpdateWithFormat:sql, self.postId, tagId, self.updated];
+    for (Tag *tag in tagArray) {
+        [self.db executeUpdateWithFormat:sql, self.table, self.postId, tag.tagId];
+    }
     
     return YES;
 }
@@ -94,7 +96,7 @@
         return NO;
     }
     
-    NSString *sql = @"UPDATE %@ SET post_id=%ld, mark_id=%ld, updated=%ld WHERE post_id=%ld";
+    //NSString *sql = @"UPDATE %@ SET post_id=%ld, mark_id=%ld WHERE post_id=%ld";
     
     //[self.db executeUpdateWithFormat:sql, self.postId, tagId, self.updated];
     
