@@ -29,4 +29,13 @@
     
 }
 
+// not finished yet
+
+- (NSString *)escape:(NSString *)string
+{
+    
+    return [NSString stringWithFormat:@"'%@'", string];
+    
+}
+
 @end

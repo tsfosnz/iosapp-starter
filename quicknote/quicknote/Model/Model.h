@@ -18,4 +18,6 @@
 @property (atomic, retain) AppConfig *config;
 @property (atomic, retain) DiskCache *cache;
 
+- (NSString *)escape:(NSString *)string;
+
 @end

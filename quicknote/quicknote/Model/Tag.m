@@ -55,13 +55,15 @@
         return NO;
     }
     
+    self.nameIndex =[self escape:[[self.name substringToIndex:1] uppercaseString]];
+    self.name = [self escape:self.name];
     
-    NSString *sql = @"INSERT INTO tag (name, name_index) VALUES (%@, %@)";
+    NSString *sql = @"INSERT INTO %@ (name, name_index) VALUES (%@, %@)";
+    sql = [NSString stringWithFormat:sql, self.table, self.name, self.nameIndex];
     
-    self.nameIndex = [[self.name substringToIndex:1] uppercaseString];
+    // can't replace table name with updateWithFormat
     
-    // can't replace table name
-    [self.db executeUpdateWithFormat:sql, self.name, self.nameIndex];
+    [self.db executeUpdate:sql];
     
     self.tagId = (NSInteger)[self.db lastInsertRowId];
     
