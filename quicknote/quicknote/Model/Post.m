@@ -112,6 +112,8 @@
     NSString *sql = @"DELETE FROM %@ WHERE post_id=%d";
     
     [self.db executeUpdateWithFormat:sql, self.table, self.postId];
+    [self.db executeQueryWithFormat:sql, self.tablePostToTag, self.postId];
+    [self.db executeQueryWithFormat:sql, self.tablePostToMark, self.postId];
     
     return YES;
 }
