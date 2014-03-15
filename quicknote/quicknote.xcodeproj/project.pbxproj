@@ -106,7 +106,6 @@
 		CEDE245F18C231EF0083B8DF /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
 		CEDE246018C231EF0083B8DF /* Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bootstrap.h; sourceTree = "<group>"; };
 		CEDE246118C231EF0083B8DF /* Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bootstrap.m; sourceTree = "<group>"; };
-		CEDE246218C231EF0083B8DF /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
 		CEDE246318C231EF0083B8DF /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		CEDE246418C231EF0083B8DF /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		CEDE246818C232570083B8DF /* DiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskCache.h; sourceTree = "<group>"; };
@@ -275,7 +274,6 @@
 		CEDE245718C21E1C0083B8DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CEDE246218C231EF0083B8DF /* global.h */,
 				CEDE245E18C231EF0083B8DF /* AppConfig.h */,
 				CEDE245F18C231EF0083B8DF /* AppConfig.m */,
 				CEDE246018C231EF0083B8DF /* Bootstrap.h */,
