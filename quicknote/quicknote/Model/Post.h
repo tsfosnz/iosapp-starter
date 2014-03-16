@@ -44,4 +44,6 @@
 - (BOOL)update;
 - (BOOL)remove;
 
+- (BOOL)updateTag:(NSArray *)tagArray;
+
 @end

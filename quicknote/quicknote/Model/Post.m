@@ -89,11 +89,11 @@
     self.latitude = [self escape:self.latitude];
     self.watermark = [self escape:self.watermark];
     
-    NSString *sql = @"UPDATE %@ SET name=%@, name_index=%@, description=%@, location=%@, address=%@, longitude=%@, latitude=%@, watermark=%@, created=%ld, updated=%ld WHERE post_id=%ld";
+    NSString *sql = @"UPDATE %@ SET name=?, name_index=?, description=?, location=?, address=?, longitude=?, latitude=?, watermark=?, created=?, updated=? WHERE post_id=?";
     
-    sql = [NSString stringWithFormat:sql, self.table, self.name, self.nameIndex, self.description, self.location, self.address, self.longitude, self.latitude, self.watermark, self.created, self.updated, self.postId];
+    sql = [NSString stringWithFormat:sql, self.table];
     
-    [self.db executeUpdate:sql];
+    [self.db executeUpdate:sql, self.name, self.nameIndex, self.description, self.location, self.address, self.longitude, self.latitude, self.watermark, [NSNumber numberWithInteger:self.created], [NSNumber numberWithInteger:self.updated], [NSNumber numberWithInteger:self.postId]];
     
     return YES;
 }
@@ -104,17 +104,16 @@
         return NO;
     }
     
-    
     NSString *sql;
     
     sql = [NSString stringWithFormat:@"DELETE FROM %@ WHERE post_id=%d", self.tablePostToTag, self.postId];
     [self.db executeUpdate:sql];
     
-    sql = @"UPDATE %@ SET post_id=%ld, tag_id=%ld WHERE post_id=%ld";
+    sql = @"INSERT INTO %@ (post_id, tag_id) VALUES (?, ?)";
+    sql = [NSString stringWithFormat:sql, self.tablePostToTag];
     
     for (Tag *tag in tagArray) {
-        sql = [NSString stringWithFormat:sql, self.tablePostToTag, self.postId, tag.tagId];
-        [self.db executeUpdate:sql];
+        [self.db executeUpdate:sql, [NSNumber numberWithInteger:self.postId], [NSNumber numberWithInteger:tag.tagId]];
     }
     
     return YES;
@@ -144,6 +143,21 @@
     [self.db executeUpdateWithFormat:sql, self.table, self.postId];
     [self.db executeQueryWithFormat:sql, self.tablePostToTag, self.postId];
     [self.db executeQueryWithFormat:sql, self.tablePostToMark, self.postId];
+    
+    return YES;
+}
+
+- (BOOL)removeAll
+{
+    if (!self.db) {
+        return NO;
+    }
+    
+    NSString *sql = @"DELETE FROM %@";
+    
+    [self.db executeUpdate:[NSString stringWithFormat:sql, self.table]];
+    [self.db executeQuery:[NSString stringWithFormat:sql, self.tablePostToTag]];
+    [self.db executeQuery:[NSString stringWithFormat:sql, self.tablePostToMark]];
     
     return YES;
 }

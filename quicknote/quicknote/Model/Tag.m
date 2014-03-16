@@ -33,13 +33,15 @@
     }
     
     NSString *sql = @"SELECT * FROM %@ WHERE %@ ORDER BY %@ LIMIT %d, %d";
+    sql = [NSString stringWithFormat:sql, self.table, filter, order, page * pageSize, pageSize];
     
-    FMResultSet *result = [self.db executeQueryWithFormat:sql, self.table, filter, order, page * pageSize, pageSize];
+    FMResultSet *result = [self.db executeQuery:sql];
     
     while ([result next]) {
         
         Tag *tag = [[Tag alloc] init];
         
+        tag.tagId = [result intForColumn:@"tag_id"];
         tag.name = [result stringForColumn:@"name"];
         [tagArray addObject:tag];
         
@@ -76,9 +78,13 @@
         return NO;
     }
     
-    NSString *sql = @"UPDATE %@ SET name=%@, name_index=%@";
+    self.nameIndex =[self escape:[[self.name substringToIndex:1] uppercaseString]];
+    self.name = [self escape:self.name];
     
-    [self.db executeUpdateWithFormat:sql, self.table, self.name, self.nameIndex];
+    NSString *sql = @"UPDATE %@ SET name=?, name_index=? WHERE tag_id=%d";
+    sql = [NSString stringWithFormat:sql, self.table];
+    
+    [self.db executeUpdateWithFormat:sql, self.table, self.name, self.nameIndex, [NSNumber numberWithInteger:self.tagId]];
     
     return YES;
 }

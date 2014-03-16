@@ -39,25 +39,29 @@
     }
 #endif
     
-    Post *post = [[Post alloc] init];
-    
-    for (int i = 0; i < 100; ++i) {
-        post.name = [NSString stringWithFormat:@"%@%d",@"post_",i];
-        post.created = [[NSDate date] timeIntervalSince1970];
-        post.updated = post.created;
-        [post add];
-    }
-    
-#if false
+#if true
     NSMutableArray *tagArray;
 
     tagArray = [[NSMutableArray alloc] init];
     
-    [tag fetch:tagArray Filter:@"TRUE" Order:@"tag_id DESC" Page:0 PageSize:200];
+    [tag fetch:tagArray Filter:@"1=1" Order:@"tag_id DESC" Page:0 PageSize:20];
     
     NSLog(@"tags = %@", tagArray);
 #endif
     
+#if true
+    Post *post = [[Post alloc] init];
+    
+    for (int i = 0; i < 100; ++i) {
+        //post.postId = i;
+        post.name = [NSString stringWithFormat:@"%@%d",@"post_",i];
+        post.created = [[NSDate date] timeIntervalSince1970];
+        post.updated = post.created;
+        [post add];
+        
+        [post updateTag:tagArray];
+    }
+#endif
     
     //Post *post = [[Post alloc] init];
     
