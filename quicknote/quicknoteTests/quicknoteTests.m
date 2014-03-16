@@ -70,4 +70,16 @@
     //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
+- (void)testFetchingPost
+{
+    NSMutableArray *postArray = [[NSMutableArray alloc] init];
+    
+    Post *post = [[Post alloc] init];
+    
+    [post fetch:postArray Filter:@"1=1" Order:@"post_id DESC" Page:0 PageSize:200];
+    
+    //2014.03.16 - not working?
+    NSLog(@"post = %@", postArray);
+}
+
 @end

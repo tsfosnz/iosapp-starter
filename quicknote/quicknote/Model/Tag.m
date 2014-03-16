@@ -102,5 +102,18 @@
     return YES;
 }
 
+- (BOOL)removeAll
+{
+    if (!self.db) {
+        return NO;
+    }
+    
+    NSString *sql = @"DELETE FROM %@";
+    
+    [self.db executeUpdate:[NSString stringWithFormat:sql, self.table]];
+    
+    return YES;
+}
+
 
 @end

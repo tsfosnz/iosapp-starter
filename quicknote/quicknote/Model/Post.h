@@ -38,6 +38,8 @@
 @property (atomic, assign) NSInteger created;
 @property (atomic, assign) NSInteger updated;
 
+@property (atomic, retain) NSMutableArray *tagArray;
+
 - (BOOL)fetch:(NSMutableArray *)postArray Filter:(NSString *)filter Order:(NSString *)order Page:(NSInteger)page PageSize:(NSInteger)pageSize;
 
 - (BOOL)add;

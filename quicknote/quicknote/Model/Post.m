@@ -36,13 +36,59 @@
         return NO;
     }
     
-    NSString *sql = @"SELECT * FROM %@ AS p INNER JOIN %@ AS pt ON p.post_id=pt.post_id INNER JOIN %@ AS t ON pt.tag_id=t.tag_id WHERE %@ ORDER BY %@ LIMIT %d, %d";
+    NSString *sql = @"SELECT * FROM %@ WHERE %@ ORDER BY %@ LIMIT %d, %d";
     
-    FMResultSet *result = [self.db executeQueryWithFormat:sql, self.table, self.tablePostToTag, self.tableTag, filter, order, page * pageSize, pageSize];
+    sql = [NSString stringWithFormat:sql, self.table, filter, order, page * pageSize, pageSize];
+    
+    FMResultSet *result = [self.db executeQuery:sql];
     
     while ([result next]) {
         
+        Post *post = [[Post alloc] init];
+        
+        post.postId = [result intForColumn:@"post_id"];
+        post.name = [result stringForColumn:@"name"];
+        
+        [postArray addObject:post];
+        
     }
+    
+    for (Post *post in postArray) {
+    
+        post.tagArray = [[NSMutableArray alloc] init];
+    
+        [post fetchTags:post.tagArray Order:@"tag_id ASC" Page:0 PageSize:100];
+        
+        //NSLog(@"tags = %@", post.tagArray);
+        
+    }
+    
+    return YES;
+}
+
+- (BOOL)fetchTags:tagArray Order:(NSString *)order Page:(NSInteger)page PageSize:(NSInteger)pageSize
+{
+    if (!self.db) {
+        return NO;
+    }
+    
+    NSString *sql = @"SELECT t.* FROM %@ AS t INNER JOIN %@ AS pt ON t.tag_id=pt.tag_id WHERE pt.post_id=%d ORDER BY %@ LIMIT %d, %d";
+    
+    sql = [NSString stringWithFormat:sql, self.tableTag, self.tablePostToTag, self.postId, order, page * pageSize, pageSize];
+    
+    FMResultSet *result = [self.db executeQuery:sql];
+    
+    while ([result next]) {
+        
+        Tag *tag = [[Tag alloc] init];
+        
+        tag.tagId = [result intForColumn:@"tag_id"];
+        tag.name = [result stringForColumn:@"name"];
+        
+        [tagArray addObject:tag];
+        
+    }
+    
     
     return YES;
 }
