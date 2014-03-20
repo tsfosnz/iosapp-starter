@@ -22,8 +22,36 @@
         self.tableTag = @"tag";
         self.tableMark = @"mark";
         
-        //self.fieldArray = [[NSMutableArray alloc] initWithArray:@[@"post_id", @"name", @"description"]];
-        //self.fieldValueDict = [[NSMutableDictionary alloc] init];
+#ifdef USE_DICT
+        self.fieldDictionary = [[NSMutableDictionary alloc] init];
+        
+        NSArray *fieldArray = @[
+            @[@"post_id", @"int"],
+            @[@"image", @"text"],
+            @[@"name", @"text"],
+            @[@"name_index", @"text"],
+            @[@"description", @"text"],
+            @[@"location", @"text"],
+            @[@"address", @"text"],
+            @[@"longitude", @"text"],
+            @[@"latitude", @"text"],
+            @[@"watermark", @"text"],
+            @[@"created", @"int"],
+            @[@"updated", @"int"]];
+        
+        
+        for (NSArray *field in fieldArray) {
+            
+            if ([[field objectAtIndex:1] isEqualToString:@"int"]) {
+                [self.fieldDictionary setObject:[NSNumber numberWithInteger:0] forKey:[field objectAtIndex:0]];
+            }
+            
+            if ([[field objectAtIndex:1] isEqualToString:@"text"]) {
+               [self.fieldDictionary setObject:@"" forKey:[field objectAtIndex:0]];
+            }
+        }
+#endif
+        
     }
     
     return self;
@@ -51,6 +79,8 @@
         
         [postArray addObject:post];
         
+        post = nil;
+        
     }
     
     for (Post *post in postArray) {
@@ -59,7 +89,7 @@
     
         [post fetchTags:post.tagArray Order:@"tag_id ASC" Page:0 PageSize:100];
         
-        //NSLog(@"tags = %@", post.tagArray);
+        NSLog(@"post = %@", post.name);
         
     }
     
@@ -93,11 +123,32 @@
     return YES;
 }
 
+#ifdef USE_DICT
+- (BOOL)setValue:(NSString *)key Value:(id)value
+{
+    [self.fieldDictionary setObject:value forKey:key];
+    
+    return YES;
+}
+#endif
+
 - (BOOL)add
 {
     if (!self.db) {
         return NO;
     }
+    
+#ifdef USE_DICT
+    
+    // looks very clean, but bad metaphor in value input
+    // even use Key-Value Coding, still not good
+    
+    NSString *sql = @"INSERT INTO %@ VALUES (:name, :name_index, :description, :location, :address, :longitude, :latitude, :watermark, :created, :updated)";
+    sql = [NSString stringWithFormat:sql, self.table];
+    
+    [self.db executeUpdate:sql withParameterDictionary:self.fieldDictionary];
+    
+#else
     
     self.nameIndex =[self escape:[[self.name substringToIndex:1] uppercaseString]];
     self.name = [self escape:self.name];
@@ -116,6 +167,7 @@
     [self.db executeUpdate:sql, self.name, self.nameIndex, self.description, self.location, self.address, self.longitude, self.latitude, self.watermark, [NSNumber numberWithInteger:self.created], [NSNumber numberWithInteger:self.updated]];
     
     self.postId = (NSInteger)[self.db lastInsertRowId];
+#endif
     
     return YES;
 }

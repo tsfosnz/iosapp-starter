@@ -10,6 +10,8 @@
 #import "Model.h"
 #import "Tag.h"
 
+//#define USE_DICT
+
 @interface Post : Model
 
 @property (atomic, retain) NSString *table;
@@ -18,13 +20,14 @@
 // but this time not necessary
 // https://github.com/AlexDenisov/iActiveRecord
 
-@property (atomic, retain) NSMutableArray *fieldArray;
-@property (atomic, retain) NSMutableDictionary *fieldValueDict;
-
 @property (atomic, retain) NSString *tableTag;
 @property (atomic, retain) NSString *tableMark;
 @property (atomic, retain) NSString *tablePostToTag;
 @property (atomic, retain) NSString *tablePostToMark;
+
+#ifdef USE_DICT
+@property (atomic, retain) NSMutableDictionary *fieldDictionary;
+#endif
 
 @property (atomic, assign) NSInteger postId;
 @property (atomic, retain) NSString *name;

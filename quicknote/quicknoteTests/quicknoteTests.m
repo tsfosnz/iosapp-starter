@@ -78,8 +78,15 @@
     
     [post fetch:postArray Filter:@"1=1" Order:@"post_id DESC" Page:0 PageSize:200];
     
-    //2014.03.16 - not working?
-    NSLog(@"post = %@", postArray);
+    for (Post *post in postArray) {
+        NSLog(@"post = %@", post.name);
+    }
+    
+    NSDictionary *dic = @{@"hello":[NSNumber numberWithBool:YES]};
+    NSLog(@"dic = %@", dic);
+    
+    //2014.03.16 - can't print postArray...
+    //NSLog(@"post = %@", postArray);
 }
 
 @end
