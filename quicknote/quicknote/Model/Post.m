@@ -7,6 +7,8 @@
 //
 
 #import "Post.h"
+#import "Image.h"
+#import "Tag.h"
 
 @implementation Post
 
@@ -19,8 +21,10 @@
         self.table = @"post";
         self.tablePostToTag = @"post_to_tag";
         self.tablePostToMark = @"post_to_mark";
+        self.tablePostToImage = @"post_to_image";
         self.tableTag = @"tag";
         self.tableMark = @"mark";
+        self.tableImage = @"image";
         
 #ifdef USE_DICT
         self.fieldDictionary = [[NSMutableDictionary alloc] init];
@@ -84,14 +88,59 @@
     }
     
     for (Post *post in postArray) {
+        
+        if (!post.imageArray) {
+            post.imageArray = [[NSMutableArray alloc] init];
+        }
+        
+        [post fetchTags:post.tagArray Order:@"image_id ASC" Page:0 PageSize:100];
+        
+        NSLog(@"post = %@", post.name);
+        
+    }
     
-        post.tagArray = [[NSMutableArray alloc] init];
+    for (Post *post in postArray) {
+    
+        if (!post.tagArray) {
+            post.tagArray = [[NSMutableArray alloc] init];
+        }
     
         [post fetchTags:post.tagArray Order:@"tag_id ASC" Page:0 PageSize:100];
         
         NSLog(@"post = %@", post.name);
         
     }
+    
+    return YES;
+}
+
+- (BOOL)fetchImages:imageArray Order:(NSString *)order Page:(NSInteger)page PageSize:(NSInteger)pageSize
+{
+    if (!self.db) {
+        return NO;
+    }
+    
+    NSString *sql = @"SELECT t.* FROM %@ AS t INNER JOIN %@ AS pt ON t.image_id=pt.image_id WHERE pt.post_id=%d ORDER BY %@ LIMIT %d, %d";
+    
+    sql = [NSString stringWithFormat:sql, self.tableImage, self.tablePostToImage, self.postId, order, page * pageSize, pageSize];
+    
+    FMResultSet *result = [self.db executeQuery:sql];
+    
+    while ([result next]) {
+        
+        Image *image = [[Image alloc] init];
+        
+        image.imageId = [result intForColumn:@"image_id"];
+        image.name = [result stringForColumn:@"name"];
+        image.description = [result stringForColumn:@"description"];
+        image.watermark = [result stringForColumn:@"watermark"];
+        image.created = [result intForColumn:@"created"];
+        image.updated = [result intForColumn:@"updated"];
+        
+        [imageArray addObject:image];
+        
+    }
+    
     
     return YES;
 }

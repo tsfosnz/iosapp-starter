@@ -21,6 +21,7 @@
 		CE9FD64218CEDD680039667F /* sql.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9FD64118CEDD680039667F /* sql.txt */; };
 		CE9FD64418CEE5650039667F /* local.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CE9FD64318CEE5650039667F /* local.sqlite */; };
 		CE9FD64718CEE63C0039667F /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FD64618CEE63C0039667F /* Post.m */; };
+		CECF9DEB18DB166D00304B0B /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = CECF9DEA18DB166D00304B0B /* Image.m */; };
 		CEDE242018C21CD50083B8DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE241F18C21CD50083B8DF /* Foundation.framework */; };
 		CEDE242218C21CD50083B8DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE242118C21CD50083B8DF /* CoreGraphics.framework */; };
 		CEDE242418C21CD50083B8DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE242318C21CD50083B8DF /* UIKit.framework */; };
@@ -88,6 +89,8 @@
 		CE9FD64318CEE5650039667F /* local.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = local.sqlite; sourceTree = "<group>"; };
 		CE9FD64518CEE63C0039667F /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		CE9FD64618CEE63C0039667F /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		CECF9DE918DB166D00304B0B /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		CECF9DEA18DB166D00304B0B /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		CEDE241C18C21CD50083B8DF /* quicknote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quicknote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDE241F18C21CD50083B8DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEDE242118C21CD50083B8DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -294,6 +297,8 @@
 				CE35EA2618D37FC700BC6FC6 /* Tag.m */,
 				CE35EA2818D37FD800BC6FC6 /* Mark.h */,
 				CE35EA2918D37FD800BC6FC6 /* Mark.m */,
+				CECF9DE918DB166D00304B0B /* Image.h */,
+				CECF9DEA18DB166D00304B0B /* Image.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -517,6 +522,7 @@
 				CEDE249218C232F10083B8DF /* AFHTTPSessionManager.m in Sources */,
 				CEDE249018C232F10083B8DF /* AFHTTPRequestOperation.m in Sources */,
 				CE9CFCC618C51DEB002871F7 /* MainController.m in Sources */,
+				CECF9DEB18DB166D00304B0B /* Image.m in Sources */,
 				CEDE247B18C232E90083B8DF /* FMResultSet.m in Sources */,
 				CEDE249418C232F10083B8DF /* AFSecurityPolicy.m in Sources */,
 				CEDE247918C232E90083B8DF /* FMDatabasePool.m in Sources */,
