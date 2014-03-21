@@ -10,4 +10,9 @@
 
 @implementation Mark
 
++ (NSString *)table
+{
+    return @"mark";
+}
+
 @end

@@ -55,6 +55,10 @@
 		CEDE249718C232F10083B8DF /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE248D18C232F10083B8DF /* AFURLResponseSerialization.m */; };
 		CEDE249818C232F10083B8DF /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE248F18C232F10083B8DF /* AFURLSessionManager.m */; };
 		CEDE249A18C233420083B8DF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE249918C233420083B8DF /* libsqlite3.dylib */; };
+		CEE00EAB18DC7F9E00BDB9FF /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE00EAA18DC7F9E00BDB9FF /* CategoryModel.m */; };
+		CEE00EAE18DC82F700BDB9FF /* PostToTag.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE00EAD18DC82F700BDB9FF /* PostToTag.m */; };
+		CEE00EB118DC830600BDB9FF /* PostToCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE00EB018DC830600BDB9FF /* PostToCategory.m */; };
+		CEE00EB418DC831600BDB9FF /* PostToImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE00EB318DC831600BDB9FF /* PostToImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +151,14 @@
 		CEDE248E18C232F10083B8DF /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		CEDE248F18C232F10083B8DF /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		CEDE249918C233420083B8DF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CEE00EA918DC7F9E00BDB9FF /* CategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryModel.h; sourceTree = "<group>"; };
+		CEE00EAA18DC7F9E00BDB9FF /* CategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryModel.m; sourceTree = "<group>"; };
+		CEE00EAC18DC82F700BDB9FF /* PostToTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToTag.h; sourceTree = "<group>"; };
+		CEE00EAD18DC82F700BDB9FF /* PostToTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToTag.m; sourceTree = "<group>"; };
+		CEE00EAF18DC830600BDB9FF /* PostToCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToCategory.h; sourceTree = "<group>"; };
+		CEE00EB018DC830600BDB9FF /* PostToCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToCategory.m; sourceTree = "<group>"; };
+		CEE00EB218DC831600BDB9FF /* PostToImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToImage.h; sourceTree = "<group>"; };
+		CEE00EB318DC831600BDB9FF /* PostToImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +249,7 @@
 		CEDE242518C21CD50083B8DF /* quicknote */ = {
 			isa = PBXGroup;
 			children = (
+				CEE00EA518DC7EF900BDB9FF /* Image */,
 				CEDE246B18C232CB0083B8DF /* Lib */,
 				CEDE245918C21E370083B8DF /* Data */,
 				CEDE245718C21E1C0083B8DF /* Model */,
@@ -291,14 +304,22 @@
 				CEDE246918C232570083B8DF /* DiskCache.m */,
 				CEDE246318C231EF0083B8DF /* Model.h */,
 				CEDE246418C231EF0083B8DF /* Model.m */,
+				CEE00EA918DC7F9E00BDB9FF /* CategoryModel.h */,
+				CEE00EAA18DC7F9E00BDB9FF /* CategoryModel.m */,
 				CE9FD64518CEE63C0039667F /* Post.h */,
 				CE9FD64618CEE63C0039667F /* Post.m */,
+				CECF9DE918DB166D00304B0B /* Image.h */,
+				CECF9DEA18DB166D00304B0B /* Image.m */,
 				CE35EA2518D37FC700BC6FC6 /* Tag.h */,
 				CE35EA2618D37FC700BC6FC6 /* Tag.m */,
 				CE35EA2818D37FD800BC6FC6 /* Mark.h */,
 				CE35EA2918D37FD800BC6FC6 /* Mark.m */,
-				CECF9DE918DB166D00304B0B /* Image.h */,
-				CECF9DEA18DB166D00304B0B /* Image.m */,
+				CEE00EAC18DC82F700BDB9FF /* PostToTag.h */,
+				CEE00EAD18DC82F700BDB9FF /* PostToTag.m */,
+				CEE00EB218DC831600BDB9FF /* PostToImage.h */,
+				CEE00EB318DC831600BDB9FF /* PostToImage.m */,
+				CEE00EAF18DC830600BDB9FF /* PostToCategory.h */,
+				CEE00EB018DC830600BDB9FF /* PostToCategory.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -403,6 +424,14 @@
 				CE9CFCCC18C51ECC002871F7 /* Setting.storyboard */,
 			);
 			name = Interface;
+			sourceTree = "<group>";
+		};
+		CEE00EA518DC7EF900BDB9FF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Image;
+			path = ../image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +541,7 @@
 				CEDE243018C21CD50083B8DF /* AppDelegate.m in Sources */,
 				CEDE249118C232F10083B8DF /* AFHTTPRequestOperationManager.m in Sources */,
 				CE9CFCD818C52528002871F7 /* CameraInitController.m in Sources */,
+				CEE00EAB18DC7F9E00BDB9FF /* CategoryModel.m in Sources */,
 				CEDE246618C231EF0083B8DF /* Bootstrap.m in Sources */,
 				CEDE249518C232F10083B8DF /* AFURLConnectionOperation.m in Sources */,
 				CEDE247718C232E90083B8DF /* FMDatabase.m in Sources */,
@@ -519,6 +549,7 @@
 				CEDE249618C232F10083B8DF /* AFURLRequestSerialization.m in Sources */,
 				CE9CFCD318C51F24002871F7 /* HomeController.m in Sources */,
 				CEDE247A18C232E90083B8DF /* FMDatabaseQueue.m in Sources */,
+				CEE00EAE18DC82F700BDB9FF /* PostToTag.m in Sources */,
 				CEDE249218C232F10083B8DF /* AFHTTPSessionManager.m in Sources */,
 				CEDE249018C232F10083B8DF /* AFHTTPRequestOperation.m in Sources */,
 				CE9CFCC618C51DEB002871F7 /* MainController.m in Sources */,
@@ -527,9 +558,11 @@
 				CEDE249418C232F10083B8DF /* AFSecurityPolicy.m in Sources */,
 				CEDE247918C232E90083B8DF /* FMDatabasePool.m in Sources */,
 				CE9FD64718CEE63C0039667F /* Post.m in Sources */,
+				CEE00EB418DC831600BDB9FF /* PostToImage.m in Sources */,
 				CEDE249318C232F10083B8DF /* AFNetworkReachabilityManager.m in Sources */,
 				CEDE249818C232F10083B8DF /* AFURLSessionManager.m in Sources */,
 				CEDE246718C231EF0083B8DF /* Model.m in Sources */,
+				CEE00EB118DC830600BDB9FF /* PostToCategory.m in Sources */,
 				CE9CFCD018C51F11002871F7 /* HomeInitController.m in Sources */,
 				CEDE246A18C232570083B8DF /* DiskCache.m in Sources */,
 				CEDE246518C231EF0083B8DF /* AppConfig.m in Sources */,

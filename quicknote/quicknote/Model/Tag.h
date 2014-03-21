@@ -20,4 +20,5 @@
 - (BOOL)update;
 - (BOOL)remove;
 
++ (NSString *)table;
 @end

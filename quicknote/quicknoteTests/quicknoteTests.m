@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 #import "Post.h"
+#import "Tag.h"
+#import "Image.h"
 
 @interface quicknoteTests : XCTestCase
 

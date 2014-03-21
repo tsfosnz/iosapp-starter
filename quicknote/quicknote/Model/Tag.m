@@ -115,5 +115,9 @@
     return YES;
 }
 
++ (NSString *)table
+{
+    return @"tag";
+}
 
 @end

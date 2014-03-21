@@ -9,6 +9,10 @@
 #import "Post.h"
 #import "Image.h"
 #import "Tag.h"
+#import "CategoryModel.h"
+#import "PostToCategory.h"
+#import "PostToImage.h"
+#import "PostToTag.h"
 
 @implementation Post
 
@@ -19,12 +23,14 @@
     
     if (self) {
         self.table = @"post";
-        self.tablePostToTag = @"post_to_tag";
-        self.tablePostToMark = @"post_to_mark";
-        self.tablePostToImage = @"post_to_image";
-        self.tableTag = @"tag";
-        self.tableMark = @"mark";
-        self.tableImage = @"image";
+        
+        self.tablePostToTag = [PostToTag table];
+        self.tablePostToImage = [PostToImage table];
+        self.tablePostToCategory = [PostToCategory table];
+        
+        self.tableTag = [Tag table];
+        self.tableImage = [Image table];
+        self.tableCategory = [CategoryModel table];
         
 #ifdef USE_DICT
         self.fieldDictionary = [[NSMutableDictionary alloc] init];
@@ -309,5 +315,9 @@
     return YES;
 }
 
++ (NSString *)table
+{
+    return @"post";
+}
 
 @end

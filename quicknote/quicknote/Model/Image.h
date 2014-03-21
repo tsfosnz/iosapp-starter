@@ -18,4 +18,6 @@
 @property (atomic, assign) NSInteger created;
 @property (atomic, assign) NSInteger updated;
 
++ (NSString *)table;
+
 @end

@@ -13,10 +13,13 @@
 
 @class Image;
 @class Tag;
+@class CategoryModel;
+
+@class PostToTag;
+@class PostToImage;
+@class PostToCategory;
 
 @interface Post : Model
-
-@property (atomic, retain) NSString *table;
 
 // we can make a full ActiveRecord model
 // but this time not necessary
@@ -29,6 +32,9 @@
 @property (atomic, retain) NSString *tablePostToTag;
 @property (atomic, retain) NSString *tablePostToMark;
 @property (atomic, retain) NSString *tablePostToImage;
+
+@property (atomic, retain) NSString *tablePostToCategory;
+@property (atomic, retain) NSString *tableCategory;
 
 #ifdef USE_DICT
 @property (atomic, retain) NSMutableDictionary *fieldDictionary;

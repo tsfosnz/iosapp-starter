@@ -22,4 +22,9 @@
     return self;
 }
 
++ (NSString *)table
+{
+    return @"image";
+}
+
 @end
