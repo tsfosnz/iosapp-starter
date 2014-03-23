@@ -10,6 +10,7 @@
 #import "Post.h"
 #import "Tag.h"
 #import "Image.h"
+#import "CategoryN.h"
 
 @interface quicknoteTests : XCTestCase
 
@@ -89,6 +90,36 @@
     
     //2014.03.16 - can't print postArray...
     //NSLog(@"post = %@", postArray);
+}
+
+- (void)testCategory
+{
+    NSMutableDictionary *categories;
+    NSString *name;
+    CategoryN *category;
+    
+    for (int i = 0; i < 100; ++i) {
+        
+        category = [[CategoryN alloc] init];
+        name = [NSString stringWithFormat:@"category_%d", i];
+        
+        category.name = name;
+        category.nameIndex = [[name substringToIndex:1] uppercaseString];
+        category.sort = i;
+        category.level = 0;
+        
+        [categories setObject:category forKey:[NSNumber numberWithInt:i]];
+        
+        category = nil;
+    }
+    
+    for (CategoryN *category in categories) {
+        
+        [category add];
+        
+    }
+    
+    
 }
 
 @end

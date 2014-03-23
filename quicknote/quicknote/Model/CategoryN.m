@@ -6,16 +6,16 @@
 //  Copyright (c) 2014年 hellomaya. All rights reserved.
 //
 
-#import "CategoryModel.h"
+#import "CategoryN.h"
 
-@implementation CategoryModel
+@implementation CategoryN
 - (id)init
 {
     
     self = [super init];
     
     if (self) {
-        self.table = @"post";
+        self.table = @"category";
         
     }
     
@@ -37,7 +37,7 @@
     
     while ([result next]) {
         
-        CategoryModel *category = [[CategoryModel alloc] init];
+        CategoryN *category = [[CategoryN alloc] init];
         
         category.categoryId = [result intForColumn:@"category_id"];
         category.name = [result stringForColumn:@"name"];
