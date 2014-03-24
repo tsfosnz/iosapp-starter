@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 hellomaya. All rights reserved.
 //
 
-#import "CategoryN.h"
+#import "CategoryM.h"
 
-@implementation CategoryN
+@implementation CategoryM
 - (id)init
 {
     
@@ -37,7 +37,7 @@
     
     while ([result next]) {
         
-        CategoryN *category = [[CategoryN alloc] init];
+        CategoryM *category = [[CategoryM alloc] init];
         
         category.categoryId = [result intForColumn:@"category_id"];
         category.name = [result stringForColumn:@"name"];
@@ -71,6 +71,13 @@
     [self.db executeUpdate:sql, self.name, self.nameIndex, [NSNumber numberWithInteger:self.level], [NSNumber numberWithInteger:self.sort], self.family];
     
     self.categoryId = (NSInteger)[self.db lastInsertRowId];
+    self.family = [NSString stringWithFormat:@"%d", self.categoryId];
+    
+    NSLog(@"family = %@", self.family);
+    
+    sql = @"UPDATE %@ SET family=? WHERE category_id=%d";
+    sql = [NSString stringWithFormat:sql, self.table, self.categoryId];
+    [self.db executeUpdate:sql, self.family];
     
     return YES;
 }

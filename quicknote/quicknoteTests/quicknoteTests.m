@@ -10,7 +10,7 @@
 #import "Post.h"
 #import "Tag.h"
 #import "Image.h"
-#import "CategoryN.h"
+#import "CategoryM.h"
 
 @interface quicknoteTests : XCTestCase
 
@@ -94,13 +94,13 @@
 
 - (void)testCategory
 {
-    NSMutableDictionary *categories;
+    NSMutableArray *categories = [[NSMutableArray alloc] init];
     NSString *name;
-    CategoryN *category;
+    CategoryM *category;
     
     for (int i = 0; i < 100; ++i) {
         
-        category = [[CategoryN alloc] init];
+        category = [[CategoryM alloc] init];
         name = [NSString stringWithFormat:@"category_%d", i];
         
         category.name = name;
@@ -108,12 +108,12 @@
         category.sort = i;
         category.level = 0;
         
-        [categories setObject:category forKey:[NSNumber numberWithInt:i]];
+        [categories addObject:category];
         
         category = nil;
     }
     
-    for (CategoryN *category in categories) {
+    for (CategoryM *category in categories) {
         
         [category add];
         

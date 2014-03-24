@@ -13,7 +13,7 @@
 
 @class Image;
 @class Tag;
-@class CategoryN;
+@class CategoryM;
 
 @class PostToTag;
 @class PostToImage;

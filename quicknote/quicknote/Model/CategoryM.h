@@ -10,7 +10,7 @@
 
 // as Category is a reversed keyword...
 
-@interface CategoryN : Model
+@interface CategoryM : Model
 
 @property (atomic, assign) NSInteger categoryId;
 @property (atomic, retain) NSString *name;
