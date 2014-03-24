@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1292C118E06B7700761726 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1292C018E06B7700761726 /* User.m */; };
 		CE1C0C8E18D47A6A004394A5 /* develop in Resources */ = {isa = PBXBuildFile; fileRef = CE1C0C8D18D47A6A004394A5 /* develop */; };
 		CE1C0C9018D48C58004394A5 /* quicknoteTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1C0C8F18D48C58004394A5 /* quicknoteTests2.m */; };
 		CE35EA2718D37FC700BC6FC6 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35EA2618D37FC700BC6FC6 /* Tag.m */; };
@@ -72,6 +73,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE1292BF18E06B7700761726 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		CE1292C018E06B7700761726 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		CE1C0C8D18D47A6A004394A5 /* develop */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = develop; sourceTree = "<group>"; };
 		CE1C0C8F18D48C58004394A5 /* quicknoteTests2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = quicknoteTests2.m; sourceTree = "<group>"; };
 		CE35EA2518D37FC700BC6FC6 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
@@ -320,6 +323,8 @@
 				CEE00EB318DC831600BDB9FF /* PostToImage.m */,
 				CEE00EAF18DC830600BDB9FF /* PostToCategory.h */,
 				CEE00EB018DC830600BDB9FF /* PostToCategory.m */,
+				CE1292BF18E06B7700761726 /* User.h */,
+				CE1292C018E06B7700761726 /* User.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -555,6 +560,7 @@
 				CE9CFCC618C51DEB002871F7 /* MainController.m in Sources */,
 				CECF9DEB18DB166D00304B0B /* Image.m in Sources */,
 				CEDE247B18C232E90083B8DF /* FMResultSet.m in Sources */,
+				CE1292C118E06B7700761726 /* User.m in Sources */,
 				CEDE249418C232F10083B8DF /* AFSecurityPolicy.m in Sources */,
 				CEDE247918C232E90083B8DF /* FMDatabasePool.m in Sources */,
 				CE9FD64718CEE63C0039667F /* Post.m in Sources */,

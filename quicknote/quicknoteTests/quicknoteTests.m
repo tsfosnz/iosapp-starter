@@ -119,6 +119,34 @@
         
     }
     
+    NSMutableArray *subcategories = [[NSMutableArray alloc] init];
+    
+    for (CategoryM *c in categories) {
+        
+        // why i < 100 ==> open error?
+        for (int i = 0; i < 10; ++i) {
+            category = [[CategoryM alloc] init];
+            name = [NSString stringWithFormat:@"category_%d", i];
+            
+            category.name = name;
+            category.nameIndex = [[name substringToIndex:1] uppercaseString];
+            category.sort = i;
+            category.level = c.level + 1;
+            category.family = c.family;
+            
+            [subcategories addObject:category];
+            
+            category = nil;
+        }
+        
+    }
+    
+    for (CategoryM *category in subcategories) {
+        
+        [category add];
+        
+    }
+    
     
 }
 

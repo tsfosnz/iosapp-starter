@@ -65,7 +65,6 @@
     
     NSString *sql = @"INSERT INTO %@ (name, name_index, level, sort, family) VALUES (?, ?, ?, ?, ?)";
     
-    //sql = @"INSERT INTO %@ (name, name_index) VALUES (?, ?)";
     sql = [NSString stringWithFormat:sql, self.table];
     
     [self.db executeUpdate:sql, self.name, self.nameIndex, [NSNumber numberWithInteger:self.level], [NSNumber numberWithInteger:self.sort], self.family];
