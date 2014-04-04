@@ -12,13 +12,11 @@
 		CE1C0C9018D48C58004394A5 /* quicknoteTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1C0C8F18D48C58004394A5 /* quicknoteTests2.m */; };
 		CE35EA2718D37FC700BC6FC6 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35EA2618D37FC700BC6FC6 /* Tag.m */; };
 		CE35EA2A18D37FD800BC6FC6 /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35EA2918D37FD800BC6FC6 /* Mark.m */; };
-		CE9CFCC618C51DEB002871F7 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CFCC518C51DEB002871F7 /* MainController.m */; };
+		CE95294418EF52C4002A34B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE95294318EF52C4002A34B4 /* Main.storyboard */; };
+		CE95294918EF5400002A34B4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE95294818EF5400002A34B4 /* MapKit.framework */; };
 		CE9CFCCB18C51EB7002871F7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9CFCCA18C51EB7002871F7 /* Home.storyboard */; };
 		CE9CFCCD18C51ECC002871F7 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9CFCCC18C51ECC002871F7 /* Setting.storyboard */; };
-		CE9CFCD018C51F11002871F7 /* HomeInitController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CFCCF18C51F11002871F7 /* HomeInitController.m */; };
-		CE9CFCD318C51F24002871F7 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CFCD218C51F24002871F7 /* HomeController.m */; };
 		CE9CFCD518C52299002871F7 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9CFCD418C52299002871F7 /* Camera.storyboard */; };
-		CE9CFCD818C52528002871F7 /* CameraInitController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CFCD718C52528002871F7 /* CameraInitController.m */; };
 		CE9FD64218CEDD680039667F /* sql.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9FD64118CEDD680039667F /* sql.txt */; };
 		CE9FD64418CEE5650039667F /* local.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CE9FD64318CEE5650039667F /* local.sqlite */; };
 		CE9FD64718CEE63C0039667F /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FD64618CEE63C0039667F /* Post.m */; };
@@ -29,7 +27,6 @@
 		CEDE242A18C21CD50083B8DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEDE242818C21CD50083B8DF /* InfoPlist.strings */; };
 		CEDE242C18C21CD50083B8DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE242B18C21CD50083B8DF /* main.m */; };
 		CEDE243018C21CD50083B8DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE242F18C21CD50083B8DF /* AppDelegate.m */; };
-		CEDE243318C21CD50083B8DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDE243118C21CD50083B8DF /* Main.storyboard */; };
 		CEDE243B18C21CD50083B8DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDE243A18C21CD50083B8DF /* Images.xcassets */; };
 		CEDE244218C21CD50083B8DF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE244118C21CD50083B8DF /* XCTest.framework */; };
 		CEDE244318C21CD50083B8DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE241F18C21CD50083B8DF /* Foundation.framework */; };
@@ -81,17 +78,11 @@
 		CE35EA2618D37FC700BC6FC6 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		CE35EA2818D37FD800BC6FC6 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		CE35EA2918D37FD800BC6FC6 /* Mark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mark.m; sourceTree = "<group>"; };
-		CE9CFCC418C51DEB002871F7 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
-		CE9CFCC518C51DEB002871F7 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		CE95294318EF52C4002A34B4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CE95294818EF5400002A34B4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CE9CFCCA18C51EB7002871F7 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CE9CFCCC18C51ECC002871F7 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
-		CE9CFCCE18C51F11002871F7 /* HomeInitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeInitController.h; sourceTree = "<group>"; };
-		CE9CFCCF18C51F11002871F7 /* HomeInitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeInitController.m; sourceTree = "<group>"; };
-		CE9CFCD118C51F24002871F7 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
-		CE9CFCD218C51F24002871F7 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		CE9CFCD418C52299002871F7 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
-		CE9CFCD618C52528002871F7 /* CameraInitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraInitController.h; sourceTree = "<group>"; };
-		CE9CFCD718C52528002871F7 /* CameraInitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraInitController.m; sourceTree = "<group>"; };
 		CE9FD64118CEDD680039667F /* sql.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sql.txt; sourceTree = "<group>"; };
 		CE9FD64318CEE5650039667F /* local.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = local.sqlite; sourceTree = "<group>"; };
 		CE9FD64518CEE63C0039667F /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
@@ -108,7 +99,6 @@
 		CEDE242D18C21CD50083B8DF /* quicknote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quicknote-Prefix.pch"; sourceTree = "<group>"; };
 		CEDE242E18C21CD50083B8DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEDE242F18C21CD50083B8DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEDE243218C21CD50083B8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEDE243A18C21CD50083B8DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CEDE244018C21CD50083B8DF /* quicknoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quicknoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDE244118C21CD50083B8DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -171,6 +161,7 @@
 			files = (
 				CEDE249A18C233420083B8DF /* libsqlite3.dylib in Frameworks */,
 				CEDE242218C21CD50083B8DF /* CoreGraphics.framework in Frameworks */,
+				CE95294918EF5400002A34B4 /* MapKit.framework in Frameworks */,
 				CEDE242418C21CD50083B8DF /* UIKit.framework in Frameworks */,
 				CEDE242018C21CD50083B8DF /* Foundation.framework in Frameworks */,
 			);
@@ -189,31 +180,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE9CFCC718C51E35002871F7 /* Home */ = {
+		CE95294218EF519E002A34B4 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				CE9CFCCE18C51F11002871F7 /* HomeInitController.h */,
-				CE9CFCCF18C51F11002871F7 /* HomeInitController.m */,
-				CE9CFCD118C51F24002871F7 /* HomeController.h */,
-				CE9CFCD218C51F24002871F7 /* HomeController.m */,
+				CE95294318EF52C4002A34B4 /* Main.storyboard */,
+				CE9CFCCA18C51EB7002871F7 /* Home.storyboard */,
+				CE9CFCD418C52299002871F7 /* Camera.storyboard */,
+				CE9CFCCC18C51ECC002871F7 /* Setting.storyboard */,
 			);
-			name = Home;
-			sourceTree = "<group>";
-		};
-		CE9CFCC818C51E70002871F7 /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				CE9CFCD618C52528002871F7 /* CameraInitController.h */,
-				CE9CFCD718C52528002871F7 /* CameraInitController.m */,
-			);
-			name = Camera;
-			sourceTree = "<group>";
-		};
-		CE9CFCC918C51E88002871F7 /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Setting;
+			name = Interface;
+			path = interface;
 			sourceTree = "<group>";
 		};
 		CEDE241318C21CD50083B8DF = {
@@ -240,6 +216,7 @@
 		CEDE241E18C21CD50083B8DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE95294818EF5400002A34B4 /* MapKit.framework */,
 				CEDE249918C233420083B8DF /* libsqlite3.dylib */,
 				CEDE241F18C21CD50083B8DF /* Foundation.framework */,
 				CEDE242118C21CD50083B8DF /* CoreGraphics.framework */,
@@ -252,11 +229,11 @@
 		CEDE242518C21CD50083B8DF /* quicknote */ = {
 			isa = PBXGroup;
 			children = (
+				CE95294218EF519E002A34B4 /* Interface */,
 				CEE00EA518DC7EF900BDB9FF /* Image */,
 				CEDE246B18C232CB0083B8DF /* Lib */,
 				CEDE245918C21E370083B8DF /* Data */,
 				CEDE245718C21E1C0083B8DF /* Model */,
-				CEDE245A18C21E3F0083B8DF /* View */,
 				CEDE245818C21E260083B8DF /* Main */,
 				CEDE242E18C21CD50083B8DF /* AppDelegate.h */,
 				CEDE242F18C21CD50083B8DF /* AppDelegate.m */,
@@ -332,14 +309,9 @@
 		CEDE245818C21E260083B8DF /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CEDE249B18C234650083B8DF /* Interface */,
-				CE9CFCC918C51E88002871F7 /* Setting */,
-				CE9CFCC818C51E70002871F7 /* Camera */,
-				CE9CFCC718C51E35002871F7 /* Home */,
-				CE9CFCC418C51DEB002871F7 /* MainController.h */,
-				CE9CFCC518C51DEB002871F7 /* MainController.m */,
 			);
 			name = Main;
+			path = main;
 			sourceTree = "<group>";
 		};
 		CEDE245918C21E370083B8DF /* Data */ = {
@@ -350,21 +322,6 @@
 			);
 			name = Data;
 			path = ../data;
-			sourceTree = "<group>";
-		};
-		CEDE245A18C21E3F0083B8DF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CEDE245D18C21F220083B8DF /* Main */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		CEDE245D18C21F220083B8DF /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Main;
 			sourceTree = "<group>";
 		};
 		CEDE246B18C232CB0083B8DF /* Lib */ = {
@@ -418,17 +375,6 @@
 				CEDE248F18C232F10083B8DF /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		CEDE249B18C234650083B8DF /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				CEDE243118C21CD50083B8DF /* Main.storyboard */,
-				CE9CFCCA18C51EB7002871F7 /* Home.storyboard */,
-				CE9CFCD418C52299002871F7 /* Camera.storyboard */,
-				CE9CFCCC18C51ECC002871F7 /* Setting.storyboard */,
-			);
-			name = Interface;
 			sourceTree = "<group>";
 		};
 		CEE00EA518DC7EF900BDB9FF /* Image */ = {
@@ -486,6 +432,16 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = hellomaya;
 				TargetAttributes = {
+					CEDE241B18C21CD50083B8DF = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					CEDE243F18C21CD50083B8DF = {
 						TestTargetID = CEDE241B18C21CD50083B8DF;
 					};
@@ -516,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDE245C18C21E920083B8DF /* readme in Resources */,
+				CE95294418EF52C4002A34B4 /* Main.storyboard in Resources */,
 				CE9CFCD518C52299002871F7 /* Camera.storyboard in Resources */,
 				CE9CFCCB18C51EB7002871F7 /* Home.storyboard in Resources */,
 				CE9FD64418CEE5650039667F /* local.sqlite in Resources */,
@@ -523,7 +480,6 @@
 				CEDE242A18C21CD50083B8DF /* InfoPlist.strings in Resources */,
 				CE1C0C8E18D47A6A004394A5 /* develop in Resources */,
 				CE9FD64218CEDD680039667F /* sql.txt in Resources */,
-				CEDE243318C21CD50083B8DF /* Main.storyboard in Resources */,
 				CE9CFCCD18C51ECC002871F7 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,19 +501,16 @@
 			files = (
 				CEDE243018C21CD50083B8DF /* AppDelegate.m in Sources */,
 				CEDE249118C232F10083B8DF /* AFHTTPRequestOperationManager.m in Sources */,
-				CE9CFCD818C52528002871F7 /* CameraInitController.m in Sources */,
 				CEE00EAB18DC7F9E00BDB9FF /* CategoryM.m in Sources */,
 				CEDE246618C231EF0083B8DF /* Bootstrap.m in Sources */,
 				CEDE249518C232F10083B8DF /* AFURLConnectionOperation.m in Sources */,
 				CEDE247718C232E90083B8DF /* FMDatabase.m in Sources */,
 				CE35EA2718D37FC700BC6FC6 /* Tag.m in Sources */,
 				CEDE249618C232F10083B8DF /* AFURLRequestSerialization.m in Sources */,
-				CE9CFCD318C51F24002871F7 /* HomeController.m in Sources */,
 				CEDE247A18C232E90083B8DF /* FMDatabaseQueue.m in Sources */,
 				CEE00EAE18DC82F700BDB9FF /* PostToTag.m in Sources */,
 				CEDE249218C232F10083B8DF /* AFHTTPSessionManager.m in Sources */,
 				CEDE249018C232F10083B8DF /* AFHTTPRequestOperation.m in Sources */,
-				CE9CFCC618C51DEB002871F7 /* MainController.m in Sources */,
 				CECF9DEB18DB166D00304B0B /* Image.m in Sources */,
 				CEDE247B18C232E90083B8DF /* FMResultSet.m in Sources */,
 				CE1292C118E06B7700761726 /* User.m in Sources */,
@@ -569,7 +522,6 @@
 				CEDE249818C232F10083B8DF /* AFURLSessionManager.m in Sources */,
 				CEDE246718C231EF0083B8DF /* Model.m in Sources */,
 				CEE00EB118DC830600BDB9FF /* PostToCategory.m in Sources */,
-				CE9CFCD018C51F11002871F7 /* HomeInitController.m in Sources */,
 				CEDE246A18C232570083B8DF /* DiskCache.m in Sources */,
 				CEDE246518C231EF0083B8DF /* AppConfig.m in Sources */,
 				CEDE242C18C21CD50083B8DF /* main.m in Sources */,
@@ -605,14 +557,6 @@
 				CEDE242918C21CD50083B8DF /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CEDE243118C21CD50083B8DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEDE243218C21CD50083B8DF /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		CEDE244A18C21CD50083B8DF /* InfoPlist.strings */ = {

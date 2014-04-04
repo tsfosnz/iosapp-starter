@@ -1,8 +1,13 @@
 ios_quicknote
 =============
 
-A smaller and smarter quick note app - capture what you are looking for and remind you of it anytime, also try to get report from your data.
+A smaller and smarter quick note app
 
+design
+========
+
+1. UI
+2. Modular UI Element
 
 		
 

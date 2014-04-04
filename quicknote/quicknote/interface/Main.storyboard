@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kNx-6f-456">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ccm-HQ-Otj">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="kNx-6f-456" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gSb-VN-ZuQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IXS-jJ-M64" kind="relationship" relationship="rootViewController" id="1AS-aY-xlU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cna-wk-RDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="208" y="-114"/>
+        </scene>
+        <!--View Controller - Notes-->
+        <scene sceneID="RHb-gz-K6Q">
+            <objects>
+                <viewController id="IXS-jJ-M64" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lQi-gi-iMa"/>
+                        <viewControllerLayoutGuide type="bottom" id="EZb-7f-WGi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eWj-L2-kUj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="i7Q-QP-ZQr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q2Y-7b-OYE">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="UxN-UR-GLa"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Search" id="pp6-Ih-wYV"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="T8Y-bL-mFw"/>
+                                    <barButtonItem title="Add" id="Gcs-tY-i7l"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="i56-95-Tu4"/>
+                                    <barButtonItem title="Category" id="3Od-eB-Z5d"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i7Q-QP-ZQr" firstAttribute="leading" secondItem="eWj-L2-kUj" secondAttribute="leading" id="CRJ-4y-F4J"/>
+                            <constraint firstAttribute="bottom" secondItem="i7Q-QP-ZQr" secondAttribute="bottom" id="NTg-6h-yFw"/>
+                            <constraint firstAttribute="bottom" secondItem="Q2Y-7b-OYE" secondAttribute="bottom" id="Oyk-ns-Ept"/>
+                            <constraint firstAttribute="trailing" secondItem="i7Q-QP-ZQr" secondAttribute="trailing" id="TCG-Sy-5m7"/>
+                            <constraint firstItem="i7Q-QP-ZQr" firstAttribute="top" secondItem="eWj-L2-kUj" secondAttribute="top" id="U8R-EK-XZX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notes" id="taY-3e-3EC">
+                        <barButtonItem key="rightBarButtonItem" title="Setting" id="QQ0-0s-NhO"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dZ-1f-qNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582" y="-114"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
