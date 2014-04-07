@@ -2,22 +2,16 @@
 DESIGN
 =========
 
+1. Single navigation or Tab based?
 
-1. Loading Posts ==> UI
+Commonly people will like Tab based design, coz it provides the most space for more functionality at same level..
 
-    .Finding posts efficiently
-    .View post detail easily
-    .Edit post easily
+Well....
 
-    .concise 
-    .detail
-    .grid
+We know for some app, it had equal important view for data....
 
-    List
-        photo ==> info ==> touch to open ==> detail
-        
-    Detail
-        photo / info
-        
-Only if we will list all information of post at one time, we don't have to load all infomation of post first time
+But this app, I think we only have one view for data....
+
+
+
 
