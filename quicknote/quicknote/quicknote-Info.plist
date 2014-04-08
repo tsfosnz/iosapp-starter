@@ -30,7 +30,7 @@
 		<string>location</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>Home</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
