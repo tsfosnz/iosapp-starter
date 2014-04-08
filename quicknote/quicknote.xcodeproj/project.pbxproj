@@ -14,6 +14,8 @@
 		CE35EA2A18D37FD800BC6FC6 /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35EA2918D37FD800BC6FC6 /* Mark.m */; };
 		CE95294418EF52C4002A34B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE95294318EF52C4002A34B4 /* Main.storyboard */; };
 		CE95294918EF5400002A34B4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE95294818EF5400002A34B4 /* MapKit.framework */; };
+		CE9FCD1918F42FCB001378BE /* HomeInitController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FCD1818F42FCB001378BE /* HomeInitController.m */; };
+		CE9FCD1C18F43017001378BE /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FCD1B18F43017001378BE /* HomeController.m */; };
 		CE9FD64218CEDD680039667F /* sql.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9FD64118CEDD680039667F /* sql.txt */; };
 		CE9FD64418CEE5650039667F /* local.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CE9FD64318CEE5650039667F /* local.sqlite */; };
 		CE9FD64718CEE63C0039667F /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FD64618CEE63C0039667F /* Post.m */; };
@@ -77,6 +79,10 @@
 		CE35EA2918D37FD800BC6FC6 /* Mark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mark.m; sourceTree = "<group>"; };
 		CE95294318EF52C4002A34B4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CE95294818EF5400002A34B4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE9FCD1718F42FCB001378BE /* HomeInitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeInitController.h; sourceTree = "<group>"; };
+		CE9FCD1818F42FCB001378BE /* HomeInitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeInitController.m; sourceTree = "<group>"; };
+		CE9FCD1A18F43017001378BE /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		CE9FCD1B18F43017001378BE /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		CE9FD64118CEDD680039667F /* sql.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sql.txt; sourceTree = "<group>"; };
 		CE9FD64318CEE5650039667F /* local.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = local.sqlite; sourceTree = "<group>"; };
 		CE9FD64518CEE63C0039667F /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
@@ -183,6 +189,18 @@
 			path = interface;
 			sourceTree = "<group>";
 		};
+		CE9FCD1618F42F8A001378BE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE9FCD1718F42FCB001378BE /* HomeInitController.h */,
+				CE9FCD1818F42FCB001378BE /* HomeInitController.m */,
+				CE9FCD1A18F43017001378BE /* HomeController.h */,
+				CE9FCD1B18F43017001378BE /* HomeController.m */,
+			);
+			name = Home;
+			path = home;
+			sourceTree = "<group>";
+		};
 		CEDE241318C21CD50083B8DF = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +243,7 @@
 				CEDE245918C21E370083B8DF /* Data */,
 				CEDE245718C21E1C0083B8DF /* Model */,
 				CE95294218EF519E002A34B4 /* Interface */,
+				CE9FCD1618F42F8A001378BE /* Home */,
 				CEDE242E18C21CD50083B8DF /* AppDelegate.h */,
 				CEDE242F18C21CD50083B8DF /* AppDelegate.m */,
 				CEDE243A18C21CD50083B8DF /* Images.xcassets */,
@@ -491,8 +510,10 @@
 				CEE00EAE18DC82F700BDB9FF /* PostToTag.m in Sources */,
 				CEDE249218C232F10083B8DF /* AFHTTPSessionManager.m in Sources */,
 				CEDE249018C232F10083B8DF /* AFHTTPRequestOperation.m in Sources */,
+				CE9FCD1918F42FCB001378BE /* HomeInitController.m in Sources */,
 				CECF9DEB18DB166D00304B0B /* Image.m in Sources */,
 				CEDE247B18C232E90083B8DF /* FMResultSet.m in Sources */,
+				CE9FCD1C18F43017001378BE /* HomeController.m in Sources */,
 				CE1292C118E06B7700761726 /* User.m in Sources */,
 				CEDE249418C232F10083B8DF /* AFSecurityPolicy.m in Sources */,
 				CEDE247918C232E90083B8DF /* FMDatabasePool.m in Sources */,

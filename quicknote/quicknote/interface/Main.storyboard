@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="141" y="-125"/>
         </scene>
-        <!--View Controller - Notes-->
+        <!--Home Controller - Notes-->
         <scene sceneID="RHb-gz-K6Q">
             <objects>
-                <viewController id="IXS-jJ-M64" sceneMemberID="viewController">
+                <viewController id="IXS-jJ-M64" customClass="HomeController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lQi-gi-iMa"/>
                         <viewControllerLayoutGuide type="bottom" id="EZb-7f-WGi"/>
@@ -55,7 +55,7 @@
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="T8Y-bL-mFw"/>
                                     <barButtonItem style="plain" id="lIb-e2-Vki">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Gm-RV-v0u">
+                                        <button key="customView" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Gm-RV-v0u">
                                             <rect key="frame" x="123" y="0.0" width="73" height="49"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button">
@@ -65,7 +65,7 @@
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="i56-95-Tu4"/>
                                     <barButtonItem style="plain" id="lOd-S8-kcd">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mx0-kp-Xzq">
+                                        <button key="customView" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mx0-kp-Xzq">
                                             <rect key="frame" x="254" y="0.0" width="50" height="49"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button">
@@ -88,6 +88,13 @@
                     <navigationItem key="navigationItem" title="Notes" id="taY-3e-3EC">
                         <barButtonItem key="rightBarButtonItem" title="Setting" id="QQ0-0s-NhO"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bottomBar" destination="Q2Y-7b-OYE" id="AYf-sA-PJF"/>
+                        <outlet property="tableView" destination="i7Q-QP-ZQr" id="vdf-lB-cpG"/>
+                        <outletCollection property="bottomBarButtonCollection" destination="Mx0-kp-Xzq" id="frY-Bi-v1v"/>
+                        <outletCollection property="bottomBarButtonCollection" destination="Uor-a9-Yci" id="Anp-9L-iiW"/>
+                        <outletCollection property="bottomBarButtonCollection" destination="9Gm-RV-v0u" id="Hm2-eU-MuU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dZ-1f-qNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
