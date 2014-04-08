@@ -10,6 +10,7 @@
 		CE1292C118E06B7700761726 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1292C018E06B7700761726 /* User.m */; };
 		CE1C0C8E18D47A6A004394A5 /* develop in Resources */ = {isa = PBXBuildFile; fileRef = CE1C0C8D18D47A6A004394A5 /* develop */; };
 		CE1C0C9018D48C58004394A5 /* quicknoteTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1C0C8F18D48C58004394A5 /* quicknoteTests2.m */; };
+		CE1ECB5A18F4723300A7184D /* AddController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1ECB5918F4723300A7184D /* AddController.m */; };
 		CE35EA2718D37FC700BC6FC6 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35EA2618D37FC700BC6FC6 /* Tag.m */; };
 		CE35EA2A18D37FD800BC6FC6 /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35EA2918D37FD800BC6FC6 /* Mark.m */; };
 		CE95294418EF52C4002A34B4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE95294318EF52C4002A34B4 /* Home.storyboard */; };
@@ -74,6 +75,8 @@
 		CE1292C018E06B7700761726 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		CE1C0C8D18D47A6A004394A5 /* develop */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = develop; sourceTree = "<group>"; };
 		CE1C0C8F18D48C58004394A5 /* quicknoteTests2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = quicknoteTests2.m; sourceTree = "<group>"; };
+		CE1ECB5818F4723300A7184D /* AddController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddController.h; sourceTree = "<group>"; };
+		CE1ECB5918F4723300A7184D /* AddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddController.m; sourceTree = "<group>"; };
 		CE35EA2518D37FC700BC6FC6 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
 		CE35EA2618D37FC700BC6FC6 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		CE35EA2818D37FD800BC6FC6 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
@@ -182,6 +185,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1ECB5718F471FC00A7184D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				CE1ECB5818F4723300A7184D /* AddController.h */,
+				CE1ECB5918F4723300A7184D /* AddController.m */,
+			);
+			name = Add;
+			path = add;
+			sourceTree = "<group>";
+		};
 		CE95294218EF519E002A34B4 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +260,7 @@
 				CEDE245718C21E1C0083B8DF /* Model */,
 				CE95294218EF519E002A34B4 /* Interface */,
 				CE9FCD1618F42F8A001378BE /* Home */,
+				CE1ECB5718F471FC00A7184D /* Add */,
 				CEDE242E18C21CD50083B8DF /* AppDelegate.h */,
 				CEDE242F18C21CD50083B8DF /* AppDelegate.m */,
 				CEDE243A18C21CD50083B8DF /* Images.xcassets */,
@@ -525,6 +539,7 @@
 				CEE00EB418DC831600BDB9FF /* PostToImage.m in Sources */,
 				CEDE249318C232F10083B8DF /* AFNetworkReachabilityManager.m in Sources */,
 				CEDE249818C232F10083B8DF /* AFURLSessionManager.m in Sources */,
+				CE1ECB5A18F4723300A7184D /* AddController.m in Sources */,
 				CEDE246718C231EF0083B8DF /* Model.m in Sources */,
 				CEE00EB118DC830600BDB9FF /* PostToCategory.m in Sources */,
 				CEDE246A18C232570083B8DF /* DiskCache.m in Sources */,
