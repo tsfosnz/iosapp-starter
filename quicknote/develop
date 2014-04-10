@@ -12,6 +12,12 @@ We know for some app, it had equal important view for data....
 
 But this app, I think we only have one view for data....
 
+2. More than a note app?
+
+dynamically define field and value
+
+field name : value (type : integer, decimal, text, note)
+
 
 
 

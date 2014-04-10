@@ -59,6 +59,7 @@ CREATE TABLE "post" (
     "name" TEXT NOT NULL DEFAULT '' ,
     "name_index" TEXT NOT NULL DEFAULT '' ,
     "description" TEXT NOT NULL DEFAULT '' ,
+    "price" TEXT NOT NULL DEFAULT '',
     "location" TEXT NOT NULL DEFAULT '' ,
     "address" TEXT NOT NULL DEFAULT '' ,
     "longitude" TEXT NOT NULL DEFAULT '' ,
@@ -87,6 +88,16 @@ DROP TABLE IF EXISTS "post_to_category";
 CREATE TABLE "post_to_category" (
     "post_id" INTEGER NOT NULL  DEFAULT 0,
     "category_id" INTEGER NOT NULL  DEFAULT 0);
+    
+DROP TABLE IF EXISTS "postmeta";
+CREATE TABLE "post_to_meta" (
+    "postmeta_id" INTEGER PRIMARY KEY  NOT NULL,
+    "post_id" INTEGER NOT NULL DEFAULT '0',
+    "name" TEXT NOT NULL DEFAULT '',
+    "type" TEXT NOT NULL DEFAULT '' ,
+    "value" TEXT NOT NULL DEFAULT '',
+    "sort" INTEGER NOT NULL DEFAULT '0'
+    );
 
 DROP TABLE IF EXISTS "user";
 CREATE TABLE "user" (
