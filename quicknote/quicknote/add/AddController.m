@@ -7,6 +7,7 @@
 //
 
 #import "AddController.h"
+#import "Post.h"
 
 @interface AddController ()
 
@@ -32,6 +33,14 @@
 - (void)setup
 {
     self.navigationItem.title = @"New note";
+    
+    self.layoutDefinition = [[NSMutableDictionary alloc] init];
+    
+    // we get layout definition dynamically from database
+    Post *post = [[Post alloc] init];
+    [post layoutAttributesInAdd:self.layoutDefinition];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,6 +48,33 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//===========================
+// 
+//===========================
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    
+    return 3;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    return nil;
+}
+
 
 /*
 #pragma mark - Navigation

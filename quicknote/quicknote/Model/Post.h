@@ -65,4 +65,6 @@
 
 - (BOOL)updateTag:(NSArray *)tagArray;
 
+- (BOOL)layoutAttributesInAdd:(NSMutableDictionary *)layout;
+
 @end

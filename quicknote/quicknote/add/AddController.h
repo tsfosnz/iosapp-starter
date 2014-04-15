@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddController : UIViewController
+@class Post;
+
+@interface AddController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, retain) NSMutableDictionary *layoutDefinition;
 
 @end

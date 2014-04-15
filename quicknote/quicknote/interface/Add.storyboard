@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="UyT-5G-xL9">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="UyT-5G-xL9" customClass="AddHorizontalImagesCell">
                                         <rect key="frame" x="0.0" y="86" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UyT-5G-xL9" id="dV2-KE-ebb">
@@ -56,8 +56,13 @@
                                                 </scrollView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outletCollection property="buttonCollection" destination="CZX-zM-4Vk" collectionClass="NSMutableArray" id="UzQ-7y-ba7"/>
+                                            <outletCollection property="buttonCollection" destination="8hZ-ro-nmz" collectionClass="NSMutableArray" id="6wd-BV-qlr"/>
+                                            <outletCollection property="buttonCollection" destination="blu-WF-grk" collectionClass="NSMutableArray" id="ayQ-nQ-ipc"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1qA-RP-1sK">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1qA-RP-1sK" customClass="AddTextInputCell">
                                         <rect key="frame" x="0.0" y="176" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1qA-RP-1sK" id="KEa-Sh-XTs">
@@ -73,8 +78,11 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="textValue" destination="vUQ-dj-ZXF" id="NHx-uZ-Ch4"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="1VK-Va-JWY">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="1VK-Va-JWY" customClass="AddNoteInputCell">
                                         <rect key="frame" x="0.0" y="220" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1VK-Va-JWY" id="tgk-LG-BGt">
@@ -91,6 +99,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="textNote" destination="q5X-rI-15q" id="MZ3-cH-kYY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

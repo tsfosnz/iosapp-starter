@@ -15,6 +15,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[self alloc] init];
+        instance.userArray = [[NSMutableArray alloc] init];
     });
     return instance;
 }

@@ -21,6 +21,9 @@
 		CE9FD64218CEDD680039667F /* sql.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9FD64118CEDD680039667F /* sql.txt */; };
 		CE9FD64418CEE5650039667F /* local.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CE9FD64318CEE5650039667F /* local.sqlite */; };
 		CE9FD64718CEE63C0039667F /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FD64618CEE63C0039667F /* Post.m */; };
+		CEA1E6D618FD7563003AB9B1 /* AddHorizontalImagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E6D518FD7563003AB9B1 /* AddHorizontalImagesCell.m */; };
+		CEA1E6D918FD7614003AB9B1 /* AddTextInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E6D818FD7614003AB9B1 /* AddTextInputCell.m */; };
+		CEA1E6DC18FD7625003AB9B1 /* AddNoteInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E6DB18FD7625003AB9B1 /* AddNoteInputCell.m */; };
 		CECF9DEB18DB166D00304B0B /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = CECF9DEA18DB166D00304B0B /* Image.m */; };
 		CEDE242018C21CD50083B8DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE241F18C21CD50083B8DF /* Foundation.framework */; };
 		CEDE242218C21CD50083B8DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE242118C21CD50083B8DF /* CoreGraphics.framework */; };
@@ -92,6 +95,12 @@
 		CE9FD64318CEE5650039667F /* local.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = local.sqlite; sourceTree = "<group>"; };
 		CE9FD64518CEE63C0039667F /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		CE9FD64618CEE63C0039667F /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		CEA1E6D418FD7563003AB9B1 /* AddHorizontalImagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddHorizontalImagesCell.h; sourceTree = "<group>"; };
+		CEA1E6D518FD7563003AB9B1 /* AddHorizontalImagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddHorizontalImagesCell.m; sourceTree = "<group>"; };
+		CEA1E6D718FD7614003AB9B1 /* AddTextInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTextInputCell.h; sourceTree = "<group>"; };
+		CEA1E6D818FD7614003AB9B1 /* AddTextInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTextInputCell.m; sourceTree = "<group>"; };
+		CEA1E6DA18FD7625003AB9B1 /* AddNoteInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteInputCell.h; sourceTree = "<group>"; };
+		CEA1E6DB18FD7625003AB9B1 /* AddNoteInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteInputCell.m; sourceTree = "<group>"; };
 		CECF9DE918DB166D00304B0B /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
 		CECF9DEA18DB166D00304B0B /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		CEDE241C18C21CD50083B8DF /* quicknote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quicknote.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +197,7 @@
 		CE1ECB5718F471FC00A7184D /* Add */ = {
 			isa = PBXGroup;
 			children = (
+				CEA1E6D318FD74A7003AB9B1 /* View */,
 				CE1ECB5818F4723300A7184D /* AddController.h */,
 				CE1ECB5918F4723300A7184D /* AddController.m */,
 			);
@@ -215,6 +225,19 @@
 			);
 			name = Home;
 			path = home;
+			sourceTree = "<group>";
+		};
+		CEA1E6D318FD74A7003AB9B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1E6D418FD7563003AB9B1 /* AddHorizontalImagesCell.h */,
+				CEA1E6D518FD7563003AB9B1 /* AddHorizontalImagesCell.m */,
+				CEA1E6D718FD7614003AB9B1 /* AddTextInputCell.h */,
+				CEA1E6D818FD7614003AB9B1 /* AddTextInputCell.m */,
+				CEA1E6DA18FD7625003AB9B1 /* AddNoteInputCell.h */,
+				CEA1E6DB18FD7625003AB9B1 /* AddNoteInputCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CEDE241318C21CD50083B8DF = {
@@ -525,6 +548,7 @@
 				CE35EA2718D37FC700BC6FC6 /* Tag.m in Sources */,
 				CEDE249618C232F10083B8DF /* AFURLRequestSerialization.m in Sources */,
 				CEDE247A18C232E90083B8DF /* FMDatabaseQueue.m in Sources */,
+				CEA1E6DC18FD7625003AB9B1 /* AddNoteInputCell.m in Sources */,
 				CEE00EAE18DC82F700BDB9FF /* PostToTag.m in Sources */,
 				CEDE249218C232F10083B8DF /* AFHTTPSessionManager.m in Sources */,
 				CEDE249018C232F10083B8DF /* AFHTTPRequestOperation.m in Sources */,
@@ -539,12 +563,14 @@
 				CEE00EB418DC831600BDB9FF /* PostToImage.m in Sources */,
 				CEDE249318C232F10083B8DF /* AFNetworkReachabilityManager.m in Sources */,
 				CEDE249818C232F10083B8DF /* AFURLSessionManager.m in Sources */,
+				CEA1E6D918FD7614003AB9B1 /* AddTextInputCell.m in Sources */,
 				CE1ECB5A18F4723300A7184D /* AddController.m in Sources */,
 				CEDE246718C231EF0083B8DF /* Model.m in Sources */,
 				CEE00EB118DC830600BDB9FF /* PostToCategory.m in Sources */,
 				CEDE246A18C232570083B8DF /* DiskCache.m in Sources */,
 				CEDE246518C231EF0083B8DF /* AppConfig.m in Sources */,
 				CEDE242C18C21CD50083B8DF /* main.m in Sources */,
+				CEA1E6D618FD7563003AB9B1 /* AddHorizontalImagesCell.m in Sources */,
 				CEDE249718C232F10083B8DF /* AFURLResponseSerialization.m in Sources */,
 				CEDE247818C232E90083B8DF /* FMDatabaseAdditions.m in Sources */,
 				CE35EA2A18D37FD800BC6FC6 /* Mark.m in Sources */,

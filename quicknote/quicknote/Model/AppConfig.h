@@ -20,6 +20,9 @@
 
 @property (atomic, retain) NSString *dbPath;
 
+// we have supported mutli-users, also switch data by them
+@property (atomic, retain) NSMutableArray *userArray;
+
 + (id)getInstance;
 
 @end
