@@ -35,7 +35,21 @@
     for (UIButton *button in self.bottomBarButtonCollection) {
         NSLog(@"button.tag = %ld", (long)button.tag);
         [button setTitle:[buttonNameArray objectAtIndex:button.tag] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(onToolbarButtonTouchDown:) forControlEvents:UIControlEventTouchDown];
     }
+}
+
+- (IBAction)onToolbarButtonTouchDown:(id)sender
+{
+    
+    UIButton *button = (UIButton *)sender;
+    
+    if (button.tag == 1) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Add" bundle:nil];
+        UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"add_home"];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning

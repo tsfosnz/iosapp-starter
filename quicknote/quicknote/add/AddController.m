@@ -26,7 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setup];
+}
+
+- (void)setup
+{
+    self.navigationItem.title = @"New note";
 }
 
 - (void)didReceiveMemoryWarning
