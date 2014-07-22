@@ -1,13 +1,8 @@
-ios_quicknote
+ios_base
 =============
 
-A smaller and smarter quick note app
+Will be a base-bone of an app starter
 
-design
-========
-
-1. UI
-2. Modular UI Element
 
 		
 
