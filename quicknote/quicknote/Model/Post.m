@@ -328,7 +328,6 @@
     // name, value type
     
     NSString *sql = @"SELECT * FROM postmeta WHERE postmeta ";
-    self.db executeQuery:<#(NSString *), ...#>
     
     return YES;
 }
