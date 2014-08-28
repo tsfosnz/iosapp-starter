@@ -12,7 +12,7 @@ Many social network app will require the same functionality on it, and it will h
 
 Basically all these kind of app will have similar functionality and architecture :
 
-Authentication module 
+<h3>Authentication module</h3> 
 
 you will have to create the authentication module for current user, the user type could be guest, logged-in, commonly the guest will be able to view those public pages and data, and for registered user who is logged in the app, he will have full functionality of their own.
 
@@ -20,7 +20,7 @@ Basically, the app will deal with two situation of the logged in user, when the 
 
 This process could be complex, as many apps today added Social Network API to access FB, Twitter, Google+ or even more, and the workflow will depend on these SDK too.
 
-Model + Network
+<h3>Model + Network</h3>
 	
 After the user logged in, they will be able to view all data, and this time, the app will have to fetch the data and for later use, they will save these data in local storage, think about an app for example, like twitter, and for each tweet, it will have 1000 bytes, and if the user have more than 10million tweets, and that will have 1,000,000 * 1000 = 10,000 MB data in total.
 
@@ -46,17 +46,17 @@ Model
 	property A
 	property B
 	
-Model Networking <Category>
+Model Networking (Category)
 
 	method A
 	method B
 
-Model Database <Category>
+Model Database (Category)
 
 	method A
 	method B
 
-Cache (Disk + Memory)
+<h3>Cache (Disk + Memory)</h3>
 
 Frankly speaking , iOS device is very quick to load image from Disk, so memory cache almost not necessary, well maybe somebody want to keep the image in the memory, but I wouldn’t…
 
@@ -71,7 +71,7 @@ To think about the cache is a circling queue, and all items in the queue has its
 Also knowing the cache size and controlling the number of resources is also required. If there are too many small pieces of files in the disk, well obviously it will slow down the app, or even the system, to think about there are 1,000,000 files in the same folder, and when system to build the share mapping to it, it will occupy a lot memory.
 
 
-Render engine (Image + Text)
+<h3>Render engine (Image + Text)</h3>
 
 The render engine, sometimes is critical, for those text, we don’t really worried about, usually it’s not a large block of data and won’t occupy a lot memory, but image is quite different!!
 
@@ -95,11 +95,11 @@ From the size of the image, we will get how many pieces we will need from this I
 To organize Cells into this situation, is not easy to do, as the List will treat cell as the whole complete one unit to release and re-render.
 
 
-Tweet engine (Cache + Sync)	
+<h3>Tweet engine (Cache + Sync)</h3>	
 
 We may think about tweet very little, but we should know that the network is not always available, so save the tweet into the cache or local storage, and then sync to the server, will be the basic way to do it.
 
-Server Performance
+<h3>Server Performance</h3>
 
 App will consume the resource from server, but we almost can’t calculate it precisely, if we can calculate the consumption of each app, we will have all those useful information to design and boost the server performance.
 
