@@ -253,6 +253,15 @@
 			path = Boot;
 			sourceTree = "<group>";
 		};
+		CE642A2819AEF81B004FD9EF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CECA11CD197E8BA3004EBFD5 /* Add.storyboard */,
+			);
+			name = UI;
+			path = ../../IPhone/NewNote/UI;
+			sourceTree = "<group>";
+		};
 		CECA11C3197E8AED004EBFD5 /* IPhone */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,28 +289,27 @@
 				CECA11C9197E8B62004EBFD5 /* HomeInitController.m */,
 			);
 			name = Home;
-			path = home;
+			path = ../IPhone/Home;
 			sourceTree = "<group>";
 		};
 		CECA11CC197E8B8C004EBFD5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CECA11CD197E8BA3004EBFD5 /* Add.storyboard */,
 				CECA11CE197E8BA3004EBFD5 /* Home.storyboard */,
 			);
-			name = UI;
-			path = ui;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		CECA11D1197E8BBF004EBFD5 /* NewNote */ = {
 			isa = PBXGroup;
 			children = (
+				CE642A2819AEF81B004FD9EF /* UI */,
 				CECA11D5197E8BE9004EBFD5 /* View */,
 				CECA11D2197E8BE1004EBFD5 /* AddController.h */,
 				CECA11D3197E8BE1004EBFD5 /* AddController.m */,
 			);
 			name = NewNote;
-			path = newnote;
+			path = ../IPhone/NewNote;
 			sourceTree = "<group>";
 		};
 		CECA11D5197E8BE9004EBFD5 /* View */ = {
@@ -315,7 +323,7 @@
 				CECA11DB197E8C00004EBFD5 /* AddTextInputCell.m */,
 			);
 			name = View;
-			path = view;
+			path = ../../IPhone/NewNote/View;
 			sourceTree = "<group>";
 		};
 		CEDE241318C21CD50083B8DF = {
