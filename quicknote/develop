@@ -1,29 +1,7 @@
 DESIGN
 =========
 
-1. Dynamical layout parameters
 
-To deal with different data type and requirement, we will have this feature
- that user can define the data what they need to save.
- 
-For instance, if it's to record daily living expense, you can have price, 
-quanlity, image and so on for it. If you are going to record your daliy event, 
-surly you will need another set of data type.
-
-Layout is to define what field will be visible for current post, so it could be 
-
-1.  image
-2.  text
-3.  note
-4.  int
-5.  decimal
-6.  date
-7.  date_range
-8.  selection
-9.  bit group => radio
-10. bit => checkbox
-
-user 1:n post 1:n type 1:1 layout
 
 
 
