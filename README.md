@@ -1,7 +1,9 @@
-iOS app backbone
-================
 
-Architecture of a Social Network App
+I can't stop thinking about the typical mobile app architecture, even people have their own style in programming, let's see there always one of them is the best, and I am looking forward that one, to achieve high efficiency and performance.
+
+
+Architecture of average Social Network App
+==========================================
 
 Many social network app will require the same functionality on it, and it will have similar architecture :
 
