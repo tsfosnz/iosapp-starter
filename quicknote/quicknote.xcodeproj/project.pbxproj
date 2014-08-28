@@ -12,6 +12,7 @@
 		CE1C0C9018D48C58004394A5 /* quicknoteTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1C0C8F18D48C58004394A5 /* quicknoteTests2.m */; };
 		CE35EA2718D37FC700BC6FC6 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35EA2618D37FC700BC6FC6 /* Tag.m */; };
 		CE35EA2A18D37FD800BC6FC6 /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35EA2918D37FD800BC6FC6 /* Mark.m */; };
+		CE642A2419AEF58C004FD9EF /* User+Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = CE642A2319AEF58C004FD9EF /* User+Authentication.m */; };
 		CE95294918EF5400002A34B4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE95294818EF5400002A34B4 /* MapKit.framework */; };
 		CE9FD64218CEDD680039667F /* sql.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9FD64118CEDD680039667F /* sql.txt */; };
 		CE9FD64418CEE5650039667F /* local.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CE9FD64318CEE5650039667F /* local.sqlite */; };
@@ -57,7 +58,7 @@
 		CEDE249718C232F10083B8DF /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE248D18C232F10083B8DF /* AFURLResponseSerialization.m */; };
 		CEDE249818C232F10083B8DF /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE248F18C232F10083B8DF /* AFURLSessionManager.m */; };
 		CEDE249A18C233420083B8DF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE249918C233420083B8DF /* libsqlite3.dylib */; };
-		CEE00EAB18DC7F9E00BDB9FF /* CategoryM.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE00EAA18DC7F9E00BDB9FF /* CategoryM.m */; };
+		CEE00EAB18DC7F9E00BDB9FF /* CategoryE.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE00EAA18DC7F9E00BDB9FF /* CategoryE.m */; };
 		CEE00EAE18DC82F700BDB9FF /* PostToTag.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE00EAD18DC82F700BDB9FF /* PostToTag.m */; };
 		CEE00EB118DC830600BDB9FF /* PostToCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE00EB018DC830600BDB9FF /* PostToCategory.m */; };
 		CEE00EB418DC831600BDB9FF /* PostToImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE00EB318DC831600BDB9FF /* PostToImage.m */; };
@@ -82,6 +83,8 @@
 		CE35EA2618D37FC700BC6FC6 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		CE35EA2818D37FD800BC6FC6 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		CE35EA2918D37FD800BC6FC6 /* Mark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mark.m; sourceTree = "<group>"; };
+		CE642A2219AEF58C004FD9EF /* User+Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+Authentication.h"; sourceTree = "<group>"; };
+		CE642A2319AEF58C004FD9EF /* User+Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+Authentication.m"; sourceTree = "<group>"; };
 		CE95294818EF5400002A34B4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CE9FD64118CEDD680039667F /* sql.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sql.txt; sourceTree = "<group>"; };
 		CE9FD64318CEE5650039667F /* local.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = local.sqlite; sourceTree = "<group>"; };
@@ -158,8 +161,8 @@
 		CEDE248E18C232F10083B8DF /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		CEDE248F18C232F10083B8DF /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		CEDE249918C233420083B8DF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		CEE00EA918DC7F9E00BDB9FF /* CategoryM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryM.h; sourceTree = "<group>"; };
-		CEE00EAA18DC7F9E00BDB9FF /* CategoryM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryM.m; sourceTree = "<group>"; };
+		CEE00EA918DC7F9E00BDB9FF /* CategoryE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryE.h; sourceTree = "<group>"; };
+		CEE00EAA18DC7F9E00BDB9FF /* CategoryE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryE.m; sourceTree = "<group>"; };
 		CEE00EAC18DC82F700BDB9FF /* PostToTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToTag.h; sourceTree = "<group>"; };
 		CEE00EAD18DC82F700BDB9FF /* PostToTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToTag.m; sourceTree = "<group>"; };
 		CEE00EAF18DC830600BDB9FF /* PostToCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToCategory.h; sourceTree = "<group>"; };
@@ -194,6 +197,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE642A2019AEF46F004FD9EF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CE1292BF18E06B7700761726 /* User.h */,
+				CE1292C018E06B7700761726 /* User.m */,
+				CEE00EA918DC7F9E00BDB9FF /* CategoryE.h */,
+				CEE00EAA18DC7F9E00BDB9FF /* CategoryE.m */,
+				CECF9DE918DB166D00304B0B /* Image.h */,
+				CECF9DEA18DB166D00304B0B /* Image.m */,
+				CE35EA2518D37FC700BC6FC6 /* Tag.h */,
+				CE35EA2618D37FC700BC6FC6 /* Tag.m */,
+				CE35EA2818D37FD800BC6FC6 /* Mark.h */,
+				CE35EA2918D37FD800BC6FC6 /* Mark.m */,
+				CE9FD64518CEE63C0039667F /* Post.h */,
+				CE9FD64618CEE63C0039667F /* Post.m */,
+				CEE00EAC18DC82F700BDB9FF /* PostToTag.h */,
+				CEE00EAD18DC82F700BDB9FF /* PostToTag.m */,
+				CEE00EB218DC831600BDB9FF /* PostToImage.h */,
+				CEE00EB318DC831600BDB9FF /* PostToImage.m */,
+				CEE00EAF18DC830600BDB9FF /* PostToCategory.h */,
+				CEE00EB018DC830600BDB9FF /* PostToCategory.m */,
+			);
+			name = Entity;
+			path = ../Model/Entity;
+			sourceTree = "<group>";
+		};
+		CE642A2119AEF567004FD9EF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE642A2219AEF58C004FD9EF /* User+Authentication.h */,
+				CE642A2319AEF58C004FD9EF /* User+Authentication.m */,
+			);
+			name = Network;
+			path = ../Model/Network;
+			sourceTree = "<group>";
+		};
+		CE642A2619AEF63F004FD9EF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE246818C232570083B8DF /* DiskCache.h */,
+				CEDE246918C232570083B8DF /* DiskCache.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CE642A2719AEF67C004FD9EF /* Boot */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE245E18C231EF0083B8DF /* AppConfig.h */,
+				CEDE245F18C231EF0083B8DF /* AppConfig.m */,
+				CEDE246018C231EF0083B8DF /* Bootstrap.h */,
+				CEDE246118C231EF0083B8DF /* Bootstrap.m */,
+			);
+			path = Boot;
+			sourceTree = "<group>";
+		};
 		CECA11C3197E8AED004EBFD5 /* IPhone */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,12 +355,13 @@
 		CEDE242518C21CD50083B8DF /* quicknote */ = {
 			isa = PBXGroup;
 			children = (
-				CECA11C4197E8B0D004EBFD5 /* IPAD */,
-				CECA11C3197E8AED004EBFD5 /* IPhone */,
-				CEE00EA518DC7EF900BDB9FF /* Image */,
 				CEDE246B18C232CB0083B8DF /* Lib */,
 				CEDE245918C21E370083B8DF /* Data */,
+				CE642A2619AEF63F004FD9EF /* Utils */,
 				CEDE245718C21E1C0083B8DF /* Model */,
+				CE642A2719AEF67C004FD9EF /* Boot */,
+				CECA11C4197E8B0D004EBFD5 /* IPAD */,
+				CECA11C3197E8AED004EBFD5 /* IPhone */,
 				CEDE242E18C21CD50083B8DF /* AppDelegate.h */,
 				CEDE242F18C21CD50083B8DF /* AppDelegate.m */,
 				CEDE243A18C21CD50083B8DF /* Images.xcassets */,
@@ -343,32 +403,10 @@
 		CEDE245718C21E1C0083B8DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CEDE245E18C231EF0083B8DF /* AppConfig.h */,
-				CEDE245F18C231EF0083B8DF /* AppConfig.m */,
-				CEDE246018C231EF0083B8DF /* Bootstrap.h */,
-				CEDE246118C231EF0083B8DF /* Bootstrap.m */,
-				CEDE246818C232570083B8DF /* DiskCache.h */,
-				CEDE246918C232570083B8DF /* DiskCache.m */,
+				CE642A2119AEF567004FD9EF /* Network */,
+				CE642A2019AEF46F004FD9EF /* Entity */,
 				CEDE246318C231EF0083B8DF /* Model.h */,
 				CEDE246418C231EF0083B8DF /* Model.m */,
-				CEE00EA918DC7F9E00BDB9FF /* CategoryM.h */,
-				CEE00EAA18DC7F9E00BDB9FF /* CategoryM.m */,
-				CE9FD64518CEE63C0039667F /* Post.h */,
-				CE9FD64618CEE63C0039667F /* Post.m */,
-				CECF9DE918DB166D00304B0B /* Image.h */,
-				CECF9DEA18DB166D00304B0B /* Image.m */,
-				CE35EA2518D37FC700BC6FC6 /* Tag.h */,
-				CE35EA2618D37FC700BC6FC6 /* Tag.m */,
-				CE35EA2818D37FD800BC6FC6 /* Mark.h */,
-				CE35EA2918D37FD800BC6FC6 /* Mark.m */,
-				CEE00EAC18DC82F700BDB9FF /* PostToTag.h */,
-				CEE00EAD18DC82F700BDB9FF /* PostToTag.m */,
-				CEE00EB218DC831600BDB9FF /* PostToImage.h */,
-				CEE00EB318DC831600BDB9FF /* PostToImage.m */,
-				CEE00EAF18DC830600BDB9FF /* PostToCategory.h */,
-				CEE00EB018DC830600BDB9FF /* PostToCategory.m */,
-				CE1292BF18E06B7700761726 /* User.h */,
-				CE1292C018E06B7700761726 /* User.m */,
 			);
 			name = Model;
 			path = model;
@@ -381,7 +419,7 @@
 				CE9FD64118CEDD680039667F /* sql.txt */,
 			);
 			name = Data;
-			path = ../data;
+			path = ../Data;
 			sourceTree = "<group>";
 		};
 		CEDE246B18C232CB0083B8DF /* Lib */ = {
@@ -391,7 +429,7 @@
 				CEDE246C18C232E90083B8DF /* fmdb */,
 			);
 			name = Lib;
-			path = ../lib;
+			path = ../Lib;
 			sourceTree = "<group>";
 		};
 		CEDE246C18C232E90083B8DF /* fmdb */ = {
@@ -435,14 +473,6 @@
 				CEDE248F18C232F10083B8DF /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		CEE00EA518DC7EF900BDB9FF /* Image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Image;
-			path = ../image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,7 +589,7 @@
 			files = (
 				CEDE243018C21CD50083B8DF /* AppDelegate.m in Sources */,
 				CEDE249118C232F10083B8DF /* AFHTTPRequestOperationManager.m in Sources */,
-				CEE00EAB18DC7F9E00BDB9FF /* CategoryM.m in Sources */,
+				CEE00EAB18DC7F9E00BDB9FF /* CategoryE.m in Sources */,
 				CECA11DC197E8C00004EBFD5 /* AddHorizontalImagesCell.m in Sources */,
 				CEDE246618C231EF0083B8DF /* Bootstrap.m in Sources */,
 				CEDE249518C232F10083B8DF /* AFURLConnectionOperation.m in Sources */,
@@ -587,6 +617,7 @@
 				CEDE246A18C232570083B8DF /* DiskCache.m in Sources */,
 				CEDE246518C231EF0083B8DF /* AppConfig.m in Sources */,
 				CEDE242C18C21CD50083B8DF /* main.m in Sources */,
+				CE642A2419AEF58C004FD9EF /* User+Authentication.m in Sources */,
 				CECA11D4197E8BE1004EBFD5 /* AddController.m in Sources */,
 				CEDE249718C232F10083B8DF /* AFURLResponseSerialization.m in Sources */,
 				CEDE247818C232E90083B8DF /* FMDatabaseAdditions.m in Sources */,

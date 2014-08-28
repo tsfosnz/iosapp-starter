@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 hellomaya. All rights reserved.
 //
 
-#import "CategoryM.h"
+#import "CategoryE.h"
 
-@implementation CategoryM
+@implementation CategoryE
 - (id)init
 {
     
@@ -37,7 +37,7 @@
     
     while ([result next]) {
         
-        CategoryM *category = [[CategoryM alloc] init];
+        CategoryE *category = [[CategoryE alloc] init];
         
         category.categoryId = [result intForColumn:@"category_id"];
         category.name = [result stringForColumn:@"name"];

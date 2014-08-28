@@ -9,7 +9,7 @@
 #import "Post.h"
 #import "Image.h"
 #import "Tag.h"
-#import "CategoryM.h"
+#import "CategoryE.h"
 #import "PostToCategory.h"
 #import "PostToImage.h"
 #import "PostToTag.h"
@@ -30,7 +30,7 @@
         
         self.tableTag = [Tag table];
         self.tableImage = [Image table];
-        self.tableCategory = [CategoryM table];
+        self.tableCategory = [CategoryE table];
         
 #ifdef USE_DICT
         self.fieldDictionary = [[NSMutableDictionary alloc] init];
