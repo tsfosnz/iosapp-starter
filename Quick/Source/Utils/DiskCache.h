@@ -17,8 +17,5 @@
 - (void)initCache;
 - (void)createDirectory:(NSString *)directoryName atFilePath:(NSString *)filePath;
 
-- (NSString *)saveImage:(UIImage *)image fileName: (NSString *)fileName;
-- (NSString *)getImagePath:(NSString *)fileName;
-- (UIImage *)getImage:(NSString *)fileName;
 
 @end
