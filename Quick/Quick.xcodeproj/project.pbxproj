@@ -36,7 +36,6 @@
 		CEDE244418C21CD50083B8DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE242318C21CD50083B8DF /* UIKit.framework */; };
 		CEDE244C18C21CD50083B8DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEDE244A18C21CD50083B8DF /* InfoPlist.strings */; };
 		CEDE244E18C21CD50083B8DF /* quicknoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE244D18C21CD50083B8DF /* quicknoteTests.m */; };
-		CEDE245C18C21E920083B8DF /* readme in Resources */ = {isa = PBXBuildFile; fileRef = CEDE245B18C21E920083B8DF /* readme */; };
 		CEDE246518C231EF0083B8DF /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE245F18C231EF0083B8DF /* AppConfig.m */; };
 		CEDE246618C231EF0083B8DF /* Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE246118C231EF0083B8DF /* Bootstrap.m */; };
 		CEDE246718C231EF0083B8DF /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE246418C231EF0083B8DF /* Model.m */; };
@@ -99,7 +98,6 @@
 		CEDE244918C21CD50083B8DF /* QuickTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickTests-Info.plist"; sourceTree = "<group>"; };
 		CEDE244B18C21CD50083B8DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEDE244D18C21CD50083B8DF /* quicknoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quicknoteTests.m; sourceTree = "<group>"; };
-		CEDE245B18C21E920083B8DF /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 		CEDE245E18C231EF0083B8DF /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		CEDE245F18C231EF0083B8DF /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
 		CEDE246018C231EF0083B8DF /* Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bootstrap.h; sourceTree = "<group>"; };
@@ -267,7 +265,6 @@
 		CEDE241318C21CD50083B8DF = {
 			isa = PBXGroup;
 			children = (
-				CEDE245B18C21E920083B8DF /* readme */,
 				CEDE242518C21CD50083B8DF /* Source */,
 				CEDE244718C21CD50083B8DF /* Tests */,
 				CEDE241E18C21CD50083B8DF /* Frameworks */,
@@ -462,7 +459,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDE245C18C21E920083B8DF /* readme in Resources */,
 				CECA11D0197E8BA3004EBFD5 /* Home.storyboard in Resources */,
 				CE9FD64418CEE5650039667F /* local.sqlite in Resources */,
 				CEDE243B18C21CD50083B8DF /* Images.xcassets in Resources */,
