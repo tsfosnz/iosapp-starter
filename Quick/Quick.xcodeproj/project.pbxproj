@@ -160,6 +160,10 @@
 		CE642A2619AEF63F004FD9EF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CE7AC79519CD93E50039FAE4 /* MemoryCache.h */,
+				CE7AC79619CD93E50039FAE4 /* MemoryCache.m */,
+				CE7AC79819CD93F80039FAE4 /* NetworkCache.h */,
+				CE7AC79919CD93F80039FAE4 /* NetworkCache.m */,
 				CEDE246818C232570083B8DF /* DiskCache.h */,
 				CEDE246918C232570083B8DF /* DiskCache.m */,
 			);
@@ -184,18 +188,6 @@
 			);
 			name = UI;
 			path = ../../IPhone/NewNote/UI;
-			sourceTree = "<group>";
-		};
-		CE7AC79419CD8E2A0039FAE4 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				CE7AC79519CD93E50039FAE4 /* MemoryCache.h */,
-				CE7AC79619CD93E50039FAE4 /* MemoryCache.m */,
-				CE7AC79819CD93F80039FAE4 /* NetworkCache.h */,
-				CE7AC79919CD93F80039FAE4 /* NetworkCache.m */,
-			);
-			name = Utils;
-			path = ../Model/Utils;
 			sourceTree = "<group>";
 		};
 		CECA11C3197E8AED004EBFD5 /* IPhone */ = {
@@ -345,7 +337,6 @@
 		CEDE245718C21E1C0083B8DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CE7AC79419CD8E2A0039FAE4 /* Utils */,
 				CE642A2119AEF567004FD9EF /* Network */,
 				CE642A2019AEF46F004FD9EF /* Entity */,
 				CEDE246318C231EF0083B8DF /* Model.h */,
