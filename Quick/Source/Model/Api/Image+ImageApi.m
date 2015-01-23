@@ -10,9 +10,7 @@
 
 @implementation Image (ImageApi)
 
-- (BOOL)getLatest:(NSMutableArray *)imageArray
-          success:(void (^)(NSString *message))success
-          failure:(void (^)(NSString *message))failure;
+- (BOOL)getLatest:(NSMutableArray *)imageArray Complete:(void (^)(NSInteger status, NSString *message))complete;
 {
     
     NSMutableArray *tempImageArray = [[NSMutableArray alloc] init];
@@ -130,14 +128,8 @@
             
             AppConfig *config = [AppConfig getInstance];
             config.theme = [theme objectForKey:@"name"];
-            
-            
-            success(@"");
             return;
         }
-        
-        
-        failure([responseObject objectForKey:@"message"]);
         
         return;
         
@@ -145,7 +137,6 @@
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        failure(@"We have encoutered a request error, please try it later");
         
     }];
     
@@ -170,7 +161,7 @@
 
 //==================
 
-- (BOOL)getTopBrands:(NSMutableArray *)imageArray
+- (BOOL)getTopBrands:(NSMutableArray *)imageArray Complete:(void (^)(NSInteger status, NSString *message))complete;
 {
     
     NSMutableArray *tempImageArray = [[NSMutableArray alloc] init];
@@ -184,7 +175,6 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     [manager.requestSerializer setValue:token forHTTPHeaderField:@"X-AUTH-KEY"];
     
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     NSDictionary *parameters = @{@"user_uuid":@""};
     
     if (user.userUUID) {
@@ -197,7 +187,6 @@
     [manager POST:api parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSString *status = [(NSDictionary *)responseObject objectForKey:@"status"];
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         
         // NSLog(@"%@", responseObject);
         
@@ -297,8 +286,6 @@
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
         // NSLog(@"%@", [operation responseObject]);
         // NSLog(@"%@", error);
         
@@ -314,7 +301,7 @@
 // comment
 //=================================
 
-- (BOOL)addComment:(NSDictionary *)values
+- (BOOL)addComment:(NSDictionary *)values Complete:(void (^)(NSInteger status, NSString *message))complete;
 {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
@@ -340,14 +327,9 @@
         }
         
         
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
-        // NSLog(@"Error: %@", error);
-        
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         
         
     }];
@@ -356,7 +338,7 @@
     
 }
 
-- (BOOL)getComments:(NSMutableArray *)commentArray
+- (BOOL)getComments:(NSMutableArray *)commentArray Complete:(void (^)(NSInteger status, NSString *message))complete;
 {
     [commentArray removeAllObjects];
     
@@ -369,15 +351,12 @@
     [manager.requestSerializer setValue:token forHTTPHeaderField:@"X-AUTH-KEY"];
     
     
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-    
     NSDictionary *parameters = @{@"image_uuid":self.imageUUID};
     
     NSString *api = [NSString stringWithFormat:API_IMAGE_COMMENT_LIST, API_BASE_URL, API_BASE_VERSION];
     [manager POST:api parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSString *status = [(NSDictionary *)responseObject objectForKey:@"status"];
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         
         // NSLog(@"%@", responseObject);
         
@@ -436,7 +415,6 @@
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         
         // NSLog(@"%@", error);
         
@@ -451,12 +429,11 @@
 // brander
 //-=================================
 
-- (BOOL)addBrand:(NSDictionary *)values
+- (BOOL)addBrand:(NSDictionary *)values Complete:(void (^)(NSInteger status, NSString *message))complete;
 {
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
-  NSString *token = [self getToken];
+    NSString *token = [self getToken];
     
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     [manager.requestSerializer setValue:token forHTTPHeaderField:@"X-AUTH-KEY"];
@@ -476,8 +453,6 @@
             
         }
         
-        
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         [self changeUploadStatus:@"1"];
         
         
@@ -494,20 +469,18 @@
     
 }
 
-- (BOOL)getBrands:(NSMutableArray *)branderArray
+- (BOOL)getBrands:(NSMutableArray *)branderArray Complete:(void (^)(NSInteger status, NSString *message))complete;
 {
     [branderArray removeAllObjects];
     
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
-  NSString *token = [self getToken];
+    NSString *token = [self getToken];
     
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     [manager.requestSerializer setValue:token forHTTPHeaderField:@"X-AUTH-KEY"];
     
-    
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
     NSDictionary *parameters = @{@"image_uuid":self.imageUUID};
     
@@ -515,9 +488,6 @@
     [manager POST:api parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSString *status = [(NSDictionary *)responseObject objectForKey:@"status"];
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
-        // NSLog(@"%@", responseObject);
         
         if ([status isEqualToString:@"success"]) {
             
@@ -564,10 +534,6 @@
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
-        // NSLog(@"%@", error);
-        
         
     }];
     
@@ -596,7 +562,7 @@
     }
 }
 
-- (BOOL)upload:(NSDictionary *)values ProgressBar:(UIProgressView *)progressBar
+- (BOOL)upload:(NSDictionary *)values ProgressBar:(UIProgressView *)progressBar Complete:(void (^)(NSInteger status, NSString *message))complete;
 {
     // @{@"file_path":filePath, @"file_name":self.photo.fileName, @"name":self.photo.name, @"description":self.photo.desc, @"user_uuid":config.uuid, @"theme_array":themes};
     
@@ -608,8 +574,6 @@
     
     self.progress.progress = 0;
     self.progress.tag = 1;
-    
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
     NSDictionary *parameters = values;
     NSString *filePath = [values objectForKey:@"file_path"];
@@ -630,7 +594,7 @@
     NSProgress *progress = nil;
     
     NSURLSessionUploadTask *uploadTask = [manager uploadTaskWithStreamedRequest:request progress:&progress completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        
         self.progress.tag = 0;
         
         if (error) {

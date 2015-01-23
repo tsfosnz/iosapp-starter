@@ -15,6 +15,7 @@
 @interface Model : NSObject
 
 @property (atomic, retain) FMDatabase *db;
+
 - (NSString *)escape:(NSString *)string;
 - (NSString *)getToken;
 - (NSString *)stringFromTimestamp:(NSInteger)timestamp;

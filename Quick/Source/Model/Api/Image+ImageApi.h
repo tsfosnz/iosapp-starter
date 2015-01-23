@@ -10,18 +10,16 @@
 
 @interface Image (ImageApi)
 
-- (BOOL)getLatest:(NSMutableArray*)imageArray
-          success:(void (^)(NSString *message))success
-          failure:(void (^)(NSString *message))failure;
+- (BOOL)getLatest:(NSMutableArray*)imageArray Complete:(void (^)(NSInteger status, NSString *message))complete;
 
-- (BOOL)upload:(NSDictionary *)values ProgressBar:(UIProgressView *)progressBar;
+- (BOOL)upload:(NSDictionary *)values ProgressBar:(UIProgressView *)progressBar Complete:(void (^)(NSInteger status, NSString *message))complete;
 
-- (BOOL)addComment:(NSDictionary *)values;
-- (BOOL)getComments:(NSMutableArray *)commentArray;
+- (BOOL)addComment:(NSDictionary *)values Complete:(void (^)(NSInteger status, NSString *message))complete;
+- (BOOL)getComments:(NSMutableArray *)commentArray Complete:(void (^)(NSInteger status, NSString *message))complete;
 
-- (BOOL)addBrand:(NSDictionary *)values;
-- (BOOL)getBrands:(NSMutableArray *)branderArray;
+- (BOOL)addBrand:(NSDictionary *)values Complete:(void (^)(NSInteger status, NSString *message))complete;
+- (BOOL)getBrands:(NSMutableArray *)branderArray Complete:(void (^)(NSInteger status, NSString *message))complete;
 
-- (BOOL)getTopBrands:(NSMutableArray *)imageArray;
+- (BOOL)getTopBrands:(NSMutableArray *)imageArray Complete:(void (^)(NSInteger status, NSString *message))complete;
 
 @end

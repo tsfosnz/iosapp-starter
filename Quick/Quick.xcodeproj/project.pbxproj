@@ -45,6 +45,10 @@
 		CE7AC79719CD93E50039FAE4 /* MemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC79619CD93E50039FAE4 /* MemoryCache.m */; };
 		CE7AC79A19CD93F80039FAE4 /* NetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC79919CD93F80039FAE4 /* NetworkCache.m */; };
 		CE95294918EF5400002A34B4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE95294818EF5400002A34B4 /* MapKit.framework */; };
+		CE9FA95F1A7244FA00411BC5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA95E1A7244FA00411BC5 /* README.md */; };
+		CE9FA9611A72451F00411BC5 /* APP.md in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA9601A72451F00411BC5 /* APP.md */; };
+		CE9FA9631A72475400411BC5 /* TEST.md in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA9621A72475400411BC5 /* TEST.md */; };
+		CE9FA9651A72478300411BC5 /* WORKLOG.md in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA9641A72478300411BC5 /* WORKLOG.md */; };
 		CE9FD64218CEDD680039667F /* sql.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9FD64118CEDD680039667F /* sql.txt */; };
 		CE9FD64418CEE5650039667F /* local.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CE9FD64318CEE5650039667F /* local.sqlite */; };
 		CEDE242018C21CD50083B8DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE241F18C21CD50083B8DF /* Foundation.framework */; };
@@ -146,6 +150,10 @@
 		CE7AC79819CD93F80039FAE4 /* NetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCache.h; sourceTree = "<group>"; };
 		CE7AC79919CD93F80039FAE4 /* NetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCache.m; sourceTree = "<group>"; };
 		CE95294818EF5400002A34B4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE9FA95E1A7244FA00411BC5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CE9FA9601A72451F00411BC5 /* APP.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = APP.md; sourceTree = "<group>"; };
+		CE9FA9621A72475400411BC5 /* TEST.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TEST.md; sourceTree = "<group>"; };
+		CE9FA9641A72478300411BC5 /* WORKLOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = WORKLOG.md; sourceTree = "<group>"; };
 		CE9FD64118CEDD680039667F /* sql.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sql.txt; sourceTree = "<group>"; };
 		CE9FD64318CEE5650039667F /* local.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = local.sqlite; sourceTree = "<group>"; };
 		CEDE241C18C21CD50083B8DF /* Quick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quick.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -324,6 +332,10 @@
 		CEDE241318C21CD50083B8DF = {
 			isa = PBXGroup;
 			children = (
+				CE9FA9641A72478300411BC5 /* WORKLOG.md */,
+				CE9FA9621A72475400411BC5 /* TEST.md */,
+				CE9FA9601A72451F00411BC5 /* APP.md */,
+				CE9FA95E1A7244FA00411BC5 /* README.md */,
 				CEDE242518C21CD50083B8DF /* Source */,
 				CEDE244718C21CD50083B8DF /* Tests */,
 				CEDE241E18C21CD50083B8DF /* Frameworks */,
@@ -550,9 +562,11 @@
 				CE1F4B401A723FAA0099D524 /* PHViewController.m in Sources */,
 				CE1F4B3D1A723F980099D524 /* PADViewController.m in Sources */,
 				CE1F4B061A72378C0099D524 /* Image+ImageApi.m in Sources */,
+				CE9FA95F1A7244FA00411BC5 /* README.md in Sources */,
 				CE1F4B681A7240840099D524 /* AFHTTPSessionManager.m in Sources */,
 				CE1F4AFF1A72373E0099D524 /* Setting.m in Sources */,
 				CE1F4B511A72406B0099D524 /* FMResultSet.m in Sources */,
+				CE9FA9651A72478300411BC5 /* WORKLOG.md in Sources */,
 				CE7AC79A19CD93F80039FAE4 /* NetworkCache.m in Sources */,
 				CE1F4B6E1A7240840099D524 /* AFURLSessionManager.m in Sources */,
 				CE1F4AF91A72373E0099D524 /* Brand.m in Sources */,
@@ -568,6 +582,7 @@
 				CE1F4AFA1A72373E0099D524 /* Comment.m in Sources */,
 				CE1F4B4F1A72406B0099D524 /* FMDatabasePool.m in Sources */,
 				CE1F4B071A72378C0099D524 /* User+UserApi.m in Sources */,
+				CE9FA9611A72451F00411BC5 /* APP.md in Sources */,
 				CE1F4B671A7240840099D524 /* AFHTTPRequestOperationManager.m in Sources */,
 				CEDE242C18C21CD50083B8DF /* main.m in Sources */,
 				CE1F4AFD1A72373E0099D524 /* Note.m in Sources */,
@@ -578,6 +593,7 @@
 				CE1F4B001A72373E0099D524 /* Theme.m in Sources */,
 				CE1F4AFE1A72373E0099D524 /* Notification.m in Sources */,
 				CE7AC79719CD93E50039FAE4 /* MemoryCache.m in Sources */,
+				CE9FA9631A72475400411BC5 /* TEST.md in Sources */,
 				CE1F4B341A723BDB0099D524 /* Bootstrap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
