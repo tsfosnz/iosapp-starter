@@ -33,6 +33,6 @@
 
 @property (atomic, retain) NSString *token;
 
-@property (atomic, retain) NSString *errorMessage;
+
 
 @end
