@@ -2,11 +2,12 @@
 //  AppConfig.m
 //  test
 //
-//  Created by  
+//  Created by  ()
 //  Copyright (c) 2013-2014 
 //
 
 #import "AppConfig.h"
+#import "Setting.h"
 
 @implementation AppConfig
 
@@ -15,18 +16,17 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[self alloc] init];
-        instance.userArray = [[NSMutableArray alloc] init];
     });
     return instance;
 }
 
 - (id)init {
     if (self = [super init]) {
-            }
+        self.notificationMessage = @"";
+        self.notificationUUID = @"";
+    }
     return self;
 }
-
-
 
 - (void)dealloc {
     // Should never be called, but just here for clarity really.

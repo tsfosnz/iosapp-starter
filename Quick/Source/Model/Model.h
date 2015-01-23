@@ -1,25 +1,22 @@
 //
 //  Model.h
-//  RITraining
+//  Pixcell8
 //
-//  Created by hello on 14-1-26.
-//  Copyright (c) 2014年 hellomaya. All rights reserved.
+//  Created by  on 14-2-8.
+//  Copyright (c) 2014年 . All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-
 #import "FMDatabase.h"
 #import "AppConfig.h"
-#import "DiskCache.h"
+#import <CommonCrypto/CommonDigest.h>
+#import "Global.h"
 
 @interface Model : NSObject
 
 @property (atomic, retain) FMDatabase *db;
-@property (atomic, retain) AppConfig *config;
-@property (atomic, retain) DiskCache *cache;
-
-@property (atomic, retain) NSString *table;
-
 - (NSString *)escape:(NSString *)string;
+- (NSString *)getToken;
+- (NSString *)stringFromTimestamp:(NSInteger)timestamp;
 
 @end

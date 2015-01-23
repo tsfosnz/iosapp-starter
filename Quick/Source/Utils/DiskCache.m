@@ -28,7 +28,7 @@
 }
 
 - (void)initCache {
-    NSString *document = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *document = NSTemporaryDirectory();
     
     if ([[NSFileManager defaultManager] fileExistsAtPath:[NSString stringWithFormat:@"%@/cache/image", document]]) {
         _imageCachePath = [NSString stringWithFormat:@"%@/cache/image", document];
@@ -52,8 +52,58 @@
                                                     attributes:nil
                                                          error:&error])
     {
-        //NSLog(@"Create directory error: %@", error);
+        // NSLog(@"Create directory error: %@", error);
     }
 }
+
+
+// add image to cache, and get its file path
+
+- (NSString *)addImage:(UIImage *)image fileName: (NSString *)fileName
+{
+    
+    NSString *filePath = [NSString stringWithFormat:@"%@/%@", _imageCachePath, fileName];
+    
+    NSFileManager *fm = [NSFileManager defaultManager];
+    if ([fm fileExistsAtPath:filePath isDirectory:NO]) {
+        
+        return filePath;
+    }
+
+    [UIImageJPEGRepresentation(image, 1) writeToFile:filePath atomically:YES];
+    //[UIImagePNGRepresentation(image) writeToFile:filePath atomically:YES];
+    
+    return filePath;
+}
+
+- (UIImage *)getImage:(NSString *)fileName
+{
+    NSString *filePath = [NSString stringWithFormat:@"%@/%@", _imageCachePath, fileName];
+    
+    NSFileManager *fm = [NSFileManager defaultManager];
+    
+    if ([fm fileExistsAtPath:filePath isDirectory:NO]) {
+        
+        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfFile:filePath]];
+        return image;
+    }
+    
+    return nil;
+}
+
+- (NSString *)getImagePath:(NSString *)fileName
+{
+    NSString *filePath = [NSString stringWithFormat:@"%@/%@", _imageCachePath, fileName];
+    
+    NSFileManager *fm = [NSFileManager defaultManager];
+    
+    if ([fm fileExistsAtPath:filePath isDirectory:NO]) {
+        
+        return filePath;
+    }
+    
+    return nil;
+}
+
 
 @end

@@ -1,24 +1,14 @@
 //
-//  Auth.h
-//  Pixcell8
+//  Brander.h
+//  Gaje
 //
-//  Created by  ()
-//  Copyright (c) 2013-2014 
+//  Created by hello on 14-7-5.
+//  Copyright (c) 2014年 AppDesignVault. All rights reserved.
 //
 
-//  DB tables - users - id, useranme, password, token, status, login date, logout date, counts
-
-#import <Foundation/Foundation.h>
-#import "AFNetworking.h"
 #import "Model.h"
-#import "Global.h"
 
-@class LoginController;
-@class RegisterController;
-
-@interface User : Model
-
-
+@interface Brand : Model
 
 @property (atomic, assign) NSInteger userId;
 @property (atomic, retain) NSString *userUUID;
@@ -40,31 +30,9 @@
 @property (atomic, retain) NSString *address;
 @property (atomic, retain) NSString *postcode;
 @property (atomic, retain) NSString *phone;
-@property (atomic, strong) NSString *location;
-
-
-// update
-
-@property (assign) NSInteger status;
-
-@property (strong) NSString *themeUUID;
 
 @property (atomic, retain) NSString *token;
-@property (nonatomic, assign) NSInteger isMutual;
 
-@property (atomic, strong) NSMutableArray *imageArray;
-
-//
-@property (strong) id menuVC;
-
-
-+ (id)getInstance;
-
-- (BOOL)auth;
-- (BOOL)fetchByToken:(NSString *)token;
-- (BOOL)add;
-- (BOOL)updateUUID;
-- (BOOL)remove;
-- (BOOL)exits;
+@property (atomic, retain) NSString *errorMessage;
 
 @end

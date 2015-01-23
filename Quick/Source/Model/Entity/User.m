@@ -1,14 +1,17 @@
 //
-//  User.m
-//  quicknote
+//  Auth.m
+//  Pixcell8
 //
-//  Created by hello on 14-3-24.
-//  Copyright (c) 2014年 hellomaya. All rights reserved.
+//  Created by  ()
+//  Copyright (c) 2013-2014 
 //
 
 #import "User.h"
+#import "Image.h"
+#import "Brand.h"
 
 @implementation User
+
 
 + (id)getInstance {
     static User *instance = nil;
@@ -20,117 +23,189 @@
     return instance;
 }
 
-- (id)init
-{
-    
-    self = [super init];
-    
-    if (self) {
-        self.table = @"user";
-        
-    }
-    
-    return self;
-    
-}
-
-- (BOOL)fetch:(NSMutableArray *)userArray Filter:(NSString *)filter Order:(NSString *)order Page:(NSInteger)page PageSize:(NSInteger)pageSize
-{
-    if (!self.db) {
-        return NO;
-    }
-    
-    NSString *sql = @"SELECT * FROM %@ WHERE %@ ORDER BY %@ LIMIT %d, %d";
-    
-    sql = [NSString stringWithFormat:sql, self.table, filter, order, page * pageSize, pageSize];
-    
-    FMResultSet *result = [self.db executeQuery:sql];
-    
-    while ([result next]) {
-        
-        User *user = [[User alloc] init];
-        
-        user.userId = [result intForColumn:@"user_id"];
-        user.name = [result stringForColumn:@"name"];
-        
-        [userArray addObject:user];
-        
-        user = nil;
-        
-    }
-    
-    return YES;
-}
-
 
 - (BOOL)add
 {
-    if (!self.db) {
+    if (![self.db open]) {
         return NO;
     }
     
-    self.name = [self escape:self.name];
-    self.password = [self escape:self.password];
+    self.username = [self escape:self.username];
+    self.desc = [self escape:self.desc];
+    self.fullname = [self escape:self.fullname];
+    self.email = [self escape:self.email];
+    self.city = [self escape:self.city];
+    self.state = [self escape:self.state];
+    self.country = [self escape:self.country];
+    self.address = [self escape:self.address];
+    self.postcode = [self escape:self.postcode];
+    self.postcode = [self escape:self.phone];
+    self.icon = [self escape:self.icon];
+    self.token = [self escape:self.token];
+    self.phone = [self escape:self.phone];
+    self.location = [self escape:self.location];
     
-    NSString *sql = @"INSERT INTO %@ (name, password, status, active, last_login, last_logout) VALUES (?, ?, ?, ?, ?, ?)";
+    self.userUUID = [self escape:self.userUUID];
     
-    sql = [NSString stringWithFormat:sql, self.table];
+    self.themeUUID = [self escape:self.themeUUID];
     
-    [self.db executeUpdate:sql, self.name, self.password, [NSNumber numberWithInteger:self.status], [NSNumber numberWithInteger:self.active], [NSNumber numberWithInteger:self.lastLogin], [NSNumber numberWithInteger:self.lastLogout]];
     
-    self.userId = (NSInteger)[self.db lastInsertRowId];
+    [self.db executeUpdateWithFormat:@"DELETE FROM user WHERE token=%@", self.token];
+    
+    [self.db executeUpdateWithFormat:@"INSERT INTO user (user_uuid, username, description, fullname, email, token, location, theme_uuid) VALUES (%@, %@, %@, %@, %@, %@, %@, %@);", self.userUUID, self.username, self.desc, self.fullname, self.email, self.token, self.location, self.themeUUID];
+    
     
     return YES;
 }
 
 - (BOOL)update
 {
-    if (!self.db) {
+    if (![self.db open]) {
         return NO;
     }
     
-    self.name = [self escape:self.name];
-    self.password = [self escape:self.password];
+    self.username = [self escape:self.username];
+    self.desc = [self escape:self.desc];
+    self.fullname = [self escape:self.fullname];
+    self.email = [self escape:self.email];
+    self.city = [self escape:self.city];
+    self.state = [self escape:self.state];
+    self.country = [self escape:self.country];
+    self.address = [self escape:self.address];
+    self.postcode = [self escape:self.postcode];
+    self.postcode = [self escape:self.phone];
+    self.icon = [self escape:self.icon];
+    self.token = [self escape:self.token];
+    self.phone = [self escape:self.phone];
     
-    NSString *sql = @"UPDATE %@ SET name=?, password=?, status=?, active=?, last_login=?, last_logout=? WHERE user_id=?";
-    
-    sql = [NSString stringWithFormat:sql, self.table];
-    
-    [self.db executeUpdate:sql, self.name, self.password, [NSNumber numberWithInteger:self.status], [NSNumber numberWithInteger:self.active], [NSNumber numberWithInteger:self.lastLogin], [NSNumber numberWithInteger:self.lastLogout], self.userId];
+    [self.db executeUpdateWithFormat:@"UPDATE user SET username=%@, description=%@, fullname=%@, email=%@, city=%@, state=%@, country=%@, address=%@, zipcode＝%@, phone=%@, picture=%@, token=%@ WHERE user_id=%ld", self.username, self.desc, self.fullname, self.email, self.city, self.state, self.country, self.address, self.postcode, self.phone, self.icon, self.token, (long)(self.userId)];
     
     return YES;
 }
 
+- (BOOL)updateUUID
+{
+    if (![self.db open]) {
+        return NO;
+    }
+    
+    self.userUUID = [self escape:self.userUUID];
+    self.themeUUID = [self escape:self.themeUUID];
+    
+    [self.db executeUpdateWithFormat:@"UPDATE user SET user_uuid=%@, theme_uuid=%@ WHERE token=%@", self.userUUID, self.themeUUID, self.token];
+    
+    return YES;
+}
 
 - (BOOL)remove
 {
-    if (!self.db) {
+    if (![self.db open]) {
         return NO;
     }
     
-    NSString *sql = @"DELETE FROM %@ WHERE user_id=%d";
-    
-    [self.db executeUpdateWithFormat:sql, self.table, self.userId];
+    self.token = [self escape:self.token];
+    [self.db executeUpdateWithFormat:@"DELETE FROM user WHERE token=%@", self.token];
     
     return YES;
 }
 
-- (BOOL)removeAll
+- (BOOL)exits
 {
-    if (!self.db) {
+    if (![self.db open]) {
         return NO;
     }
     
-    NSString *sql = @"DELETE FROM %@";
+    FMResultSet *result;
     
-    [self.db executeUpdate:[NSString stringWithFormat:sql, self.table]];
+    result = [self.db executeQueryWithFormat:@"SELECT * FROM user WHERE token=%@", self.token];
+    
+    self.userId = 0;
+    
+    while ([result next]) {
+        
+        return YES;
+    }
+    
+    return NO;
+}
+
+- (BOOL)auth
+{
+    if (![self.db open]) {
+        return NO;
+    }
+    
+    FMResultSet *result;
+    result = [self.db executeQueryWithFormat:@"SELECT * FROM user"];
+    
+    while ([result next]) {
+        
+        self.userId = [result intForColumn:@"user_id"];
+        self.username = [result stringForColumn:@"username"];
+        self.desc = [result stringForColumn:@"description"];
+        
+        self.email = [result stringForColumn:@"email"];
+        
+        self.fullname = [result stringForColumn:@"fullname"];
+        self.city = [result stringForColumn:@"city"];
+        self.state = [result stringForColumn:@"state"];
+        self.country = [result stringForColumn:@"country"];
+        self.address = [result stringForColumn:@"address"];
+        self.postcode = [result stringForColumn:@"zipcode"];
+        self.phone = [result stringForColumn:@"phone"];
+        
+        self.token = [result stringForColumn:@"token"];
+        self.userUUID = [result stringForColumn:@"user_uuid"];
+        self.location = [result stringForColumn:@"location"];
+        
+        self.themeUUID = [result stringForColumn:@"theme_uuid"];
+        
+        self.icon = self.token;
+        self.iconurl = [NSString stringWithFormat:FB_PROFILE_ICON, self.token];
+        
+        AppConfig *config = [AppConfig getInstance];
+        config.userIsLogin = 1;
+        config.uuid = self.userUUID;
+        config.token = self.token;        
+    }
     
     return YES;
 }
 
-+ (NSString *)table
+- (BOOL)fetchByToken:(NSString *)token
 {
-    return @"user";
+    if (![self.db open]) {
+        return NO;
+    }
+    
+    FMResultSet *result;
+    
+    token = [self escape:token];
+    
+    result = [self.db executeQueryWithFormat:@"SELECT * FROM user WHERE token=%@", token];
+    
+    self.userId = 0;
+    
+    while ([result next]) {
+        
+        self.userId = [result intForColumn:@"user_id"];
+        self.username = [result stringForColumn:@"username"];
+        self.desc = [result stringForColumn:@"description"];
+        
+        self.email = [result stringForColumn:@"email"];
+        
+        self.fullname = [result stringForColumn:@"fullname"];
+        self.city = [result stringForColumn:@"city"];
+        self.state = [result stringForColumn:@"state"];
+        self.country = [result stringForColumn:@"country"];
+        self.address = [result stringForColumn:@"address"];
+        self.postcode = [result stringForColumn:@"zipcode"];
+        self.phone = [result stringForColumn:@"phone"];
+        
+        self.token = [result stringForColumn:@"token"];
+    }
+    
+    return YES;
 }
 
 @end

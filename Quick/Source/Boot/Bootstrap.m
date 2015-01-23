@@ -7,6 +7,8 @@
 //
 
 #import "Bootstrap.h"
+#import "User.h"
+#import "BackgroundTask.h"
 
 @implementation Bootstrap
 
@@ -25,6 +27,8 @@
     [self initdb];
     [self initScreenSize];
     [self initDiskCache];
+    [self initAuth];
+    [self initBackgroundTask];
 }
 
 - (void)initdb {
@@ -36,7 +40,7 @@
     NSString *databasePath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"local.sqlite"];
     NSString *toPath = [NSString stringWithFormat:@"%@/%@", document, @"local.sqlite" ];
     
-    NSLog(@"data = %@", databasePath);
+    //// NSLog(@"data = %@", databasePath);
     
     self.config.dbPath = nil;
     
@@ -46,7 +50,6 @@
             [[NSFileManager defaultManager] copyItemAtPath:databasePath
                                                     toPath:toPath
                                                      error:&error];
-            NSLog(@"db copied to = %@, error = %@", toPath, error);
         }
         
         if (error == nil) {
@@ -87,6 +90,32 @@
 - (void)initDiskCache
 {
     [[DiskCache getInstance] initCache];
+}
+
+- (void)initAuth
+{
+    
+    User *user = [User getInstance];
+    AppConfig *config = [AppConfig getInstance];
+    
+    if ([user exits]) {
+        config.userIsLogin = 1;
+        config.token = user.token;
+        return;
+    }
+    
+    config.userIsLogin = 0;
+    config.token = @"";
+    
+}
+
+- (void)initBackgroundTask
+{
+    BackgroundTask *task = [BackgroundTask getInstance];
+    [task initTask];
+    
+    
+    
 }
 
 

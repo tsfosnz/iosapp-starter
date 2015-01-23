@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FMDatabase.h"
 #import "AppConfig.h"
 #import "DiskCache.h"
-#import "FMDatabase.h"
+
+
+@class User;
+@class BackgroundTask;
 
 @interface Bootstrap : NSObject
 
