@@ -40,6 +40,8 @@
 		CE1F4B341A723BDB0099D524 /* Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1F4B321A723BDB0099D524 /* Bootstrap.m */; };
 		CE1F4B371A723CB30099D524 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1F4B361A723CB30099D524 /* Model.m */; };
 		CE1F4B3A1A723CDF0099D524 /* DiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1F4B391A723CDF0099D524 /* DiskCache.m */; };
+		CE1F4B3D1A723F980099D524 /* PADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1F4B3C1A723F980099D524 /* PADViewController.m */; };
+		CE1F4B401A723FAA0099D524 /* PHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1F4B3F1A723FAA0099D524 /* PHViewController.m */; };
 		CE7AC79719CD93E50039FAE4 /* MemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC79619CD93E50039FAE4 /* MemoryCache.m */; };
 		CE7AC79A19CD93F80039FAE4 /* NetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7AC79919CD93F80039FAE4 /* NetworkCache.m */; };
 		CE95294918EF5400002A34B4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE95294818EF5400002A34B4 /* MapKit.framework */; };
@@ -135,6 +137,10 @@
 		CE1F4B361A723CB30099D524 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		CE1F4B381A723CDF0099D524 /* DiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskCache.h; sourceTree = "<group>"; };
 		CE1F4B391A723CDF0099D524 /* DiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskCache.m; sourceTree = "<group>"; };
+		CE1F4B3B1A723F980099D524 /* PADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PADViewController.h; sourceTree = "<group>"; };
+		CE1F4B3C1A723F980099D524 /* PADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PADViewController.m; sourceTree = "<group>"; };
+		CE1F4B3E1A723FAA0099D524 /* PHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHViewController.h; path = Source/IPhone/PHViewController.h; sourceTree = SOURCE_ROOT; };
+		CE1F4B3F1A723FAA0099D524 /* PHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHViewController.m; path = Source/IPhone/PHViewController.m; sourceTree = SOURCE_ROOT; };
 		CE7AC79519CD93E50039FAE4 /* MemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryCache.h; sourceTree = "<group>"; };
 		CE7AC79619CD93E50039FAE4 /* MemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryCache.m; sourceTree = "<group>"; };
 		CE7AC79819CD93F80039FAE4 /* NetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCache.h; sourceTree = "<group>"; };
@@ -301,6 +307,8 @@
 		CECA11C3197E8AED004EBFD5 /* IPhone */ = {
 			isa = PBXGroup;
 			children = (
+				CE1F4B3E1A723FAA0099D524 /* PHViewController.h */,
+				CE1F4B3F1A723FAA0099D524 /* PHViewController.m */,
 			);
 			name = IPhone;
 			path = iphone;
@@ -309,6 +317,8 @@
 		CECA11C4197E8B0D004EBFD5 /* IPAD */ = {
 			isa = PBXGroup;
 			children = (
+				CE1F4B3B1A723F980099D524 /* PADViewController.h */,
+				CE1F4B3C1A723F980099D524 /* PADViewController.m */,
 			);
 			path = IPAD;
 			sourceTree = "<group>";
@@ -540,6 +550,8 @@
 				CEDE243018C21CD50083B8DF /* AppDelegate.m in Sources */,
 				CE1F4B221A7237D40099D524 /* AFURLRequestSerialization.m in Sources */,
 				CE1F4AD61A7234FD0099D524 /* FMDatabase.m in Sources */,
+				CE1F4B401A723FAA0099D524 /* PHViewController.m in Sources */,
+				CE1F4B3D1A723F980099D524 /* PADViewController.m in Sources */,
 				CE1F4B061A72378C0099D524 /* Image+ImageApi.m in Sources */,
 				CE1F4AFF1A72373E0099D524 /* Setting.m in Sources */,
 				CE7AC79A19CD93F80039FAE4 /* NetworkCache.m in Sources */,
