@@ -68,7 +68,7 @@
                     
                     Notification *notification = [[Notification alloc] init];
                     
-                    notification.notificationUUID = [item objectForKey:@"notification_uuid"];
+                    notification.notificationuuid = [item objectForKey:@"notification_uuid"];
                     notification.name = [item objectForKey:@"name"];
                     notification.desc = [item objectForKey:@"description"];
                     

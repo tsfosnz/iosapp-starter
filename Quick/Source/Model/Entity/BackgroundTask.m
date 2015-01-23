@@ -45,7 +45,7 @@
     if (data != nil && [data objectForKey:@"notification_uuid"]) {
      
         AppConfig *config = [AppConfig getInstance];
-        config.notificationUUID = [data objectForKey:@"notification_uuid"];
+        config.notificationuuid = [data objectForKey:@"notification_uuid"];
     }
 }
 
@@ -67,15 +67,15 @@
         AppConfig *config = [AppConfig getInstance];
         Notification *notification = [self.data objectAtIndex:0];
         
-        if ([notification.notificationUUID isEqualToString:config.notificationUUID]){
+        if ([notification.notificationuuid isEqualToString:config.notificationuuid]){
             return NO;
         }
         
-        config.notificationUUID = notification.notificationUUID;
+        config.notificationuuid = notification.notificationuuid;
         
         Setting *model = [Setting getInstance];
-        if (![model addItem:@"notification_uuid" Value:config.notificationUUID]) {
-            [model updateItem:@"notification_uuid" Value:config.notificationUUID];
+        if (![model addItem:@"notification_uuid" Value:config.notificationuuid]) {
+            [model updateItem:@"notification_uuid" Value:config.notificationuuid];
         };
         
         //NSLog(@"%@", [model getItem:@"notification_uuid"]);

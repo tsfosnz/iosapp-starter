@@ -11,7 +11,7 @@
 @interface Brand : Model
 
 @property (atomic, assign) NSInteger userId;
-@property (atomic, retain) NSString *userUUID;
+@property (atomic, retain) NSString *useruuid;
 @property (atomic, retain) NSString *username;
 @property (atomic, retain) NSString *desc;
 

@@ -68,7 +68,7 @@
                     
                     Note *note = [[Note alloc] init];
                     
-                    note.noteUUID = [item objectForKey:@"note_uuid"];
+                    note.noteuuid = [item objectForKey:@"note_uuid"];
                     note.name = [item objectForKey:@"name"];
                     note.desc = [item objectForKey:@"description"];
                     

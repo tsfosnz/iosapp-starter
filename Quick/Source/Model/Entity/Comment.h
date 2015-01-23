@@ -10,12 +10,12 @@
 
 @interface Comment : Model
 
-@property (strong, nonatomic) NSString *commentUUID;
+@property (strong, nonatomic) NSString *commentuuid;
 @property (strong, nonatomic) NSString *content;
 @property (strong, nonatomic) NSString *create;
 @property (strong, nonatomic) NSString *modified;
 
-@property (strong, nonatomic) NSString *userUUID;
+@property (strong, nonatomic) NSString *useruuid;
 @property (strong, nonatomic) NSString *username;
 @property (strong, nonatomic) NSString *usericon;
 

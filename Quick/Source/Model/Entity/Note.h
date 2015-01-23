@@ -13,7 +13,7 @@
 @interface Note : Model
 
 @property (atomic, assign) NSInteger *noteId;
-@property (atomic, retain) NSString *noteUUID;
+@property (atomic, retain) NSString *noteuuid;
 @property (atomic, retain) NSString *name;
 @property (atomic, retain) NSString *desc;
 @property (atomic, assign) BOOL selected;

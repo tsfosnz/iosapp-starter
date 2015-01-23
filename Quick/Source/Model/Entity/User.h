@@ -13,15 +13,10 @@
 #import "Model.h"
 #import "Global.h"
 
-@class LoginController;
-@class RegisterController;
-
 @interface User : Model
 
-
-
 @property (atomic, assign) NSInteger userId;
-@property (atomic, retain) NSString *userUUID;
+@property (atomic, retain) NSString *useruuid;
 @property (atomic, retain) NSString *username;
 @property (atomic, retain) NSString *desc;
 
@@ -47,15 +42,13 @@
 
 @property (assign) NSInteger status;
 
-@property (strong) NSString *themeUUID;
+@property (strong) NSString *themeuuid;
 
 @property (atomic, retain) NSString *token;
 @property (nonatomic, assign) NSInteger isMutual;
 
 @property (atomic, strong) NSMutableArray *imageArray;
 
-//
-@property (strong) id menuVC;
 
 
 + (id)getInstance;
@@ -63,7 +56,7 @@
 - (BOOL)auth;
 - (BOOL)fetchByToken:(NSString *)token;
 - (BOOL)add;
-- (BOOL)updateUUID;
+- (BOOL)updateuuid;
 - (BOOL)remove;
 - (BOOL)exits;
 

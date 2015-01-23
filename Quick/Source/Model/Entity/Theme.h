@@ -13,7 +13,7 @@
 @interface Theme : Model
 
 @property (atomic, assign) NSInteger *themeId;
-@property (atomic, retain) NSString *themeUUID;
+@property (atomic, retain) NSString *themeuuid;
 @property (atomic, retain) NSString *name;
 @property (atomic, retain) NSString *desc;
 @property (atomic, assign) BOOL selected;

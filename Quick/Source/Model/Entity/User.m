@@ -45,14 +45,14 @@
     self.phone = [self escape:self.phone];
     self.location = [self escape:self.location];
     
-    self.userUUID = [self escape:self.userUUID];
+    self.useruuid = [self escape:self.useruuid];
     
-    self.themeUUID = [self escape:self.themeUUID];
+    self.themeuuid = [self escape:self.themeuuid];
     
     
     [self.db executeUpdateWithFormat:@"DELETE FROM user WHERE token=%@", self.token];
     
-    [self.db executeUpdateWithFormat:@"INSERT INTO user (user_uuid, username, description, fullname, email, token, location, theme_uuid) VALUES (%@, %@, %@, %@, %@, %@, %@, %@);", self.userUUID, self.username, self.desc, self.fullname, self.email, self.token, self.location, self.themeUUID];
+    [self.db executeUpdateWithFormat:@"INSERT INTO user (user_uuid, username, description, fullname, email, token, location, theme_uuid) VALUES (%@, %@, %@, %@, %@, %@, %@, %@);", self.useruuid, self.username, self.desc, self.fullname, self.email, self.token, self.location, self.themeuuid];
     
     
     return YES;
@@ -83,16 +83,16 @@
     return YES;
 }
 
-- (BOOL)updateUUID
+- (BOOL)updateuuid
 {
     if (![self.db open]) {
         return NO;
     }
     
-    self.userUUID = [self escape:self.userUUID];
-    self.themeUUID = [self escape:self.themeUUID];
+    self.useruuid = [self escape:self.useruuid];
+    self.themeuuid = [self escape:self.themeuuid];
     
-    [self.db executeUpdateWithFormat:@"UPDATE user SET user_uuid=%@, theme_uuid=%@ WHERE token=%@", self.userUUID, self.themeUUID, self.token];
+    [self.db executeUpdateWithFormat:@"UPDATE user SET user_uuid=%@, theme_uuid=%@ WHERE token=%@", self.useruuid, self.themeuuid, self.token];
     
     return YES;
 }
@@ -155,17 +155,17 @@
         self.phone = [result stringForColumn:@"phone"];
         
         self.token = [result stringForColumn:@"token"];
-        self.userUUID = [result stringForColumn:@"user_uuid"];
+        self.useruuid = [result stringForColumn:@"user_uuid"];
         self.location = [result stringForColumn:@"location"];
         
-        self.themeUUID = [result stringForColumn:@"theme_uuid"];
+        self.themeuuid = [result stringForColumn:@"theme_uuid"];
         
         self.icon = self.token;
         self.iconurl = [NSString stringWithFormat:FB_PROFILE_ICON, self.token];
         
         AppConfig *config = [AppConfig getInstance];
         config.userIsLogin = 1;
-        config.uuid = self.userUUID;
+        config.uuid = self.useruuid;
         config.token = self.token;        
     }
     

@@ -68,7 +68,7 @@
                     
                     Theme *theme = [[Theme alloc] init];
                     
-                    theme.themeUUID = [item objectForKey:@"theme_uuid"];
+                    theme.themeuuid = [item objectForKey:@"theme_uuid"];
                     theme.name = [item objectForKey:@"name"];
                     theme.desc = [item objectForKey:@"description"];
                     

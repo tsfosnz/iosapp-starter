@@ -25,7 +25,7 @@
 
 @property (atomic, strong) NSString *theme;
 @property (atomic, strong) NSString *notificationMessage;
-@property (atomic, strong) NSString *notificationUUID;
+@property (atomic, strong) NSString *notificationuuid;
 
 @property (assign) NSInteger numberOfNotifications;
 

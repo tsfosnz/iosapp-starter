@@ -18,8 +18,8 @@
 @interface Image : Model
 
 @property (atomic, assign) NSInteger imageId;
-@property (atomic, retain) NSString *imageUUID;
-@property (atomic, retain) NSString *userUUID;
+@property (atomic, retain) NSString *imageuuid;
+@property (atomic, retain) NSString *useruuid;
 @property (atomic, retain) NSString *username;
 @property (atomic, retain) NSString *usertoken;
 @property (atomic, retain) NSString *usericon;
@@ -42,8 +42,8 @@
 
 // table relationship properties
 
-@property (strong) NSString *commentUUID;
-@property (strong) NSString *branderUUID;
+@property (strong) NSString *commentuuid;
+@property (strong) NSString *branderuuid;
 
 @property (atomic, assign) NSInteger branderCount;
 @property (atomic, strong) NSMutableArray *branderArray;
@@ -55,10 +55,8 @@
 @property (assign) NSInteger status;
 
 // accessory properties
-
-
-
-
 @property (atomic, retain) UIProgressView *progress;
+
+- (BOOL)changeUploadStatus:(NSString *)status;
 
 @end
