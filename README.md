@@ -1,3 +1,16 @@
+## Introduction
+
+This one is basically a pre-mature iOS app starter. Since the mobile app development tool quickly changed, IMO, more productive way is to use React Native instead.
+
+And this one is out of date a long time ago.
+
+I recommand that you go React Native official site to start learn react native.
+
+> Learn once, write anywhere
+
+It's almost true.
+
+## Summary
 
 I can't stop thinking about the typical mobile app architecture, even people have their own style in programming, let's see there always one of them is the best, and I am looking forward that one, to achieve high efficiency and performance.
 
